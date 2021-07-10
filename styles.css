@@ -12056,6 +12056,7 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-family: var(--fontFamily);
+  overflow: hidden;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
@@ -12063,6 +12064,15 @@ body {
   color: #000000;
   color: var(--blackColor);
   line-height: 1;
+}
+video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 ul {
   padding-left: 0;
@@ -12582,17 +12592,18 @@ Main Banner CSS
   opacity: 0.8;
 }
 .item-bg-one {
-  background-image: url('main-bg-1.jpg');
+  background: transparent;
 }
 .item-bg-two {
-  background-image: url('main-bg-2.jpg');
+  background: transparent;
 }
 .item-bg-three {
-  background-image: url('main-bg-3.jpg');
+  background: transparent;
 }
 .main-banner-text {
   position: relative;
   text-align: center;
+  top: -80px;
   z-index: 1;
 }
 .main-banner-text h4 {
