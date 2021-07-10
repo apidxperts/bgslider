@@ -7,7 +7,7 @@
 
   (self["webpackChunkxavro"] = self["webpackChunkxavro"] || []).push([["main"], {
     /***/
-    8255:
+    98255:
     /*!*******************************************************!*\
       !*** ./$_lazy_route_resources/ lazy namespace object ***!
       \*******************************************************/
@@ -29,13 +29,13 @@
       };
 
       webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-      webpackEmptyAsyncContext.id = 8255;
+      webpackEmptyAsyncContext.id = 98255;
       module.exports = webpackEmptyAsyncContext;
       /***/
     },
 
     /***/
-    158:
+    90158:
     /*!***************************************!*\
       !*** ./src/app/app-routing.module.ts ***!
       \***************************************/
@@ -64,55 +64,55 @@
 
       var _angular_router__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! @angular/router */
-      9895);
+      39895);
       /* harmony import */
 
 
       var _components_home_one_home_one_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ./components/home-one/home-one.component */
-      2489);
+      12489);
       /* harmony import */
 
 
       var _components_home_two_home_two_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ./components/home-two/home-two.component */
-      6519);
+      56519);
       /* harmony import */
 
 
       var _components_home_three_home_three_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ./components/home-three/home-three.component */
-      3562);
+      93562);
       /* harmony import */
 
 
       var _components_home_four_home_four_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ./components/home-four/home-four.component */
-      7496);
+      17496);
       /* harmony import */
 
 
       var _components_home_five_home_five_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ./components/home-five/home-five.component */
-      3806);
+      83806);
       /* harmony import */
 
 
       var _components_home_six_home_six_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ./components/home-six/home-six.component */
-      6174);
+      56174);
       /* harmony import */
 
 
       var _components_home_seven_home_seven_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ./components/home-seven/home-seven.component */
-      4616);
+      64616);
       /* harmony import */
 
 
       var _components_home_eight_home_eight_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ./components/home-eight/home-eight.component */
-      3860);
+      83860);
       /* harmony import */
 
 
@@ -124,37 +124,37 @@
 
       var _components_home_ten_home_ten_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ./components/home-ten/home-ten.component */
-      390);
+      90390);
       /* harmony import */
 
 
       var _components_home_eleven_home_eleven_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ./components/home-eleven/home-eleven.component */
-      2505);
+      52505);
       /* harmony import */
 
 
       var _components_home_twelve_home_twelve_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ./components/home-twelve/home-twelve.component */
-      7505);
+      27505);
       /* harmony import */
 
 
       var _components_home_thirteen_home_thirteen_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ./components/home-thirteen/home-thirteen.component */
-      1011);
+      71011);
       /* harmony import */
 
 
       var _components_blog_details_blog_details_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ./components/blog-details/blog-details.component */
-      8794);
+      88794);
       /* harmony import */
 
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
 
       var routes = [{
         path: '',
@@ -233,7 +233,7 @@
     },
 
     /***/
-    5041:
+    55041:
     /*!**********************************!*\
       !*** ./src/app/app.component.ts ***!
       \**********************************/
@@ -262,37 +262,37 @@
 
       var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! @angular/router */
-      9895);
+      39895);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! rxjs/operators */
-      5435);
+      45435);
       /* harmony import */
 
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _components_common_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ./components/common/navbar/navbar.component */
-      4173);
+      94173);
       /* harmony import */
 
 
       var _components_common_footer_footer_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ./components/common/footer/footer.component */
-      1823);
+      71823);
 
       var _AppComponent = /*#__PURE__*/function () {
         function _AppComponent(router) {
@@ -357,7 +357,7 @@
     },
 
     /***/
-    6747:
+    36747:
     /*!*******************************!*\
       !*** ./src/app/app.module.ts ***!
       \*******************************/
@@ -386,13 +386,13 @@
 
       var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(
       /*! @angular/platform-browser */
-      9075);
+      39075);
       /* harmony import */
 
 
       var ng2_sticky_nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ng2-sticky-nav */
-      9217);
+      29217);
       /* harmony import */
 
 
@@ -402,19 +402,19 @@
 
       var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(
       /*! @angular/platform-browser/animations */
-      5835);
+      75835);
       /* harmony import */
 
 
       var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ngx-smart-modal */
-      2259);
+      42259);
       /* harmony import */
 
 
       var ngx_scrolltop__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(
       /*! ngx-scrolltop */
-      9528);
+      39528);
       /* harmony import */
 
 
@@ -432,19 +432,19 @@
 
       var ngx_countup__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(
       /*! ngx-countup */
-      5046);
+      75046);
       /* harmony import */
 
 
       var ngx_typed_js__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(
       /*! ngx-typed-js */
-      3192);
+      23192);
       /* harmony import */
 
 
       var ngx_accordion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ngx-accordion */
-      8362);
+      28362);
       /* harmony import */
 
 
@@ -454,217 +454,217 @@
 
       var ngx_tabset__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ngx-tabset */
-      293);
+      20293);
       /* harmony import */
 
 
       var ng2_tooltip_directive__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(
       /*! ng2-tooltip-directive */
-      1463);
+      61463);
       /* harmony import */
 
 
       var ngx_particle__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(
       /*! ngx-particle */
-      5290);
+      15290);
       /* harmony import */
 
 
       var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ./app-routing.module */
-      158);
+      90158);
       /* harmony import */
 
 
       var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ./app.component */
-      5041);
+      55041);
       /* harmony import */
 
 
       var _components_common_preloader_preloader_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ./components/common/preloader/preloader.component */
-      4425);
+      14425);
       /* harmony import */
 
 
       var _components_home_one_home_one_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ./components/home-one/home-one.component */
-      2489);
+      12489);
       /* harmony import */
 
 
       var _components_common_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ./components/common/navbar/navbar.component */
-      4173);
+      94173);
       /* harmony import */
 
 
       var _components_common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ./components/common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _components_common_about_about_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ./components/common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _components_common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ./components/common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _components_common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ./components/common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _components_common_cta_cta_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ./components/common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _components_common_skill_skill_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ./components/common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _components_common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ./components/common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _components_common_team_team_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ./components/common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _components_common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ./components/common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _components_common_services_services_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ./components/common/services/services.component */
-      8211);
+      18211);
       /* harmony import */
 
 
       var _components_common_footer_footer_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! ./components/common/footer/footer.component */
-      1823);
+      71823);
       /* harmony import */
 
 
       var _components_common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! ./components/common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _components_common_partner_partner_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
       /*! ./components/common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _components_common_blog_blog_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
       /*! ./components/common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _components_common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
       /*! ./components/common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _components_common_faq_faq_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
       /*! ./components/common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _components_common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
       /*! ./components/common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _components_common_work_work_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
       /*! ./components/common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _components_common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
       /*! ./components/common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _components_common_contact_contact_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
       /*! ./components/common/contact/contact.component */
-      7524);
+      17524);
       /* harmony import */
 
 
       var _components_home_two_home_two_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
       /*! ./components/home-two/home-two.component */
-      6519);
+      56519);
       /* harmony import */
 
 
       var _components_home_three_home_three_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
       /*! ./components/home-three/home-three.component */
-      3562);
+      93562);
       /* harmony import */
 
 
       var _components_home_four_home_four_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
       /*! ./components/home-four/home-four.component */
-      7496);
+      17496);
       /* harmony import */
 
 
       var _components_home_five_home_five_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
       /*! ./components/home-five/home-five.component */
-      3806);
+      83806);
       /* harmony import */
 
 
       var _components_common_services_two_services_two_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
       /*! ./components/common/services-two/services-two.component */
-      2784);
+      12784);
       /* harmony import */
 
 
       var _components_home_six_home_six_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
       /*! ./components/home-six/home-six.component */
-      6174);
+      56174);
       /* harmony import */
 
 
       var _components_home_seven_home_seven_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
       /*! ./components/home-seven/home-seven.component */
-      4616);
+      64616);
       /* harmony import */
 
 
       var _components_home_eight_home_eight_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
       /*! ./components/home-eight/home-eight.component */
-      3860);
+      83860);
       /* harmony import */
 
 
@@ -676,31 +676,31 @@
 
       var _components_home_ten_home_ten_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(
       /*! ./components/home-ten/home-ten.component */
-      390);
+      90390);
       /* harmony import */
 
 
       var _components_home_eleven_home_eleven_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(
       /*! ./components/home-eleven/home-eleven.component */
-      2505);
+      52505);
       /* harmony import */
 
 
       var _components_home_twelve_home_twelve_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(
       /*! ./components/home-twelve/home-twelve.component */
-      7505);
+      27505);
       /* harmony import */
 
 
       var _components_home_thirteen_home_thirteen_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(
       /*! ./components/home-thirteen/home-thirteen.component */
-      1011);
+      71011);
       /* harmony import */
 
 
       var _components_blog_details_blog_details_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(
       /*! ./components/blog-details/blog-details.component */
-      8794);
+      88794);
       /* harmony import */
 
 
@@ -712,7 +712,7 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
 
       var _AppModule = function _AppModule() {
         _classCallCheck(this, _AppModule);
@@ -742,7 +742,7 @@
     },
 
     /***/
-    8794:
+    88794:
     /*!*******************************************************************!*\
       !*** ./src/app/components/blog-details/blog-details.component.ts ***!
       \*******************************************************************/
@@ -771,19 +771,19 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/router */
-      9895);
+      39895);
       /* harmony import */
 
 
       var ng2_tooltip_directive__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ng2-tooltip-directive */
-      1463);
+      61463);
 
       var _BlogDetailsComponent = /*#__PURE__*/function () {
         function _BlogDetailsComponent() {
@@ -1344,7 +1344,7 @@
     },
 
     /***/
-    7042:
+    97042:
     /*!************************************************************!*\
       !*** ./src/app/components/common/about/about.component.ts ***!
       \************************************************************/
@@ -1373,13 +1373,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ngx-smart-modal */
-      2259);
+      42259);
 
       var _AboutComponent = /*#__PURE__*/function () {
         function _AboutComponent(ngxSmartModalService) {
@@ -1578,7 +1578,7 @@
     },
 
     /***/
-    3635:
+    13635:
     /*!**********************************************************!*\
       !*** ./src/app/components/common/blog/blog.component.ts ***!
       \**********************************************************/
@@ -1607,13 +1607,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
@@ -1625,7 +1625,7 @@
 
       var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! @angular/router */
-      9895);
+      39895);
 
       function BlogComponent_ng_template_13_Template(rf, ctx) {
         if (rf & 1) {
@@ -1927,7 +1927,7 @@
     },
 
     /***/
-    7524:
+    17524:
     /*!****************************************************************!*\
       !*** ./src/app/components/common/contact/contact.component.ts ***!
       \****************************************************************/
@@ -1956,13 +1956,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
@@ -2430,7 +2430,7 @@
     },
 
     /***/
-    9769:
+    79769:
     /*!********************************************************!*\
       !*** ./src/app/components/common/cta/cta.component.ts ***!
       \********************************************************/
@@ -2459,13 +2459,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
 
       var _CtaComponent = /*#__PURE__*/function () {
         function _CtaComponent(viewportScroller) {
@@ -2589,7 +2589,7 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
 
       var _DemoSidebarComponent = /*#__PURE__*/function () {
         function _DemoSidebarComponent() {
@@ -2938,7 +2938,7 @@
     },
 
     /***/
-    2631:
+    82631:
     /*!********************************************************!*\
       !*** ./src/app/components/common/faq/faq.component.ts ***!
       \********************************************************/
@@ -2967,19 +2967,19 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var ngx_accordion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ngx-accordion */
-      8362);
+      28362);
       /* harmony import */
 
 
@@ -3131,7 +3131,7 @@
     },
 
     /***/
-    6900:
+    46900:
     /*!******************************************************************!*\
       !*** ./src/app/components/common/feedback/feedback.component.ts ***!
       \******************************************************************/
@@ -3160,13 +3160,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
@@ -3349,7 +3349,7 @@
     },
 
     /***/
-    1823:
+    71823:
     /*!**************************************************************!*\
       !*** ./src/app/components/common/footer/footer.component.ts ***!
       \**************************************************************/
@@ -3378,19 +3378,19 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! @angular/router */
-      9895);
+      39895);
       /* harmony import */
 
 
@@ -3402,7 +3402,7 @@
 
       var ngx_scrolltop__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ngx-scrolltop */
-      9528);
+      39528);
 
       var _FooterComponent = /*#__PURE__*/function () {
         function _FooterComponent(viewportScroller) {
@@ -3516,7 +3516,7 @@
     },
 
     /***/
-    5357:
+    25357:
     /*!******************************************************************!*\
       !*** ./src/app/components/common/funfacts/funfacts.component.ts ***!
       \******************************************************************/
@@ -3545,19 +3545,19 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var ngx_countup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ngx-countup */
-      5046);
+      75046);
 
       var _FunfactsComponent = /*#__PURE__*/function () {
         function _FunfactsComponent(viewportScroller) {
@@ -3733,7 +3733,7 @@
     },
 
     /***/
-    4679:
+    14679:
     /*!************************************************************************!*\
       !*** ./src/app/components/common/how-we-work/how-we-work.component.ts ***!
       \************************************************************************/
@@ -3762,13 +3762,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
 
       var _HowWeWorkComponent = /*#__PURE__*/function () {
         function _HowWeWorkComponent(viewportScroller) {
@@ -3927,7 +3927,7 @@
     },
 
     /***/
-    4173:
+    94173:
     /*!**************************************************************!*\
       !*** ./src/app/components/common/navbar/navbar.component.ts ***!
       \**************************************************************/
@@ -3956,19 +3956,19 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var ng2_sticky_nav__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ng2-sticky-nav */
-      9217);
+      29217);
       /* harmony import */
 
 
@@ -3978,7 +3978,7 @@
 
       var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! @angular/router */
-      9895);
+      39895);
 
       var _NavbarComponent = /*#__PURE__*/function () {
         function _NavbarComponent(viewportScroller) {
@@ -4312,7 +4312,7 @@
     },
 
     /***/
-    6455:
+    16455:
     /*!****************************************************************!*\
       !*** ./src/app/components/common/partner/partner.component.ts ***!
       \****************************************************************/
@@ -4341,13 +4341,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
@@ -4632,7 +4632,7 @@
     },
 
     /***/
-    4425:
+    14425:
     /*!********************************************************************!*\
       !*** ./src/app/components/common/preloader/preloader.component.ts ***!
       \********************************************************************/
@@ -4661,7 +4661,7 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
 
       var _PreloaderComponent = /*#__PURE__*/function () {
         function _PreloaderComponent() {
@@ -4711,7 +4711,7 @@
     },
 
     /***/
-    2019:
+    62019:
     /*!****************************************************************!*\
       !*** ./src/app/components/common/pricing/pricing.component.ts ***!
       \****************************************************************/
@@ -4740,19 +4740,19 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! @angular/router */
-      9895);
+      39895);
 
       var _PricingComponent = /*#__PURE__*/function () {
         function _PricingComponent(viewportScroller) {
@@ -5116,7 +5116,7 @@
     },
 
     /***/
-    2784:
+    12784:
     /*!**************************************************************************!*\
       !*** ./src/app/components/common/services-two/services-two.component.ts ***!
       \**************************************************************************/
@@ -5145,13 +5145,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
 
       var _ServicesTwoComponent = /*#__PURE__*/function () {
         function _ServicesTwoComponent(viewportScroller) {
@@ -5460,7 +5460,7 @@
     },
 
     /***/
-    8211:
+    18211:
     /*!******************************************************************!*\
       !*** ./src/app/components/common/services/services.component.ts ***!
       \******************************************************************/
@@ -5489,13 +5489,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
 
       var _ServicesComponent = /*#__PURE__*/function () {
         function _ServicesComponent(viewportScroller) {
@@ -5894,7 +5894,7 @@
     },
 
     /***/
-    3649:
+    33649:
     /*!************************************************************!*\
       !*** ./src/app/components/common/skill/skill.component.ts ***!
       \************************************************************/
@@ -5923,13 +5923,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var ngx_smart_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ngx-smart-modal */
-      2259);
+      42259);
 
       var _SkillComponent = /*#__PURE__*/function () {
         function _SkillComponent(ngxSmartModalService) {
@@ -6212,7 +6212,7 @@
     },
 
     /***/
-    8181:
+    38181:
     /*!******************************************************************!*\
       !*** ./src/app/components/common/strategy/strategy.component.ts ***!
       \******************************************************************/
@@ -6241,13 +6241,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
 
       var _StrategyComponent = /*#__PURE__*/function () {
         function _StrategyComponent(viewportScroller) {
@@ -6410,7 +6410,7 @@
     },
 
     /***/
-    9495:
+    39495:
     /*!********************************************************************!*\
       !*** ./src/app/components/common/subscribe/subscribe.component.ts ***!
       \********************************************************************/
@@ -6439,13 +6439,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
@@ -6523,7 +6523,7 @@
     },
 
     /***/
-    6278:
+    36278:
     /*!**********************************************************!*\
       !*** ./src/app/components/common/team/team.component.ts ***!
       \**********************************************************/
@@ -6552,13 +6552,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
@@ -7069,7 +7069,7 @@
     },
 
     /***/
-    3416:
+    63416:
     /*!****************************************************************!*\
       !*** ./src/app/components/common/welcome/welcome.component.ts ***!
       \****************************************************************/
@@ -7098,13 +7098,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
 
       var _WelcomeComponent = /*#__PURE__*/function () {
         function _WelcomeComponent(viewportScroller) {
@@ -7299,7 +7299,7 @@
     },
 
     /***/
-    2096:
+    79529:
     /*!**********************************************************************!*\
       !*** ./src/app/components/common/who-we-are/who-we-are.component.ts ***!
       \**********************************************************************/
@@ -7328,13 +7328,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
 
       var _WhoWeAreComponent = /*#__PURE__*/function () {
         function _WhoWeAreComponent(viewportScroller) {
@@ -7577,7 +7577,7 @@
     },
 
     /***/
-    2337:
+    42337:
     /*!**********************************************************************************!*\
       !*** ./src/app/components/common/why-we-different/why-we-different.component.ts ***!
       \**********************************************************************************/
@@ -7606,13 +7606,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
 
       var _WhyWeDifferentComponent = /*#__PURE__*/function () {
         function _WhyWeDifferentComponent(viewportScroller) {
@@ -8051,7 +8051,7 @@
     },
 
     /***/
-    3815:
+    53815:
     /*!**********************************************************!*\
       !*** ./src/app/components/common/work/work.component.ts ***!
       \**********************************************************/
@@ -8080,25 +8080,25 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var ngx_tabset__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ngx-tabset */
-      293);
+      20293);
       /* harmony import */
 
 
       var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! @angular/router */
-      9895);
+      39895);
 
       var _WorkComponent = /*#__PURE__*/function () {
         function _WorkComponent(viewportScroller) {
@@ -9030,7 +9030,7 @@
     },
 
     /***/
-    3860:
+    83860:
     /*!***************************************************************!*\
       !*** ./src/app/components/home-eight/home-eight.component.ts ***!
       \***************************************************************/
@@ -9059,133 +9059,133 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var ngx_typed_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
       /*! ngx-typed-js */
-      3192);
+      23192);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_two_services_two_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services-two/services-two.component */
-      2784);
+      12784);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _c0 = function _c0() {
         return ["Professional", "Passionate", "Creative", "Designer", "Unique", "Best", "Support"];
@@ -9339,7 +9339,7 @@
     },
 
     /***/
-    2505:
+    52505:
     /*!*****************************************************************!*\
       !*** ./src/app/components/home-eleven/home-eleven.component.ts ***!
       \*****************************************************************/
@@ -9368,139 +9368,139 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var ngx_particle__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
       /*! ngx-particle */
-      5290);
+      15290);
       /* harmony import */
 
 
       var ngx_typed_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
       /*! ngx-typed-js */
-      3192);
+      23192);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_services_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services/services.component */
-      8211);
+      18211);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _c0 = function _c0() {
         return ["Professional", "Passionate", "Creative", "Designer", "Unique", "Best", "Support"];
@@ -9689,7 +9689,7 @@
     },
 
     /***/
-    3806:
+    83806:
     /*!*************************************************************!*\
       !*** ./src/app/components/home-five/home-five.component.ts ***!
       \*************************************************************/
@@ -9718,127 +9718,127 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_services_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services/services.component */
-      8211);
+      18211);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _HomeFiveComponent = /*#__PURE__*/function () {
         function _HomeFiveComponent(viewportScroller) {
@@ -9992,7 +9992,7 @@
     },
 
     /***/
-    7496:
+    17496:
     /*!*************************************************************!*\
       !*** ./src/app/components/home-four/home-four.component.ts ***!
       \*************************************************************/
@@ -10021,127 +10021,127 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_two_services_two_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services-two/services-two.component */
-      2784);
+      12784);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _HomeFourComponent = /*#__PURE__*/function () {
         function _HomeFourComponent(viewportScroller) {
@@ -10316,133 +10316,133 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var ngx_particle__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
       /*! ngx-particle */
-      5290);
+      15290);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_services_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services/services.component */
-      8211);
+      18211);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _HomeNineComponent = /*#__PURE__*/function () {
         function _HomeNineComponent(viewportScroller) {
@@ -10623,7 +10623,7 @@
     },
 
     /***/
-    2489:
+    12489:
     /*!***********************************************************!*\
       !*** ./src/app/components/home-one/home-one.component.ts ***!
       \***********************************************************/
@@ -10652,127 +10652,127 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_services_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services/services.component */
-      8211);
+      18211);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _HomeOneComponent = /*#__PURE__*/function () {
         function _HomeOneComponent(viewportScroller) {
@@ -10918,7 +10918,7 @@
     },
 
     /***/
-    4616:
+    64616:
     /*!***************************************************************!*\
       !*** ./src/app/components/home-seven/home-seven.component.ts ***!
       \***************************************************************/
@@ -10947,127 +10947,127 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_services_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services/services.component */
-      8211);
+      18211);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _HomeSevenComponent = /*#__PURE__*/function () {
         function _HomeSevenComponent(viewportScroller) {
@@ -11215,7 +11215,7 @@
     },
 
     /***/
-    6174:
+    56174:
     /*!***********************************************************!*\
       !*** ./src/app/components/home-six/home-six.component.ts ***!
       \***********************************************************/
@@ -11244,127 +11244,127 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_two_services_two_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services-two/services-two.component */
-      2784);
+      12784);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _HomeSixComponent = /*#__PURE__*/function () {
         function _HomeSixComponent(viewportScroller) {
@@ -11512,7 +11512,7 @@
     },
 
     /***/
-    390:
+    90390:
     /*!***********************************************************!*\
       !*** ./src/app/components/home-ten/home-ten.component.ts ***!
       \***********************************************************/
@@ -11541,133 +11541,133 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var ngx_typed_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
       /*! ngx-typed-js */
-      3192);
+      23192);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_two_services_two_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services-two/services-two.component */
-      2784);
+      12784);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _c0 = function _c0() {
         return ["Professional", "Passionate", "Creative", "Designer", "Unique", "Best", "Support"];
@@ -11823,7 +11823,7 @@
     },
 
     /***/
-    1011:
+    71011:
     /*!*********************************************************************!*\
       !*** ./src/app/components/home-thirteen/home-thirteen.component.ts ***!
       \*********************************************************************/
@@ -11852,133 +11852,133 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var ngx_particle__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
       /*! ngx-particle */
-      5290);
+      15290);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_services_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services/services.component */
-      8211);
+      18211);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _HomeThirteenComponent = /*#__PURE__*/function () {
         function _HomeThirteenComponent(viewportScroller) {
@@ -12159,7 +12159,7 @@
     },
 
     /***/
-    3562:
+    93562:
     /*!***************************************************************!*\
       !*** ./src/app/components/home-three/home-three.component.ts ***!
       \***************************************************************/
@@ -12188,127 +12188,127 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_services_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services/services.component */
-      8211);
+      18211);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _HomeThreeComponent = /*#__PURE__*/function () {
         function _HomeThreeComponent(viewportScroller) {
@@ -12460,7 +12460,7 @@
     },
 
     /***/
-    7505:
+    27505:
     /*!*****************************************************************!*\
       !*** ./src/app/components/home-twelve/home-twelve.component.ts ***!
       \*****************************************************************/
@@ -12489,127 +12489,127 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
       var _common_welcome_welcome_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/welcome/welcome.component */
-      3416);
+      63416);
       /* harmony import */
 
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_two_services_two_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/services-two/services-two.component */
-      2784);
+      12784);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       var _HomeTwelveComponent = /*#__PURE__*/function () {
         function _HomeTwelveComponent(viewportScroller) {
@@ -12755,7 +12755,7 @@
     },
 
     /***/
-    6519:
+    56519:
     /*!***********************************************************!*\
       !*** ./src/app/components/home-two/home-two.component.ts ***!
       \***********************************************************/
@@ -12784,13 +12784,13 @@
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _angular_common__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
       /*! @angular/common */
-      8583);
+      38583);
       /* harmony import */
 
 
@@ -12802,109 +12802,109 @@
 
       var _common_about_about_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ../common/about/about.component */
-      7042);
+      97042);
       /* harmony import */
 
 
       var _common_strategy_strategy_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ../common/strategy/strategy.component */
-      8181);
+      38181);
       /* harmony import */
 
 
       var _common_who_we_are_who_we_are_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! ../common/who-we-are/who-we-are.component */
-      2096);
+      79529);
       /* harmony import */
 
 
       var _common_cta_cta_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ../common/cta/cta.component */
-      9769);
+      79769);
       /* harmony import */
 
 
       var _common_skill_skill_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
       /*! ../common/skill/skill.component */
-      3649);
+      33649);
       /* harmony import */
 
 
       var _common_funfacts_funfacts_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
       /*! ../common/funfacts/funfacts.component */
-      5357);
+      25357);
       /* harmony import */
 
 
       var _common_team_team_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
       /*! ../common/team/team.component */
-      6278);
+      36278);
       /* harmony import */
 
 
       var _common_how_we_work_how_we_work_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
       /*! ../common/how-we-work/how-we-work.component */
-      4679);
+      14679);
       /* harmony import */
 
 
       var _common_services_two_services_two_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
       /*! ../common/services-two/services-two.component */
-      2784);
+      12784);
       /* harmony import */
 
 
       var _common_why_we_different_why_we_different_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
       /*! ../common/why-we-different/why-we-different.component */
-      2337);
+      42337);
       /* harmony import */
 
 
       var _common_work_work_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
       /*! ../common/work/work.component */
-      3815);
+      53815);
       /* harmony import */
 
 
       var _common_pricing_pricing_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
       /*! ../common/pricing/pricing.component */
-      2019);
+      62019);
       /* harmony import */
 
 
       var _common_faq_faq_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
       /*! ../common/faq/faq.component */
-      2631);
+      82631);
       /* harmony import */
 
 
       var _common_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
       /*! ../common/feedback/feedback.component */
-      6900);
+      46900);
       /* harmony import */
 
 
       var _common_blog_blog_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
       /*! ../common/blog/blog.component */
-      3635);
+      13635);
       /* harmony import */
 
 
       var _common_partner_partner_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
       /*! ../common/partner/partner.component */
-      6455);
+      16455);
       /* harmony import */
 
 
       var _common_subscribe_subscribe_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
       /*! ../common/subscribe/subscribe.component */
-      9495);
+      39495);
       /* harmony import */
 
 
       var _common_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
       /*! ../common/contact/contact.component */
-      7524);
+      17524);
 
       function HomeTwoComponent_ng_template_2_Template(rf, ctx) {
         if (rf & 1) {
@@ -13227,7 +13227,7 @@
     },
 
     /***/
-    2340:
+    92340:
     /*!*****************************************!*\
       !*** ./src/environments/environment.ts ***!
       \*****************************************/
@@ -13271,7 +13271,7 @@
     },
 
     /***/
-    4431:
+    14431:
     /*!*********************!*\
       !*** ./src/main.ts ***!
       \*********************/
@@ -13286,25 +13286,25 @@
 
       var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! @angular/platform-browser */
-      9075);
+      39075);
       /* harmony import */
 
 
       var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
       /*! @angular/core */
-      7716);
+      37716);
       /* harmony import */
 
 
       var _app_app_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ./app/app.module */
-      6747);
+      36747);
       /* harmony import */
 
 
       var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! ./environments/environment */
-      2340);
+      92340);
 
       if (_environments_environment__WEBPACK_IMPORTED_MODULE_1__.environment.production) {
         (0, _angular_core__WEBPACK_IMPORTED_MODULE_2__.enableProdMode)();
@@ -13334,7 +13334,7 @@
 
 
     __webpack_require__.O(0, ["vendor"], function () {
-      return __webpack_exec__(4431);
+      return __webpack_exec__(14431);
     });
     /******/
 
