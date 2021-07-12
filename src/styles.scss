@@ -10,6 +10,11 @@ Default CSS
     --blackColor: #000000;
     --transition: .5s;
 }
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: visible!important;
+    -webkit-transform: translate3d(0,0,0);
+}
 body {
     padding: 0;
     margin: 0;
