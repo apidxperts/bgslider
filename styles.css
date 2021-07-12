@@ -12061,12 +12061,12 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   font-weight: 400;
-  color: #000000;
-  color: var(--blackColor);
+  color: #ffffff;
+  color: var(--whiteColor);
   line-height: 1;
 }
 video {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -12236,6 +12236,9 @@ img {
   font-size: 17px;
   font-weight: 400;
 }
+p.text-muted.mb-0 {
+  color: #e0e0e0 !important;
+}
 /* Form Control */
 .form-control {
   height: 45px;
@@ -12374,6 +12377,9 @@ Preloader CSS
 /*==============================
 Main Header CSS
 ==============================*/
+.mobile-socio {
+  display: none;
+}
 .navbar {
   top: 0;
   left: 0;
@@ -12487,6 +12493,11 @@ Main Header CSS
   color: var(--mainColor);
 }
 @media only screen and (max-width: 991px) {
+  .mobile-socio {
+    position: absolute;
+    display: block !important;
+  }
+
   .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -12566,9 +12577,31 @@ Main Header CSS
 /*==============================
 Main Banner CSS
 ==============================*/
+.mobile-socio li a {
+  color: #e2e2e2;
+}
 @media only screen and (max-width: 600px) {
   .main-banner {
     min-height: 760px;
+  }
+
+  .navbar-brand img {
+    /* margin: auto; */
+    /* height: 200px; */
+    left: 80%;
+    margin-bottom: 5%;
+    position: relative;
+  }
+
+  .mobile-socio {
+    display: block !important;
+    top: 70%;
+    left: 6%;
+  }
+
+  .mobile-socio li {
+    position: relative;
+    float: left;
   }
 
   .main-banner-text {
@@ -12642,6 +12675,27 @@ Main Banner CSS
 .main-banner-text h1 ngx-typed-js div span {
   display: inline-block;
 }
+.main-banner-text h2 {
+  color: #ffffff;
+  color: var(--whiteColor);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 25px;
+}
+.main-banner-text h2 span {
+  color: #ff2c57;
+  font-weight: 600;
+}
+.main-banner-text h2 ngx-typed-js {
+  display: inline-block;
+}
+.main-banner-text h2 ngx-typed-js div {
+  display: inline-block;
+}
+.main-banner-text h2 ngx-typed-js div span {
+  display: inline-block;
+}
 .main-banner-text p {
   color: #ffffff;
   color: var(--whiteColor);
@@ -12681,7 +12735,7 @@ Main Banner CSS
   margin-right: 0;
 }
 .home-slides .owl-theme .owl-nav {
-  display: none;
+  display: block;
   margin-top: 0;
   transition: .5s;
   transition: var(--transition);
@@ -12691,7 +12745,7 @@ Main Banner CSS
 .home-slides .owl-theme .owl-nav [class*=owl-] {
   position: absolute;
   left: 40px;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.33);
   width: 55px;
