@@ -12066,13 +12066,11 @@ body {
   line-height: 1;
 }
 video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100vw;
-  height: 100vh;
   position: fixed;
-  top: 0;
-  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 ul {
   padding-left: 0;
@@ -12568,6 +12566,17 @@ Main Header CSS
 /*==============================
 Main Banner CSS
 ==============================*/
+@media only screen and (max-width: 600px) {
+  .main-banner {
+    min-height: 760px;
+  }
+
+  .main-banner-text {
+    position: relative;
+    text-align: center;
+    top: 40px !important;
+  }
+}
 .main-banner {
   height: 850px;
   position: relative;
@@ -12672,6 +12681,7 @@ Main Banner CSS
   margin-right: 0;
 }
 .home-slides .owl-theme .owl-nav {
+  display: none;
   margin-top: 0;
   transition: .5s;
   transition: var(--transition);
