@@ -12657,7 +12657,6 @@ Main Banner CSS
 .main-banner-text {
   position: relative;
   text-align: center;
-  top: -80px;
   z-index: 1;
 }
 .main-banner-text h4 {
