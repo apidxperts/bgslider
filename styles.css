@@ -12589,7 +12589,7 @@ Main Banner CSS
 }
 @media only screen and (max-width: 600px) {
   .main-banner-text {
-    margin-top: 60px;
+    margin-top: 40px !important;
   }
 
   .main-banner {
@@ -12652,6 +12652,7 @@ Main Banner CSS
 .main-banner-text {
   position: relative;
   text-align: center;
+  top: -80px;
   z-index: 1;
 }
 .main-banner-text h4 {
