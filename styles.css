@@ -12588,12 +12588,13 @@ Main Banner CSS
   color: #e2e2e2;
 }
 @media only screen and (max-width: 600px) {
-  .main-banner {
-    min-height: 760px;
+  .main-banner-text {
+    margin-top: 60px;
   }
 
   .main-banner {
     max-width: 500px;
+    min-height: 760px;
   }
 
   .navbar-brand img {
@@ -12613,12 +12614,6 @@ Main Banner CSS
   .mobile-socio li {
     position: relative;
     float: left;
-  }
-
-  .main-banner-text {
-    position: relative;
-    text-align: center;
-    top: 40px !important;
   }
 }
 .main-banner {
