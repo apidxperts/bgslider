@@ -12044,9 +12044,14 @@ textarea.form-control-lg {
 /*==============================
 Default CSS
 ==============================*/
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 100%;
+  }
+}
 :root {
   --fontFamily: "Poppins", sans-serif;
-  --mainColor: #ff2c57;
+  --mainColor: #0d6efd;
   --whiteColor: #ffffff;
   --blackColor: #000000;
   --transition: .5s;
@@ -12095,7 +12100,7 @@ a {
   transition: var(--transition);
 }
 a:hover, a:focus {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   text-decoration: none;
 }
@@ -12150,25 +12155,25 @@ img {
 .btn-primary {
   color: #ffffff;
   color: var(--whiteColor);
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.disabled:hover, .btn-primary.disabled:focus {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   background-color: #ffffff;
   background-color: var(--whiteColor);
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
   color: #ffffff;
   color: var(--whiteColor);
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
 }
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
@@ -12180,9 +12185,9 @@ img {
 .btn-primary.disabled, .btn-primary:disabled {
   color: #ffffff;
   color: var(--whiteColor);
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
   opacity: 1;
 }
@@ -12199,7 +12204,7 @@ img {
   height: 100%;
   left: 10px;
   top: 0;
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
@@ -12220,7 +12225,7 @@ img {
   font-weight: 400;
 }
 .section-title h2 span {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   font-weight: 600;
 }
@@ -12229,7 +12234,7 @@ img {
   margin-top: -7px;
 }
 .section-title h4 {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   margin-bottom: 14px;
   text-transform: capitalize;
@@ -12259,6 +12264,8 @@ textarea.form-control {
 }
 /* Owl Carousel Button */
 .owl-theme .owl-dots .owl-dot span {
+  position: absolute;
+  z-index: 999;
   width: 15px;
   height: 15px;
   margin: 0 4px;
@@ -12273,15 +12280,15 @@ textarea.form-control {
   border-radius: 5px;
   width: 35px;
   height: 10px;
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
 }
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
 }
 /*==============================
@@ -12319,7 +12326,7 @@ Preloader CSS
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
           animation: sk-foldCubeAngle 2.4s infinite linear both;
@@ -12415,7 +12422,7 @@ Main Header CSS
   font-weight: 600;
 }
 .navbar-light .navbar-brand span {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   line-height: 10px;
   text-transform: lowercase;
@@ -12460,14 +12467,14 @@ Main Header CSS
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
   transform: scaleX(0);
 }
 .navbar-light .navbar-nav .nav-item .nav-link.active, .navbar-light .navbar-nav .nav-item .nav-link:hover, .navbar-light .navbar-nav .nav-item .nav-link:focus {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
 }
 .navbar-light .navbar-nav .nav-item .nav-link.active::before, .navbar-light .navbar-nav .nav-item .nav-link:hover::before, .navbar-light .navbar-nav .nav-item .nav-link:focus::before {
@@ -12485,11 +12492,11 @@ Main Header CSS
   color: var(--blackColor);
 }
 .navbar-light.sticky-box-shadow .navbar-nav .nav-link.active, .navbar-light.sticky-box-shadow .navbar-nav .nav-link.show, .navbar-light.sticky-box-shadow .navbar-nav .nav-link:hover, .navbar-light.sticky-box-shadow .navbar-nav .nav-link:focus {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
 }
 .navbar-light.sticky-box-shadow .navbar-nav .active .nav-link, .navbar-light.sticky-box-shadow .navbar-nav .show .nav-link {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
 }
 @media only screen and (max-width: 991px) {
@@ -12522,7 +12529,7 @@ Main Header CSS
     display: inline-block;
   }
   .navbar-light .navbar-nav .nav-item .nav-link.active, .navbar-light .navbar-nav .nav-item .nav-link:hover {
-    color: #ff2c57;
+    color: #0d6efd;
     color: var(--mainColor);
   }
   .navbar-light .navbar-nav.for-responsive {
@@ -12585,6 +12592,10 @@ Main Banner CSS
     min-height: 760px;
   }
 
+  .main-banner {
+    max-width: 500px;
+  }
+
   .navbar-brand img {
     /* margin: auto; */
     /* height: 200px; */
@@ -12612,6 +12623,7 @@ Main Banner CSS
 }
 .main-banner {
   height: 850px;
+  width: auto;
   position: relative;
   overflow: hidden;
   background-position: center center;
@@ -12663,7 +12675,7 @@ Main Banner CSS
   font-size: 55px;
 }
 .main-banner-text h1 span {
-  color: #ff2c57;
+  color: #0d6efd;
   font-weight: 600;
 }
 .main-banner-text h1 ngx-typed-js {
@@ -12681,10 +12693,10 @@ Main Banner CSS
   margin-top: 10px;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 30px;
 }
 .main-banner-text h2 span {
-  color: #ff2c57;
+  color: #0d6efd;
   font-weight: 600;
 }
 .main-banner-text h2 ngx-typed-js {
@@ -12719,9 +12731,9 @@ Main Banner CSS
   border-color: var(--whiteColor);
 }
 .main-banner-text .view-work:hover, .main-banner-text .view-work:focus {
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -12766,7 +12778,7 @@ Main Banner CSS
   right: 40px;
 }
 .home-slides .owl-theme .owl-nav [class*=owl-]:hover {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -12876,11 +12888,11 @@ Welcome Area CSS
   margin-bottom: 30px;
 }
 .single-box .icon {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   font-size: 25px;
   width: 65px;
-  border: 1px dashed #ff2c57;
+  border: 1px dashed #0d6efd;
   border: 1px dashed var(--mainColor);
   height: 65px;
   position: relative;
@@ -12925,7 +12937,7 @@ Welcome Area CSS
 }
 .single-box:hover {
   transform: translateY(-5px);
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
 }
 .single-box:hover .icon {
@@ -12945,7 +12957,7 @@ Welcome Area CSS
 .single-box:hover .link-btn {
   background: #ffffff;
   background: var(--whiteColor);
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   opacity: 1;
   visibility: visible;
@@ -12988,7 +13000,7 @@ About Area CSS
   font-size: 15.5px;
 }
 .about-content .features-list li i {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   margin-right: 7px;
 }
@@ -13015,7 +13027,7 @@ About Area CSS
   background-color: #ffffff;
   background-color: var(--whiteColor);
   border-radius: 50%;
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   z-index: 1;
   font-size: 35px;
@@ -13042,7 +13054,7 @@ About Area CSS
           animation: ripple 2s linear 1s infinite;
 }
 .about-video .video-btn button:hover {
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -13145,7 +13157,7 @@ Strategy Area CSS
   font-size: 15.5px;
 }
 .strategy-content .features-list li i {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   margin-right: 7px;
 }
@@ -13180,7 +13192,7 @@ Who We Are Area CSS
 }
 .single-who-we-are i {
   font-size: 50px;
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
@@ -13220,7 +13232,7 @@ Who We Are Area CSS
   width: 100%;
   transition: .5s;
   transition: var(--transition);
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   z-index: -1;
 }
@@ -13312,9 +13324,9 @@ CTA Area CSS
   border-color: var(--whiteColor);
 }
 .cta-content .section-title .view-work:hover, .cta-content .section-title .view-work:focus {
-  border-color: #ff2c57 !important;
+  border-color: #0d6efd !important;
   border-color: var(--mainColor) !important;
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -13365,7 +13377,7 @@ Skill Area CSS
   left: 0px;
   top: 0px;
   height: 7px;
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   transition: all 2000ms ease;
   border-radius: 30px;
@@ -13393,7 +13405,7 @@ Skill Area CSS
   border-radius: 50%;
   transition: .5s;
   transition: var(--transition);
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   z-index: 1;
   font-size: 35px;
@@ -13420,7 +13432,7 @@ Skill Area CSS
           animation: ripple 2s linear 1s infinite;
 }
 .skill-video .video-btn button:hover {
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -13464,7 +13476,7 @@ Fun Facts Area CSS
 }
 .funfact i {
   font-size: 50px;
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   position: absolute;
   left: 0;
@@ -13521,7 +13533,7 @@ Team Area CSS
   font-weight: 600;
 }
 .single-team-box .content .post {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
@@ -13565,9 +13577,9 @@ Team Area CSS
   border-radius: 50%;
 }
 .single-team-box .social ul li a:hover {
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
 }
 .single-team-box:hover .content {
@@ -13616,14 +13628,14 @@ How We Work Area CSS
   position: relative;
   text-align: center;
   font-size: 30px;
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
   margin-bottom: 28px;
   border-width: 2px;
   border-style: dashed;
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
   border-radius: 50%;
 }
@@ -13659,11 +13671,11 @@ How We Work Area CSS
   transform: translateY(-5px);
 }
 .single-how-work:hover .icon {
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
 }
 .col-lg-4:nth-child(3) .single-how-work::before {
@@ -13690,10 +13702,10 @@ Services Area CSS
   left: 0;
   bottom: 0;
   width: 50px;
-  border-left: 2px solid #ff2c57;
+  border-left: 2px solid #0d6efd;
   border-left: 2px solid var(--mainColor);
   height: 50px;
-  border-bottom: 2px solid #ff2c57;
+  border-bottom: 2px solid #0d6efd;
   border-bottom: 2px solid var(--mainColor);
   opacity: 0;
   transition: .5s;
@@ -13713,7 +13725,7 @@ Services Area CSS
   width: 70px;
   height: 70px;
   line-height: 71px;
-  border: 1px dashed #ff2c57;
+  border: 1px dashed #0d6efd;
   border: 1px dashed var(--mainColor);
   font-size: 30px;
   border-radius: 50%;
@@ -13721,7 +13733,7 @@ Services Area CSS
   transition: var(--transition);
   background: #ffffff;
   background: var(--whiteColor);
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
 }
 .single-services .services-content {
@@ -13740,7 +13752,7 @@ Services Area CSS
   transform: translateY(-10px);
 }
 .single-services:hover .services-img .icon i {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   border-color: #ffffff;
   border-color: var(--whiteColor);
@@ -13795,9 +13807,9 @@ Why We Are Different CSS
   margin-bottom: 0;
 }
 .why-we-different-tabset.tabset input:checked + label {
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -13826,7 +13838,7 @@ Why We Are Different CSS
   margin-bottom: 0;
 }
 .why-we-different-content ul li i {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   margin-right: 5px;
 }
@@ -13856,7 +13868,7 @@ Work Area CSS
   font-weight: 500;
 }
 .shorting-menu .filter.active, .shorting-menu .filter:hover {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -13894,13 +13906,13 @@ Work Area CSS
   font-weight: 500;
 }
 .work-tabs .nav-tabset .nav-tab span:hover {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
 }
 .work-tabs .nav-tabset .nav-tab.active span {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -13976,9 +13988,9 @@ Work Area CSS
   transition: var(--transition);
 }
 .single-work .popup-btn:hover {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
 }
 .single-work:hover::before {
@@ -14020,7 +14032,7 @@ Pricing Area CSS
   content: "";
   width: 70px;
   height: 30px;
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   position: absolute;
   top: 50px;
@@ -14033,7 +14045,7 @@ Pricing Area CSS
 }
 .pricingTable .title {
   margin-bottom: 35px;
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14083,7 +14095,7 @@ Pricing Area CSS
   margin-top: 0;
 }
 .pricingTable .pricing-content li i {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   margin-right: 4px;
 }
@@ -14148,7 +14160,7 @@ FAQ Area CSS
   display: block;
 }
 .faq-accordion .card .card-header a:hover {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
 }
 .faq-accordion .card .card-header a h5 {
@@ -14156,7 +14168,7 @@ FAQ Area CSS
   padding: 20px 40px 20px 20px;
   color: #ffffff;
   color: var(--whiteColor);
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   position: relative;
   font-size: 16px;
@@ -14214,7 +14226,7 @@ FAQ Area CSS
 .faq-accordion .panel-heading .panel-title a:hover {
   color: #ffffff;
   color: var(--whiteColor);
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
 }
 .faq-accordion .panel-heading .panel-title a::before {
@@ -14230,7 +14242,7 @@ FAQ Area CSS
 .faq-accordion .dropup .panel-heading .panel-title a {
   color: #ffffff;
   color: var(--whiteColor);
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
 }
 .faq-accordion .dropup .panel-heading .panel-title a::before {
@@ -14291,7 +14303,7 @@ Feedback Area CSS
   font-weight: 500;
 }
 .single-feedback-item .info span {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   display: block;
   font-weight: 500;
@@ -14345,11 +14357,11 @@ Feedback Area CSS
   right: 50px;
 }
 .feedback-slides .owl-theme .owl-nav [class*=owl-]:hover, .feedback-slides .owl-theme .owl-nav [class*=owl-]:focus {
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
   box-shadow: 0px 8px 16px 0px rgba(241, 96, 1, 0.2);
 }
@@ -14404,7 +14416,7 @@ Blog Area CSS
 }
 .single-blog-item span {
   display: block;
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
 }
 .single-blog-item span, .single-blog-item p, .single-blog-item h3 {
@@ -14426,7 +14438,7 @@ Blog Area CSS
   display: inline-block;
 }
 .single-blog-item h3 a:hover {
-  color: #ff2c57 !important;
+  color: #0d6efd !important;
   color: var(--mainColor) !important;
 }
 .single-blog-item .link-btn {
@@ -14477,7 +14489,7 @@ Blog Area CSS
   color: var(--whiteColor);
 }
 .single-blog-item:hover .link-btn {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14563,9 +14575,9 @@ Contact Area CSS
   background: var(--whiteColor);
   padding: 30px;
   height: 100%;
-  border-top: 3px solid #ff2c57;
+  border-top: 3px solid #0d6efd;
   border-top: 3px solid var(--mainColor);
-  border-bottom: 3px solid #ff2c57;
+  border-bottom: 3px solid #0d6efd;
   border-bottom: 3px solid var(--mainColor);
 }
 .contact-info ul li {
@@ -14594,7 +14606,7 @@ Contact Area CSS
   position: absolute;
   left: 0;
   top: 50%;
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   font-size: 19px;
   background: #f6f6f6;
@@ -14608,7 +14620,7 @@ Contact Area CSS
   transform: translateY(-50%);
 }
 .contact-info ul li:hover i {
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14618,13 +14630,13 @@ Contact Area CSS
   background: var(--whiteColor);
   box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
   padding: 30px;
-  border-top: 3px solid #ff2c57;
+  border-top: 3px solid #0d6efd;
   border-top: 3px solid var(--mainColor);
-  border-bottom: 3px solid #ff2c57;
+  border-bottom: 3px solid #0d6efd;
   border-bottom: 3px solid var(--mainColor);
 }
 .contact-form h3 {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   margin-bottom: 25px;
   font-size: 20px;
@@ -14634,7 +14646,7 @@ Contact Area CSS
   border-radius: 3px;
 }
 .contact-form .form-control:focus {
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
 }
 .contact-form label {
@@ -14700,7 +14712,7 @@ Page Title CSS
   color: var(--whiteColor);
 }
 .page-title-content ul li a:hover {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
 }
 /*==============================
@@ -14731,7 +14743,7 @@ Blog Details Area CSS
   left: 15px;
   height: 100px;
   text-align: center;
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14749,7 +14761,7 @@ Blog Details Area CSS
   display: inline-block;
 }
 .blog-details .article-text .category a {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14766,7 +14778,7 @@ Blog Details Area CSS
   background: #f4f4f4;
   padding: 30px;
   font-size: 17px;
-  border-left: 4px solid #ff2c57;
+  border-left: 4px solid #0d6efd;
   border-left: 4px solid var(--mainColor);
   margin-bottom: 25px;
   margin-top: 25px;
@@ -14782,7 +14794,7 @@ Blog Details Area CSS
   text-align: right;
 }
 .blog-details .article-text .author-share .social-share a {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14843,12 +14855,12 @@ Blog Details Area CSS
   border-radius: 5px;
   background: #ffffff;
   background: var(--whiteColor);
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   display: inline-block;
 }
 .post-controls-buttons div a:hover {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14895,7 +14907,7 @@ Blog Details Area CSS
   position: absolute;
   right: 25px;
   bottom: 25px;
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   text-transform: uppercase;
   font-size: 17px;
@@ -14936,7 +14948,7 @@ Footer Area CSS
 }
 .footer-area h3 span {
   text-transform: lowercase;
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
   font-size: 35px;
   font-weight: 700;
@@ -14960,11 +14972,11 @@ Footer Area CSS
   display: block;
 }
 .footer-area ul li a:hover, .footer-area ul li a:focus {
-  background: #ff2c57;
+  background: #0d6efd;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
-  border-color: #ff2c57;
+  border-color: #0d6efd;
   border-color: var(--mainColor);
 }
 .footer-area p {
@@ -15011,7 +15023,7 @@ Sidebar Eaxmple Demo CSS
 .demo-modal-panel .sidebar-demo-control:hover {
   color: #ffffff;
   color: var(--whiteColor);
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
 }
 .example-demo-modal {
@@ -15067,7 +15079,7 @@ Sidebar Eaxmple Demo CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #ff2c57;
+  background-color: #0d6efd;
   background-color: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
@@ -15140,7 +15152,7 @@ Sidebar Eaxmple Demo CSS
   display: inline-block;
 }
 .example-demo-modal .header-title .example-demo-modal-control:hover {
-  color: #ff2c57;
+  color: #0d6efd;
   color: var(--mainColor);
 }
 .example-demo-modal .header-title .title {
