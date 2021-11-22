@@ -226,7 +226,7 @@
 
       });
       /**
-       * @license Angular v12.0.2
+       * @license Angular v12.0.5
        * (c) 2010-2021 Google LLC. https://angular.io/
        * License: MIT
        */
@@ -1880,7 +1880,7 @@
       /*! @angular/core */
       7716);
       /**
-       * @license Angular v12.0.2
+       * @license Angular v12.0.5
        * (c) 2010-2021 Google LLC. https://angular.io/
        * License: MIT
        */
@@ -9144,7 +9144,7 @@
       /*! @angular/core */
       7716);
       /**
-       * @license Angular v12.0.2
+       * @license Angular v12.0.5
        * (c) 2010-2021 Google LLC. https://angular.io/
        * License: MIT
        */
@@ -13402,21 +13402,22 @@
             this._ngForOfDirty = true;
           }
           /**
-           * A function that defines how to track changes for items in the iterable.
+           * Specifies a custom `TrackByFunction` to compute the identity of items in an iterable.
            *
-           * When items are added, moved, or removed in the iterable,
-           * the directive must re-render the appropriate DOM nodes.
-           * To minimize churn in the DOM, only nodes that have changed
-           * are re-rendered.
+           * If a custom `TrackByFunction` is not provided, `NgForOf` will use the item's [object
+           * identity](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is)
+           * as the key.
            *
-           * By default, the change detector assumes that
-           * the object instance identifies the node in the iterable.
-           * When this function is supplied, the directive uses
-           * the result of calling this function to identify the item node,
-           * rather than the identity of the object itself.
+           * `NgForOf` uses the computed key to associate items in an iterable with DOM elements
+           * it produces for these items.
            *
-           * The function receives two inputs,
-           * the iteration index and the associated node data.
+           * A custom `TrackByFunction` is useful to provide good user experience in cases when items in an
+           * iterable rendered using `NgForOf` have a natural identifier (for example, custom ID or a
+           * primary key), and this iterable could be updated with new object instances that still
+           * represent the same underlying entity (for example, when data is re-fetched from the server,
+           * and the iterable is recreated and re-rendered, but most of the data is still the same).
+           *
+           * @see `TrackByFunction`
            */
 
         }, {
@@ -16137,7 +16138,8 @@
 
         _createClass2(_CurrencyPipe, [{
           key: "transform",
-          value: function transform(value, currencyCode) {
+          value: function transform(value) {
+            var currencyCode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this._defaultCurrencyCode;
             var display = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'symbol';
             var digitsInfo = arguments.length > 3 ? arguments[3] : undefined;
             var locale = arguments.length > 4 ? arguments[4] : undefined;
@@ -16470,7 +16472,7 @@
        */
 
 
-      var _VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('12.0.2');
+      var _VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('12.0.5');
       /**
        * @license
        * Copyright Google LLC All Rights Reserved.
@@ -20395,7 +20397,7 @@
       /*! rxjs/operators */
       8345);
       /**
-       * @license Angular v12.0.2
+       * @license Angular v12.0.5
        * (c) 2010-2021 Google LLC. https://angular.io/
        * License: MIT
        */
@@ -21524,24 +21526,24 @@
        */
 
       function _ɵɵdefineNgModule(def) {
-        var res = {
-          type: def.type,
-          bootstrap: def.bootstrap || EMPTY_ARRAY,
-          declarations: def.declarations || EMPTY_ARRAY,
-          imports: def.imports || EMPTY_ARRAY,
-          exports: def.exports || EMPTY_ARRAY,
-          transitiveCompileScopes: null,
-          schemas: def.schemas || null,
-          id: def.id || null
-        };
+        return noSideEffects(function () {
+          var res = {
+            type: def.type,
+            bootstrap: def.bootstrap || EMPTY_ARRAY,
+            declarations: def.declarations || EMPTY_ARRAY,
+            imports: def.imports || EMPTY_ARRAY,
+            exports: def.exports || EMPTY_ARRAY,
+            transitiveCompileScopes: null,
+            schemas: def.schemas || null,
+            id: def.id || null
+          };
 
-        if (def.id != null) {
-          noSideEffects(function () {
+          if (def.id != null) {
             autoRegisterModuleById[def.id] = def.type;
-          });
-        }
+          }
 
-        return res;
+          return res;
+        });
       }
       /**
        * Adds the module metadata that is necessary to compute the module's transitive scope to an
@@ -28347,6 +28349,10 @@
       };
       /**
        * Defines a schema that allows any property on any element.
+       *
+       * This schema allows you to ignore the errors related to any unknown elements or properties in a
+       * template. The usage of this schema is generally discouraged because it prevents useful validation
+       * and may hide real errors in your template. Consider using the `CUSTOM_ELEMENTS_SCHEMA` instead.
        *
        * @publicApi
        */
@@ -45799,6 +45805,9 @@
        * then use the factory's `create()` method to create a component of that type.
        *
        * @see [Dynamic Components](guide/dynamic-component-loader)
+       * @see [Usage Example](guide/dynamic-component-loader#resolving-components)
+       * @see <live-example name="dynamic-component-loader" noDownload></live-example>
+      of the code in this cookbook
        * @publicApi
        */
 
@@ -46086,7 +46095,7 @@
        */
 
 
-      var _VERSION2 = new _Version('12.0.2');
+      var _VERSION2 = new _Version('12.0.5');
       /**
        * @license
        * Copyright Google LLC All Rights Reserved.
@@ -62421,7 +62430,7 @@
       /*! rxjs/operators */
       8002);
       /**
-       * @license Angular v12.0.2
+       * @license Angular v12.0.5
        * (c) 2010-2021 Google LLC. https://angular.io/
        * License: MIT
        */
@@ -65872,7 +65881,7 @@
             // `VALID` or `INVALID`.
             // The status should be broadcasted via the `statusChanges` observable, so we set `emitEvent`
             // to `true` to allow that during the control creation process.
-            emitEvent: !!asyncValidator
+            emitEvent: !!_this108.asyncValidator
           });
 
           return _this108;
@@ -66191,7 +66200,7 @@
             // If `asyncValidator` is present, it will trigger control status change from `PENDING` to
             // `VALID` or `INVALID`. The status should be broadcasted via the `statusChanges` observable,
             // so we set `emitEvent` to `true` to allow that during the control creation process.
-            emitEvent: !!asyncValidator
+            emitEvent: !!_this110.asyncValidator
           });
 
           return _this110;
@@ -66752,7 +66761,7 @@
             // `VALID` or `INVALID`.
             // The status should be broadcasted via the `statusChanges` observable, so we set `emitEvent`
             // to `true` to allow that during the control creation process.
-            emitEvent: !!asyncValidator
+            emitEvent: !!_this116.asyncValidator
           });
 
           return _this116;
@@ -67008,19 +67017,19 @@
            * ]);
            * arr.reset(['name', 'last name']);
            *
-           * console.log(this.arr.value);  // ['name', 'last name']
+           * console.log(arr.value);  // ['name', 'last name']
            * ```
            *
            * ### Reset the values in a form array and the disabled status for the first control
            *
            * ```
-           * this.arr.reset([
+           * arr.reset([
            *   {value: 'name', disabled: true},
            *   'last'
            * ]);
            *
-           * console.log(this.arr.value);  // ['name', 'last name']
-           * console.log(this.arr.get(0).status);  // 'DISABLED'
+           * console.log(arr.value);  // ['last']
+           * console.log(arr.at(0).status);  // 'DISABLED'
            * ```
            *
            * @param value Array of values for the controls
@@ -71692,7 +71701,9 @@
         hostVars: 1,
         hostBindings: function MaxValidator_HostBindings(rf, ctx) {
           if (rf & 2) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("max", ctx.max ? ctx.max : null);
+            var tmp_b_0;
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("max", (tmp_b_0 = ctx.max) !== null && tmp_b_0 !== undefined ? tmp_b_0 : null);
           }
         },
         inputs: {
@@ -71713,7 +71724,7 @@
             selector: 'input[type=number][max][formControlName],input[type=number][max][formControl],input[type=number][max][ngModel]',
             providers: [MAX_VALIDATOR],
             host: {
-              '[attr.max]': 'max ? max : null'
+              '[attr.max]': 'max ?? null'
             }
           }]
         }], null, {
@@ -71816,7 +71827,9 @@
         hostVars: 1,
         hostBindings: function MinValidator_HostBindings(rf, ctx) {
           if (rf & 2) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("min", ctx.min ? ctx.min : null);
+            var tmp_b_0;
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("min", (tmp_b_0 = ctx.min) !== null && tmp_b_0 !== undefined ? tmp_b_0 : null);
           }
         },
         inputs: {
@@ -71837,7 +71850,7 @@
             selector: 'input[type=number][min][formControlName],input[type=number][min][formControl],input[type=number][min][ngModel]',
             providers: [MIN_VALIDATOR],
             host: {
-              '[attr.min]': 'min ? min : null'
+              '[attr.min]': 'min ?? null'
             }
           }]
         }], null, {
@@ -72909,7 +72922,7 @@
        */
 
 
-      var _VERSION3 = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('12.0.2');
+      var _VERSION3 = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('12.0.5');
       /**
        * @license
        * Copyright Google LLC All Rights Reserved.
@@ -73104,7 +73117,7 @@
       /*! @angular/common */
       8583);
       /**
-       * @license Angular v12.0.2
+       * @license Angular v12.0.5
        * (c) 2010-2021 Google LLC. https://angular.io/
        * License: MIT
        */
@@ -74498,7 +74511,7 @@
       /*! @angular/core */
       7716);
       /**
-       * @license Angular v12.0.2
+       * @license Angular v12.0.5
        * (c) 2010-2021 Google LLC. https://angular.io/
        * License: MIT
        */
@@ -77797,7 +77810,7 @@
        */
 
 
-      var _VERSION4 = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('12.0.2');
+      var _VERSION4 = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('12.0.5');
       /**
        * @license
        * Copyright Google LLC All Rights Reserved.
@@ -78560,7 +78573,7 @@
       /*! rxjs/operators */
       3282);
       /**
-       * @license Angular v12.0.2
+       * @license Angular v12.0.5
        * (c) 2010-2021 Google LLC. https://angular.io/
        * License: MIT
        */
@@ -79907,6 +79920,8 @@
           return Array.isArray(value) ? value.map(function (v) {
             return "".concat(encodeUriQuery(name), "=").concat(encodeUriQuery(v));
           }).join('&') : "".concat(encodeUriQuery(name), "=").concat(encodeUriQuery(value));
+        }).filter(function (s) {
+          return !!s;
         });
         return strParams.length ? "?".concat(strParams.join('&')) : '';
       }
@@ -83488,7 +83503,12 @@
 
       /**
        * The [DI token](guide/glossary/#di-token) for a router configuration.
-       * @see `ROUTES`
+       *
+       * `ROUTES` is a low level API for router configuration via dependency injection.
+       *
+       * We recommend that in almost all cases to use higher level APIs such as `RouterModule.forRoot()`,
+       * `RouterModule.forChild()`, `provideRoutes`, or `Router.resetConfig()`.
+       *
        * @publicApi
        */
 
@@ -83796,6 +83816,12 @@
 
           this.lastLocationChangeInfo = null;
           this.navigationId = 0;
+          /**
+           * The id of the currently active page in the router.
+           * Updated to the transition's target id on a successful navigation.
+           */
+
+          this.currentPageId = 0;
           this.isNgZoneEnabled = false;
           /**
            * An event stream for routing events in this NgModule.
@@ -83847,8 +83873,16 @@
           this.routeReuseStrategy = new DefaultRouteReuseStrategy();
           /**
            * How to handle a navigation request to the current URL. One of:
+           *
            * - `'ignore'` :  The router ignores the request.
            * - `'reload'` : The router reloads the URL. Use to implement a "refresh" feature.
+           *
+           * Note that this only configures whether the Route reprocesses the URL and triggers related
+           * action and events like redirects, guards, and resolvers. By default, the router re-uses a
+           * component instance when it re-navigates to the same component type without visiting a different
+           * component first. This behavior is configured by the `RouteReuseStrategy`. In order to reload
+           * routed components on same url navigation, you need to set `onSameUrlNavigation` to `'reload'`
+           * _and_ provide a `RouteReuseStrategy` which returns `false` for `shouldReuseRoute`.
            */
 
           this.onSameUrlNavigation = 'ignore';
@@ -83878,6 +83912,25 @@
            */
 
           this.relativeLinkResolution = 'corrected';
+          /**
+           * Configures how the Router attempts to restore state when a navigation is cancelled.
+           *
+           * 'replace' - Always uses `location.replaceState` to set the browser state to the state of the
+           * router before the navigation started.
+           *
+           * 'computed' - Will always return to the same state that corresponds to the actual Angular route
+           * when the navigation gets cancelled right after triggering a `popstate` event.
+           *
+           * The default value is `replace`
+           *
+           * @internal
+           */
+          // TODO(atscott): Determine how/when/if to make this public API
+          // This shouldn’t be an option at all but may need to be in order to allow migration without a
+          // breaking change. We need to determine if it should be made into public api (or if we forgo
+          // the option and release as a breaking change bug fix in a major version).
+
+          this.canceledNavigationResolution = 'replace';
 
           var onLoadStart = function onLoadStart(r) {
             return _this200.triggerEvent(new _RouteConfigLoadStart(r));
@@ -83899,6 +83952,7 @@
           this.routerState = createEmptyState(this.currentUrlTree, this.rootComponentType);
           this.transitions = new rxjs__WEBPACK_IMPORTED_MODULE_3__.BehaviorSubject({
             id: 0,
+            targetPageId: 0,
             currentUrlTree: this.currentUrlTree,
             currentRawUrl: this.currentUrlTree,
             extractedUrl: this.urlHandlingStrategy.extract(this.currentUrlTree),
@@ -83985,7 +84039,7 @@
                   (0, rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(function (t) {
                     if (_this201.urlUpdateStrategy === 'eager') {
                       if (!t.extras.skipLocationChange) {
-                        _this201.setBrowserUrl(t.urlAfterRedirects, !!t.extras.replaceUrl, t.id, t.extras.state);
+                        _this201.setBrowserUrl(t.urlAfterRedirects, t);
                       }
 
                       _this201.browserUrlTree = t.urlAfterRedirects;
@@ -84070,11 +84124,8 @@
                 _this201.triggerEvent(guardsEnd);
               }), (0, rxjs_operators__WEBPACK_IMPORTED_MODULE_10__.filter)(function (t) {
                 if (!t.guardsResult) {
-                  _this201.resetUrlToCurrentUrlTree();
+                  _this201.cancelNavigationTransition(t, '');
 
-                  var navCancel = new _NavigationCancel(t.id, _this201.serializeUrl(t.extractedUrl), '');
-                  eventsSubject.next(navCancel);
-                  t.resolve(false);
                   return false;
                 }
 
@@ -84094,9 +84145,7 @@
                       },
                       complete: function complete() {
                         if (!dataResolved) {
-                          var navCancel = new _NavigationCancel(t.id, _this201.serializeUrl(t.extractedUrl), "At least one route resolver didn't emit any value.");
-                          eventsSubject.next(navCancel);
-                          t.resolve(false);
+                          _this201.cancelNavigationTransition(t, "At least one route resolver didn't emit any value.");
                         }
                       }
                     }));
@@ -84142,7 +84191,7 @@
 
                 if (_this201.urlUpdateStrategy === 'deferred') {
                   if (!t.extras.skipLocationChange) {
-                    _this201.setBrowserUrl(_this201.rawUrlTree, !!t.extras.replaceUrl, t.id, t.extras.state);
+                    _this201.setBrowserUrl(_this201.rawUrlTree, t);
                   }
 
                   _this201.browserUrlTree = t.urlAfterRedirects;
@@ -84172,11 +84221,7 @@
                   // sync code which looks for a value here in order to determine whether or
                   // not to handle a given popstate event or to leave it to the Angular
                   // router.
-                  _this201.resetUrlToCurrentUrlTree();
-
-                  var navCancel = new _NavigationCancel(t.id, _this201.serializeUrl(t.extractedUrl), "Navigation ID ".concat(t.id, " is not equal to the current navigation id ").concat(_this201.navigationId));
-                  eventsSubject.next(navCancel);
-                  t.resolve(false);
+                  _this201.cancelNavigationTransition(t, "Navigation ID ".concat(t.id, " is not equal to the current navigation id ").concat(_this201.navigationId));
                 } // currentNavigation should always be reset to null here. If navigation was
                 // successful, lastSuccessfulTransition will have already been set. Therefore
                 // we can safely set currentNavigation to null here.
@@ -84323,6 +84368,7 @@
                     if (state) {
                       var stateCopy = Object.assign({}, state);
                       delete stateCopy.navigationId;
+                      delete stateCopy.ɵrouterPageId;
 
                       if (Object.keys(stateCopy).length !== 0) {
                         extras.state = stateCopy;
@@ -84566,7 +84612,17 @@
 
             var urlTree = isUrlTree(url) ? url : this.parseUrl(url);
             var mergedTree = this.urlHandlingStrategy.merge(urlTree, this.rawUrlTree);
-            return this.scheduleNavigation(mergedTree, 'imperative', null, extras);
+            var restoredState = null;
+
+            if (this.canceledNavigationResolution === 'computed') {
+              var isInitialPage = this.currentPageId === 0;
+
+              if (isInitialPage || extras.skipLocationChange || extras.replaceUrl) {
+                restoredState = this.location.getState();
+              }
+            }
+
+            return this.scheduleNavigation(mergedTree, 'imperative', restoredState, extras);
           }
           /**
            * Navigate based on the provided array of commands and a starting point.
@@ -84671,6 +84727,7 @@
             this.navigations.subscribe(function (t) {
               _this203.navigated = true;
               _this203.lastSuccessfulId = t.id;
+              _this203.currentPageId = t.targetPageId;
 
               _this203.events.next(new _NavigationEnd(t.id, _this203.serializeUrl(t.extractedUrl), _this203.serializeUrl(_this203.currentUrlTree)));
 
@@ -84726,8 +84783,24 @@
             }
 
             var id = ++this.navigationId;
+            var targetPageId;
+
+            if (this.canceledNavigationResolution === 'computed') {
+              // If the `ɵrouterPageId` exist in the state then `targetpageId` should have the value of
+              // `ɵrouterPageId`
+              if (restoredState && restoredState.ɵrouterPageId) {
+                targetPageId = restoredState.ɵrouterPageId;
+              } else {
+                targetPageId = this.currentPageId + 1;
+              }
+            } else {
+              // This is unused when `canceledNavigationResolution` is not computed.
+              targetPageId = 0;
+            }
+
             this.setTransition({
               id: id,
+              targetPageId: targetPageId,
               source: source,
               restoredState: restoredState,
               currentUrlTree: this.currentUrlTree,
@@ -84748,19 +84821,14 @@
           }
         }, {
           key: "setBrowserUrl",
-          value: function setBrowserUrl(url, replaceUrl, id, state) {
+          value: function setBrowserUrl(url, t) {
             var path = this.urlSerializer.serialize(url);
-            state = state || {};
+            var state = Object.assign(Object.assign({}, t.extras.state), this.generateNgRouterState(t.id, t.targetPageId));
 
-            if (this.location.isCurrentPathEqualTo(path) || replaceUrl) {
-              // TODO(jasonaden): Remove first `navigationId` and rely on `ng` namespace.
-              this.location.replaceState(path, '', Object.assign(Object.assign({}, state), {
-                navigationId: id
-              }));
+            if (this.location.isCurrentPathEqualTo(path) || !!t.extras.replaceUrl) {
+              this.location.replaceState(path, '', state);
             } else {
-              this.location.go(path, '', Object.assign(Object.assign({}, state), {
-                navigationId: id
-              }));
+              this.location.go(path, '', state);
             }
           }
         }, {
@@ -84774,9 +84842,52 @@
         }, {
           key: "resetUrlToCurrentUrlTree",
           value: function resetUrlToCurrentUrlTree() {
-            this.location.replaceState(this.urlSerializer.serialize(this.rawUrlTree), '', {
-              navigationId: this.lastSuccessfulId
-            });
+            this.location.replaceState(this.urlSerializer.serialize(this.rawUrlTree), '', this.generateNgRouterState(this.lastSuccessfulId, this.currentPageId));
+          }
+          /**
+           * Responsible for handling the cancellation of a navigation:
+           * - performs the necessary rollback action to restore the browser URL to the
+           * state before the transition
+           * - triggers the `NavigationCancel` event
+           * - resolves the transition promise with `false`
+           */
+
+        }, {
+          key: "cancelNavigationTransition",
+          value: function cancelNavigationTransition(t, reason) {
+            if (this.canceledNavigationResolution === 'computed') {
+              // The navigator change the location before triggered the browser event,
+              // so we need to go back to the current url if the navigation is canceled.
+              // Also, when navigation gets cancelled while using url update strategy eager, then we need to
+              // go back. Because, when `urlUpdateSrategy` is `eager`; `setBrowserUrl` method is called
+              // before any verification.
+              if (t.source === 'popstate' || this.urlUpdateStrategy === 'eager') {
+                var targetPagePosition = this.currentPageId - t.targetPageId;
+                this.location.historyGo(targetPagePosition);
+              } else {// If update is not 'eager' and the transition navigation source isn't 'popstate', then the
+                // navigation was cancelled before any browser url change so nothing needs to be restored.
+              }
+            } else {
+              this.resetUrlToCurrentUrlTree();
+            }
+
+            var navCancel = new _NavigationCancel(t.id, this.serializeUrl(t.extractedUrl), reason);
+            this.triggerEvent(navCancel);
+            t.resolve(false);
+          }
+        }, {
+          key: "generateNgRouterState",
+          value: function generateNgRouterState(navigationId, routerPageId) {
+            if (this.canceledNavigationResolution === 'computed') {
+              return {
+                navigationId: navigationId,
+                ɵrouterPageId: routerPageId
+              };
+            }
+
+            return {
+              navigationId: navigationId
+            };
           }
         }]);
 
@@ -86896,7 +87007,7 @@
        */
 
 
-      var _VERSION5 = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('12.0.2');
+      var _VERSION5 = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('12.0.5');
       /**
        * @license
        * Copyright Google LLC All Rights Reserved.
@@ -86979,7 +87090,7 @@
           _CountUp = function () {
         function t(t, i, a) {
           var s = this;
-          this.target = t, this.endVal = i, this.options = a, this.version = "2.0.7", this.defaults = {
+          this.target = t, this.endVal = i, this.options = a, this.version = "2.0.8", this.defaults = {
             startVal: 0,
             decimalPlaces: 0,
             duration: 2,
@@ -87000,24 +87111,25 @@
                 a,
                 n,
                 e,
-                r,
-                o = t < 0 ? "-" : "";
+                r = t < 0 ? "-" : "";
+            i = Math.abs(t).toFixed(s.options.decimalPlaces);
+            var o = (i += "").split(".");
 
-            if (i = Math.abs(t).toFixed(s.options.decimalPlaces), n = (a = (i += "").split("."))[0], e = a.length > 1 ? s.options.decimal + a[1] : "", s.options.useGrouping) {
-              r = "";
+            if (a = o[0], n = o.length > 1 ? s.options.decimal + o[1] : "", s.options.useGrouping) {
+              e = "";
 
-              for (var l = 0, h = n.length; l < h; ++l) {
-                0 !== l && l % 3 == 0 && (r = s.options.separator + r), r = n[h - l - 1] + r;
+              for (var l = 0, h = a.length; l < h; ++l) {
+                0 !== l && l % 3 == 0 && (e = s.options.separator + e), e = a[h - l - 1] + e;
               }
 
-              n = r;
+              a = e;
             }
 
-            return s.options.numerals && s.options.numerals.length && (n = n.replace(/[0-9]/g, function (t) {
+            return s.options.numerals && s.options.numerals.length && (a = a.replace(/[0-9]/g, function (t) {
               return s.options.numerals[+t];
-            }), e = e.replace(/[0-9]/g, function (t) {
+            }), n = n.replace(/[0-9]/g, function (t) {
               return s.options.numerals[+t];
-            })), o + s.options.prefix + n + e + s.options.suffix;
+            })), r + s.options.prefix + a + n + s.options.suffix;
           }, this.easeOutExpo = function (t, i, a, s) {
             return a * (1 - Math.pow(2, -10 * t / s)) * 1024 / 1023 + i;
           }, this.options = __assign(__assign({}, this.defaults), a), this.formattingFn = this.options.formattingFn ? this.options.formattingFn : this.formatNumber, this.easingFn = this.options.easingFn ? this.options.easingFn : this.easeOutExpo, this.startVal = this.validateValue(this.options.startVal), this.frameVal = this.startVal, this.endVal = this.validateValue(i), this.options.decimalPlaces = Math.max(this.options.decimalPlaces), this.resetDuration(), this.options.separator = String(this.options.separator), this.useEasing = this.options.useEasing, "" === this.options.separator && (this.options.useGrouping = !1), this.el = "string" == typeof t ? document.getElementById(t) : t, this.el ? this.printValue(this.startVal) : this.error = "[CountUp] target is null or undefined";
@@ -87331,10 +87443,10 @@
     },
 
     /***/
-    1463:
-    /*!*******************************************************************************************!*\
-      !*** ./node_modules/ng2-tooltip-directive/__ivy_ngcc__/fesm2015/ng2-tooltip-directive.js ***!
-      \*******************************************************************************************/
+    6017:
+    /*!******************************************************************************!*\
+      !*** ./node_modules/ng2-tooltip-directive/fesm2015/ng2-tooltip-directive.js ***!
+      \******************************************************************************/
 
     /***/
     function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
@@ -87366,14 +87478,6 @@
           return (
             /* binding */
             _TooltipModule
-          );
-        },
-
-        /* harmony export */
-        "ɵa": function ɵa() {
-          return (
-            /* binding */
-            TooltipOptionsService
           );
         }
         /* harmony export */
@@ -87649,8 +87753,8 @@
             this.setAnimationDuration();
             this.hostClassShadow = this.options['shadow'];
             this.hostClassLight = this.isThemeLight;
-            this.hostStyleMaxWidth = this.options['maxWidth'] + "px";
-            this.hostStyleWidth = this.options['width'] ? this.options['width'] + "px" : '';
+            this.hostStyleMaxWidth = this.options['maxWidth'];
+            this.hostStyleWidth = this.options['width'] ? this.options['width'] : '';
           }
         }]);
 
@@ -87661,7 +87765,7 @@
         return new (t || _TooltipComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2));
       };
 
-      _TooltipComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      _TooltipComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
         type: _TooltipComponent,
         selectors: [["tooltip"]],
         hostAttrs: [1, "tooltip"],
@@ -87674,14 +87778,14 @@
           }
 
           if (rf & 2) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("top", ctx.hostStyleTop)("left", ctx.hostStyleLeft)("z-index", ctx.hostStyleZIndex)("pointer-events", ctx.hostStylePointerEvents)("transition", ctx.hostStyleTransition)("max-width", ctx.hostStyleMaxWidth)("width", ctx.hostStyleWidth);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("top", ctx.hostStyleTop)("left", ctx.hostStyleLeft)("z-index", ctx.hostStyleZIndex)("transition", ctx.hostStyleTransition)("width", ctx.hostStyleWidth)("max-width", ctx.hostStyleMaxWidth)("pointer-events", ctx.hostStylePointerEvents);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("tooltip-show", ctx.hostClassShow)("tooltip-shadow", ctx.hostClassShadow)("tooltip-light", ctx.hostClassLight);
           }
         },
         inputs: {
-          show: "show",
-          data: "data"
+          data: "data",
+          show: "show"
         },
         decls: 4,
         vars: 3,
@@ -87706,80 +87810,19 @@
           }
         },
         directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_1__.NgTemplateOutlet],
-        styles: ["[_nghost-%COMP%]{background-color:#000;border-radius:6px;color:#fff;display:block;left:0;max-width:200px;opacity:0;padding:5px 8px;pointer-events:none;position:absolute;text-align:center;top:0;transition:opacity .3s;z-index:1000}.tooltip-show[_nghost-%COMP%]{opacity:1}.tooltip-shadow[_nghost-%COMP%]{box-shadow:0 7px 15px -5px rgba(0,0,0,.4)}.tooltip-light.tooltip-shadow[_nghost-%COMP%]{box-shadow:0 5px 15px -5px rgba(0,0,0,.4)}.tooltip[_nghost-%COMP%]:after{border-style:solid;content:\"\";position:absolute}.tooltip-top[_nghost-%COMP%]:after{border-color:#000 transparent transparent;border-width:5px;left:50%;margin-left:-5px;top:100%}.tooltip-bottom[_nghost-%COMP%]:after{border-color:transparent transparent #000;border-width:5px;bottom:100%;left:50%;margin-left:-5px}.tooltip-left[_nghost-%COMP%]:after{border-color:transparent transparent transparent #000;border-width:5px;left:100%;margin-top:-5px;top:50%}.tooltip-right[_nghost-%COMP%]:after{border-color:transparent #000 transparent transparent;border-width:5px;margin-top:-5px;right:100%;top:50%}.tooltip-light[_nghost-%COMP%]:after{display:none}.tooltip-light[_nghost-%COMP%]{background-color:#fff;border:1px solid rgba(0,0,0,.06);color:#000}.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]{background-color:rgba(0,0,0,.07);height:10px;position:absolute;transform:rotate(135deg);width:10px}.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]:after{background-color:#fff;content:\"\";display:block;height:10px;position:absolute;width:10px}.tooltip-top.tooltip-light[_nghost-%COMP%]{margin-top:-2px}.tooltip-top.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]{background:linear-gradient(to bottom left,rgba(0,0,0,.07) 50%,transparent 0);left:50%;margin-left:-5px;margin-top:-4px;top:100%}.tooltip-top.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]:after{right:1px;top:1px}.tooltip-bottom.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]{background:linear-gradient(to top right,rgba(0,0,0,.1) 50%,transparent 0);bottom:100%;left:50%;margin-bottom:-4px;margin-left:-5px}.tooltip-bottom.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]:after{right:-1px;top:-1px}.tooltip-left.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]{background:linear-gradient(to bottom right,rgba(0,0,0,.07) 50%,transparent 0);left:100%;margin-left:-4px;margin-top:-5px;top:50%}.tooltip-left.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]:after{right:-1px;top:1px}.tooltip-right.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]{background:linear-gradient(to top left,rgba(0,0,0,.07) 50%,transparent 0);margin-right:-4px;margin-top:-5px;right:100%;top:50%}.tooltip-right.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]:after{right:1px;top:-1px}"]
+        styles: ["[_nghost-%COMP%]{max-width:200px;background-color:#000;color:#fff;text-align:center;border-radius:6px;padding:5px 8px;position:absolute;pointer-events:none;z-index:1000;display:block;opacity:0;transition:opacity .3s;top:0;left:0}.tooltip-show[_nghost-%COMP%]{opacity:1}.tooltip-shadow[_nghost-%COMP%]{box-shadow:0 7px 15px -5px #0006}.tooltip-light.tooltip-shadow[_nghost-%COMP%]{box-shadow:0 5px 15px -5px #0006}.tooltip[_nghost-%COMP%]:after{content:\"\";position:absolute;border-style:solid}.tooltip-top[_nghost-%COMP%]:after{top:100%;left:50%;margin-left:-5px;border-width:5px;border-color:#000 #0000 #0000}.tooltip-bottom[_nghost-%COMP%]:after{bottom:100%;left:50%;margin-left:-5px;border-width:5px;border-color:#0000 #0000 #000}.tooltip-left[_nghost-%COMP%]:after{top:50%;left:100%;margin-top:-5px;border-width:5px;border-color:#0000 #0000 #0000 #000}.tooltip-right[_nghost-%COMP%]:after{top:50%;right:100%;margin-top:-5px;border-width:5px;border-color:#0000 #000 #0000 #0000}.tooltip-light[_nghost-%COMP%]:after{display:none}.tooltip-light[_nghost-%COMP%]{border:1px solid #0000000f;background-color:#fff;color:#000}.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]{position:absolute;width:10px;height:10px;transform:rotate(135deg);background-color:#00000012}.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]:after{background-color:#fff;content:\"\";display:block;position:absolute;width:10px;height:10px}.tooltip-top.tooltip-light[_nghost-%COMP%]{margin-top:-2px}.tooltip-top.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]{top:100%;left:50%;margin-top:-4px;margin-left:-5px;background:linear-gradient(to bottom left,#00000012 50%,#0000 0)}.tooltip-top.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]:after{top:1px;right:1px}.tooltip-bottom.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]{bottom:100%;left:50%;margin-bottom:-4px;margin-left:-5px;background:linear-gradient(to top right,#0000001a 50%,#0000 0)}.tooltip-bottom.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]:after{top:-1px;right:-1px}.tooltip-left.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]{top:50%;left:100%;margin-top:-5px;margin-left:-4px;background:linear-gradient(to bottom right,#00000012 50%,#0000 0)}.tooltip-left.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]:after{top:1px;right:-1px}.tooltip-right.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]{top:50%;right:100%;margin-top:-5px;margin-right:-4px;background:linear-gradient(to top left,#00000012 50%,#0000 0)}.tooltip-right.tooltip-light[_nghost-%COMP%]   .tooltip-arrow[_ngcontent-%COMP%]:after{top:-1px;right:1px}"]
       });
-
-      _TooltipComponent.ctorParameters = function () {
-        return [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
-        }, {
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
-        }];
-      };
-
-      _TooltipComponent.propDecorators = {
-        data: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
-        }],
-        hostStyleTop: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-          args: ['style.top']
-        }],
-        hostStyleLeft: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-          args: ['style.left']
-        }],
-        hostStyleZIndex: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-          args: ['style.z-index']
-        }],
-        hostStyleTransition: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-          args: ['style.transition']
-        }],
-        hostStyleWidth: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-          args: ['style.width']
-        }],
-        hostStyleMaxWidth: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-          args: ['style.max-width']
-        }],
-        hostStylePointerEvents: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-          args: ['style.pointer-events']
-        }],
-        hostClassShow: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-          args: ['class.tooltip-show']
-        }],
-        hostClassShadow: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-          args: ['class.tooltip-shadow']
-        }],
-        hostClassLight: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-          args: ['class.tooltip-light']
-        }],
-        transitionEnd: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-          args: ['transitionend', ['$event']]
-        }],
-        show: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
-        }]
-      };
 
       (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](_TooltipComponent, [{
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
           args: [{
             selector: 'tooltip',
-            template: "<div *ngIf=\"isThemeLight\" class=\"tooltip-arrow\"></div>\r\n\r\n<div *ngIf=\"options['contentType'] === 'template' else htmlOrStringTemplate\">\r\n\r\n\t<ng-container *ngTemplateOutlet=\"value\"></ng-container>\r\n</div>\r\n\r\n<ng-template #htmlOrStringTemplate>\r\n\t<div [innerHTML]=\"value\"></div>\r\n</ng-template>\r\n",
+            templateUrl: './tooltip.component.html',
             host: {
               'class': 'tooltip'
             },
-            styles: [":host{background-color:#000;border-radius:6px;color:#fff;display:block;left:0;max-width:200px;opacity:0;padding:5px 8px;pointer-events:none;position:absolute;text-align:center;top:0;transition:opacity .3s;z-index:1000}:host.tooltip-show{opacity:1}:host.tooltip-shadow{box-shadow:0 7px 15px -5px rgba(0,0,0,.4)}:host.tooltip-light.tooltip-shadow{box-shadow:0 5px 15px -5px rgba(0,0,0,.4)}:host.tooltip:after{border-style:solid;content:\"\";position:absolute}:host.tooltip-top:after{border-color:#000 transparent transparent;border-width:5px;left:50%;margin-left:-5px;top:100%}:host.tooltip-bottom:after{border-color:transparent transparent #000;border-width:5px;bottom:100%;left:50%;margin-left:-5px}:host.tooltip-left:after{border-color:transparent transparent transparent #000;border-width:5px;left:100%;margin-top:-5px;top:50%}:host.tooltip-right:after{border-color:transparent #000 transparent transparent;border-width:5px;margin-top:-5px;right:100%;top:50%}:host.tooltip-light:after{display:none}:host.tooltip-light{background-color:#fff;border:1px solid rgba(0,0,0,.06);color:#000}:host.tooltip-light .tooltip-arrow{background-color:rgba(0,0,0,.07);height:10px;position:absolute;transform:rotate(135deg);width:10px}:host.tooltip-light .tooltip-arrow:after{background-color:#fff;content:\"\";display:block;height:10px;position:absolute;width:10px}:host.tooltip-top.tooltip-light{margin-top:-2px}:host.tooltip-top.tooltip-light .tooltip-arrow{background:linear-gradient(to bottom left,rgba(0,0,0,.07) 50%,transparent 0);left:50%;margin-left:-5px;margin-top:-4px;top:100%}:host.tooltip-top.tooltip-light .tooltip-arrow:after{right:1px;top:1px}:host.tooltip-bottom.tooltip-light .tooltip-arrow{background:linear-gradient(to top right,rgba(0,0,0,.1) 50%,transparent 0);bottom:100%;left:50%;margin-bottom:-4px;margin-left:-5px}:host.tooltip-bottom.tooltip-light .tooltip-arrow:after{right:-1px;top:-1px}:host.tooltip-left.tooltip-light .tooltip-arrow{background:linear-gradient(to bottom right,rgba(0,0,0,.07) 50%,transparent 0);left:100%;margin-left:-4px;margin-top:-5px;top:50%}:host.tooltip-left.tooltip-light .tooltip-arrow:after{right:-1px;top:1px}:host.tooltip-right.tooltip-light .tooltip-arrow{background:linear-gradient(to top left,rgba(0,0,0,.07) 50%,transparent 0);margin-right:-4px;margin-top:-5px;right:100%;top:50%}:host.tooltip-right.tooltip-light .tooltip-arrow:after{right:1px;top:-1px}"]
+            styleUrls: ['./tooltip.component.sass']
           }]
         }], function () {
           return [{
@@ -87788,16 +87831,8 @@
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2
           }];
         }, {
-          transitionEnd: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-            args: ['transitionend', ['$event']]
-          }],
-          show: [{
+          data: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
-          }],
-          hostClassShow: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-            args: ['class.tooltip-show']
           }],
           hostStyleTop: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
@@ -87811,13 +87846,25 @@
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
             args: ['style.z-index']
           }],
+          hostStyleTransition: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+            args: ['style.transition']
+          }],
+          hostStyleWidth: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+            args: ['style.width']
+          }],
+          hostStyleMaxWidth: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
+            args: ['style.max-width']
+          }],
           hostStylePointerEvents: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
             args: ['style.pointer-events']
           }],
-          hostStyleTransition: [{
+          hostClassShow: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-            args: ['style.transition']
+            args: ['class.tooltip-show']
           }],
           hostClassShadow: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
@@ -87827,15 +87874,11 @@
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
             args: ['class.tooltip-light']
           }],
-          hostStyleMaxWidth: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-            args: ['style.max-width']
+          transitionEnd: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['transitionend', ['$event']]
           }],
-          hostStyleWidth: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostBinding,
-            args: ['style.width']
-          }],
-          data: [{
+          show: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
           }]
         });
@@ -87894,9 +87937,8 @@
           this.componentFactoryResolver = componentFactoryResolver;
           this.appRef = appRef;
           this.injector = injector;
-          this._showDelay = 0;
-          this._hideDelay = 300;
           this._options = {};
+          this._contentType = "string";
           this.events = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
         }
 
@@ -87904,10 +87946,136 @@
           key: "options",
           get: function get() {
             return this._options;
-          },
+          } // Content type
+          ,
           set: function set(value) {
             if (value && defaultOptions) {
               this._options = value;
+            }
+          }
+        }, {
+          key: "contentTypeBackwardCompatibility",
+          set: function set(value) {
+            if (value) {
+              this._contentType = value;
+            }
+          }
+        }, {
+          key: "contentType",
+          get: function get() {
+            return this._contentType;
+          } // z-index
+          ,
+          set: function set(value) {
+            if (value) {
+              this._contentType = value;
+            }
+          }
+        }, {
+          key: "zIndexBackwardCompatibility",
+          set: function set(value) {
+            if (value) {
+              this._zIndex = value;
+            }
+          }
+        }, {
+          key: "zIndex",
+          get: function get() {
+            return this._zIndex;
+          } // Animation duration
+          ,
+          set: function set(value) {
+            if (value) {
+              this._zIndex = value;
+            }
+          }
+        }, {
+          key: "animationDurationBackwardCompatibility",
+          set: function set(value) {
+            if (value) {
+              this._animationDuration = value;
+            }
+          }
+        }, {
+          key: "animationDuration",
+          get: function get() {
+            return this._animationDuration;
+          } // Tooltip class
+          ,
+          set: function set(value) {
+            if (value) {
+              this._animationDuration = value;
+            }
+          }
+        }, {
+          key: "tooltipClassBackwardCompatibility",
+          set: function set(value) {
+            if (value) {
+              this._tooltipClass = value;
+            }
+          }
+        }, {
+          key: "tooltipClass",
+          get: function get() {
+            return this._tooltipClass;
+          } // Max width
+          ,
+          set: function set(value) {
+            if (value) {
+              this._tooltipClass = value;
+            }
+          }
+        }, {
+          key: "maxWidthBackwardCompatibility",
+          set: function set(value) {
+            if (value) {
+              this._maxWidth = value;
+            }
+          }
+        }, {
+          key: "maxWidth",
+          get: function get() {
+            return this._maxWidth;
+          } // Show delay
+          ,
+          set: function set(value) {
+            if (value) {
+              this._maxWidth = value;
+            }
+          }
+        }, {
+          key: "showDelayBackwardCompatibility",
+          set: function set(value) {
+            if (value) {
+              this._showDelay = value;
+            }
+          }
+        }, {
+          key: "showDelay",
+          get: function get() {
+            return this._showDelay;
+          } // Hide delay
+          ,
+          set: function set(value) {
+            if (value) {
+              this._showDelay = value;
+            }
+          }
+        }, {
+          key: "hideDelayBackwardCompatibility",
+          set: function set(value) {
+            if (value) {
+              this._hideDelay = value;
+            }
+          }
+        }, {
+          key: "hideDelay",
+          get: function get() {
+            return this._hideDelay;
+          },
+          set: function set(value) {
+            if (value) {
+              this._hideDelay = value;
             }
           }
         }, {
@@ -88198,7 +88366,7 @@
         }, {
           key: "applyOptionsDefault",
           value: function applyOptionsDefault(defaultOptions, options) {
-            this.options = Object.assign({}, defaultOptions, this.initOptions || {}, options);
+            this.options = Object.assign({}, defaultOptions, this.initOptions || {}, this.options, options);
           }
         }, {
           key: "handleEvents",
@@ -88213,6 +88381,10 @@
         }, {
           key: "show",
           value: function show() {
+            if (!this.tooltipValue) {
+              return;
+            }
+
             if (!this.componentRef || this.isTooltipDestroyed) {
               this.createTooltip();
             } else if (!this.isTooltipDestroyed) {
@@ -88233,7 +88405,7 @@
         return new (t || _TooltipDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TooltipOptionsService, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ComponentFactoryResolver), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ApplicationRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector));
       };
 
-      _TooltipDirective.ɵdir = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      _TooltipDirective.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
         type: _TooltipDirective,
         selectors: [["", "tooltip", ""]],
         hostBindings: function TooltipDirective_HostBindings(rf, ctx) {
@@ -88256,13 +88428,17 @@
           tooltipValue: ["tooltip", "tooltipValue"],
           placement: "placement",
           autoPlacement: "autoPlacement",
-          contentType: ["content-type", "contentType"],
+          contentTypeBackwardCompatibility: ["content-type", "contentTypeBackwardCompatibility"],
+          contentType: "contentType",
           hideDelayMobile: ["hide-delay-mobile", "hideDelayMobile"],
           hideDelayTouchscreen: "hideDelayTouchscreen",
-          zIndex: ["z-index", "zIndex"],
-          animationDuration: ["animation-duration", "animationDuration"],
+          zIndexBackwardCompatibility: ["z-index", "zIndexBackwardCompatibility"],
+          zIndex: "zIndex",
+          animationDurationBackwardCompatibility: ["animation-duration", "animationDurationBackwardCompatibility"],
+          animationDuration: "animationDuration",
           trigger: "trigger",
-          tooltipClass: ["tooltip-class", "tooltipClass"],
+          tooltipClassBackwardCompatibility: ["tooltip-class", "tooltipClassBackwardCompatibility"],
+          tooltipClass: "tooltipClass",
           display: "display",
           displayMobile: ["display-mobile", "displayMobile"],
           displayTouchscreen: "displayTouchscreen",
@@ -88270,10 +88446,13 @@
           theme: "theme",
           offset: "offset",
           width: "width",
-          maxWidth: ["max-width", "maxWidth"],
+          maxWidthBackwardCompatibility: ["max-width", "maxWidthBackwardCompatibility"],
+          maxWidth: "maxWidth",
           id: "id",
-          showDelay: ["show-delay", "showDelay"],
-          hideDelay: ["hide-delay", "hideDelay"],
+          showDelayBackwardCompatibility: ["show-delay", "showDelayBackwardCompatibility"],
+          showDelay: "showDelay",
+          hideDelayBackwardCompatibility: ["hide-delay", "hideDelayBackwardCompatibility"],
+          hideDelay: "hideDelay",
           hideDelayAfterClick: "hideDelayAfterClick",
           pointerEvents: "pointerEvents",
           position: "position"
@@ -88284,150 +88463,6 @@
         exportAs: ["tooltip"],
         features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]]
       });
-
-      _TooltipDirective.ctorParameters = function () {
-        return [{
-          type: undefined,
-          decorators: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Optional
-          }, {
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
-            args: [TooltipOptionsService]
-          }]
-        }, {
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
-        }, {
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ComponentFactoryResolver
-        }, {
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ApplicationRef
-        }, {
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector
-        }];
-      };
-
-      _TooltipDirective.propDecorators = {
-        options: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['options']
-        }],
-        tooltipValue: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['tooltip']
-        }],
-        placement: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['placement']
-        }],
-        autoPlacement: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['autoPlacement']
-        }],
-        contentType: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['content-type']
-        }],
-        hideDelayMobile: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['hide-delay-mobile']
-        }],
-        hideDelayTouchscreen: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['hideDelayTouchscreen']
-        }],
-        zIndex: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['z-index']
-        }],
-        animationDuration: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['animation-duration']
-        }],
-        trigger: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['trigger']
-        }],
-        tooltipClass: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['tooltip-class']
-        }],
-        display: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['display']
-        }],
-        displayMobile: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['display-mobile']
-        }],
-        displayTouchscreen: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['displayTouchscreen']
-        }],
-        shadow: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['shadow']
-        }],
-        theme: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['theme']
-        }],
-        offset: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['offset']
-        }],
-        width: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['width']
-        }],
-        maxWidth: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['max-width']
-        }],
-        id: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['id']
-        }],
-        showDelay: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['show-delay']
-        }],
-        hideDelay: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['hide-delay']
-        }],
-        hideDelayAfterClick: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['hideDelayAfterClick']
-        }],
-        pointerEvents: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['pointerEvents']
-        }],
-        position: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
-          args: ['position']
-        }],
-        events: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
-        }],
-        onMouseEnter: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-          args: ['focusin']
-        }, {
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-          args: ['mouseenter']
-        }],
-        onMouseLeave: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-          args: ['focusout']
-        }, {
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-          args: ['mouseleave']
-        }],
-        onClick: [{
-          type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-          args: ['click']
-        }]
-      };
 
       (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](_TooltipDirective, [{
@@ -88455,30 +88490,9 @@
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector
           }];
         }, {
-          events: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
-          }],
           options: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['options']
-          }],
-          onMouseEnter: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-            args: ['focusin']
-          }, {
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-            args: ['mouseenter']
-          }],
-          onMouseLeave: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-            args: ['focusout']
-          }, {
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-            args: ['mouseleave']
-          }],
-          onClick: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
-            args: ['click']
           }],
           tooltipValue: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
@@ -88492,9 +88506,13 @@
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['autoPlacement']
           }],
-          contentType: [{
+          contentTypeBackwardCompatibility: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['content-type']
+          }],
+          contentType: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['contentType']
           }],
           hideDelayMobile: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
@@ -88504,21 +88522,33 @@
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['hideDelayTouchscreen']
           }],
-          zIndex: [{
+          zIndexBackwardCompatibility: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['z-index']
           }],
-          animationDuration: [{
+          zIndex: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['zIndex']
+          }],
+          animationDurationBackwardCompatibility: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['animation-duration']
+          }],
+          animationDuration: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['animationDuration']
           }],
           trigger: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['trigger']
           }],
-          tooltipClass: [{
+          tooltipClassBackwardCompatibility: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['tooltip-class']
+          }],
+          tooltipClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['tooltipClass']
           }],
           display: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
@@ -88548,21 +88578,33 @@
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['width']
           }],
-          maxWidth: [{
+          maxWidthBackwardCompatibility: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['max-width']
+          }],
+          maxWidth: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['maxWidth']
           }],
           id: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['id']
           }],
-          showDelay: [{
+          showDelayBackwardCompatibility: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['show-delay']
           }],
-          hideDelay: [{
+          showDelay: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['showDelay']
+          }],
+          hideDelayBackwardCompatibility: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['hide-delay']
+          }],
+          hideDelay: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+            args: ['hideDelay']
           }],
           hideDelayAfterClick: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
@@ -88575,6 +88617,27 @@
           position: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
             args: ['position']
+          }],
+          events: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+          }],
+          onMouseEnter: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['focusin']
+          }, {
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['mouseenter']
+          }],
+          onMouseLeave: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['focusout']
+          }, {
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['mouseleave']
+          }],
+          onClick: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
+            args: ['click']
           }]
         });
       })();
@@ -88604,10 +88667,10 @@
         return new (t || _TooltipModule)();
       };
 
-      _TooltipModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
+      _TooltipModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
         type: _TooltipModule
       });
-      _TooltipModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
+      _TooltipModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
         imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule]]
       });
 
@@ -88621,20 +88684,6 @@
             entryComponents: [_TooltipComponent]
           }]
         }], null, null);
-      })();
-
-      (function () {
-        (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](_TooltipModule, {
-          declarations: function declarations() {
-            return [_TooltipDirective, _TooltipComponent];
-          },
-          imports: function imports() {
-            return [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule];
-          },
-          exports: function exports() {
-            return [_TooltipDirective];
-          }
-        });
       })();
       /*
        * Public API Surface of ng2-tooltip-directive
@@ -89708,6 +89757,14 @@
         },
 
         /* harmony export */
+        "SlideModel": function SlideModel() {
+          return (
+            /* binding */
+            _SlideModel
+          );
+        },
+
+        /* harmony export */
         "SlidesOutputData": function SlidesOutputData() {
           return (
             /* binding */
@@ -90168,19 +90225,31 @@
 
       function StageComponent_ng_container_2_2_ng_template_0_Template(rf, ctx) {}
 
+      var _c4 = function _c4(a0, a1) {
+        return {
+          $implicit: a0,
+          index: a1
+        };
+      };
+
       function StageComponent_ng_container_2_2_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, StageComponent_ng_container_2_2_ng_template_0_Template, 0, 0, "ng-template", 4);
         }
 
         if (rf & 2) {
-          var slide_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+          var ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", slide_r1.tplRef);
+          var slide_r1 = ctx_r5.$implicit;
+          var i_r2 = ctx_r5.index;
+
+          var ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", slide_r1.tplRef)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction2"](2, _c4, ctx_r3.preparePublicSlide(slide_r1), i_r2));
         }
       }
 
-      var _c4 = function _c4(a0, a1, a2, a3) {
+      var _c5 = function _c5(a0, a1, a2, a3) {
         return {
           "width": a0,
           "margin-left": a1,
@@ -90207,7 +90276,7 @@
             return ctx_r6.clear(slide_r1.id);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, StageComponent_ng_container_2_2_Template, 1, 1, undefined, 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, StageComponent_ng_container_2_2_Template, 1, 5, undefined, 3);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -90219,7 +90288,7 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", slide_r1.classes)("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction4"](4, _c4, slide_r1.width + "px", slide_r1.marginL ? slide_r1.marginL + "px" : "", slide_r1.marginR ? slide_r1.marginR + "px" : "", slide_r1.left))("@autoHeight", slide_r1.heightState);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", slide_r1.classes)("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction4"](4, _c5, slide_r1.width + "px", slide_r1.marginL ? slide_r1.marginL + "px" : "", slide_r1.marginR ? slide_r1.marginR + "px" : "", slide_r1.left))("@autoHeight", slide_r1.heightState);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
@@ -90227,7 +90296,7 @@
         }
       }
 
-      var _c5 = function _c5(a0, a1, a2, a3, a4) {
+      var _c6 = function _c6(a0, a1, a2, a3, a4) {
         return {
           "width": a0,
           "transform": a1,
@@ -92430,13 +92499,20 @@
              * Gets the difference of two vectors.
              * @todo #261
              * @param first The first vector.
-             * @param second- The second vector.
+             * @param second The second vector.
              * @returns The difference.
              */
 
         }, {
           key: "difference",
           value: function difference(first, second) {
+            if (null === first || null === second) {
+              return {
+                x: 0,
+                y: 0
+              };
+            }
+
             return {
               x: first.x - second.x,
               y: first.y - second.y
@@ -93115,12 +93191,26 @@
            */
 
           this._paused = false;
+          /**
+           * Shows whether the autoplay is paused for unlimited time by the developer.
+           * Use to prevent autoplaying in case of firing `mouseleave` by adding layers to `<body>` like `mat-menu` does
+           */
+
+          this._isAutoplayStopped = false;
           this.winRef = winRef;
           this.docRef = docRef;
           this.spyDataStreams();
         }
 
         _createClass2(AutoplayService, [{
+          key: "isAutoplayStopped",
+          get: function get() {
+            return this._isAutoplayStopped;
+          },
+          set: function set(value) {
+            this._isAutoplayStopped = value;
+          }
+        }, {
           key: "ngOnDestroy",
           value: function ngOnDestroy() {
             this.autoplaySubscription.unsubscribe();
@@ -93143,7 +93233,7 @@
               _this234._handleChangeObservable(data);
             }));
             var resized$ = this.carouselService.getResizedState().pipe((0, rxjs_operators__WEBPACK_IMPORTED_MODULE_3__.tap)(function () {
-              if (_this234.carouselService.settings.autoplay) {
+              if (_this234.carouselService.settings.autoplay && !_this234._isAutoplayStopped) {
                 _this234.play();
               } else {
                 _this234.stop();
@@ -94064,11 +94154,11 @@
 
             switch (this.docRef.visibilityState) {
               case 'visible':
-                this.autoplayService.play();
+                !this.autoplayService.isAutoplayStopped && this.autoplayService.play();
                 break;
 
               case 'hidden':
-                this.autoplayService.stop();
+                this.autoplayService.pause();
                 break;
 
               default:
@@ -94082,9 +94172,22 @@
             this.carouselWindowWidth = this.el.nativeElement.querySelector('.owl-carousel').clientWidth;
           }
         }, {
-          key: "ngAfterContentChecked",
-          value: function ngAfterContentChecked() {} // ngAfterContentChecked() END
+          key: "ngOnChanges",
+          value: function ngOnChanges() {
+            var _a;
 
+            if (this.prevOptions !== this.options) {
+              if (this.prevOptions && ((_a = this.slides) === null || _a === void 0 ? void 0 : _a.toArray().length)) {
+                this.carouselService.setup(this.carouselWindowWidth, this.slides.toArray(), this.options);
+                this.carouselService.initialize(this.slides.toArray());
+              } else {
+                this.carouselLoaded = false;
+                this.logger.log("There are no slides to show. So the carousel won't be re-rendered");
+              }
+
+              this.prevOptions = this.options;
+            }
+          }
         }, {
           key: "ngAfterContentInit",
           value: function ngAfterContentInit() {
@@ -94354,6 +94457,18 @@
           value: function startPlayTE() {
             this.autoplayService.startPlayingTouchEnd();
           }
+        }, {
+          key: "stopAutoplay",
+          value: function stopAutoplay() {
+            this.autoplayService.isAutoplayStopped = true;
+            this.autoplayService.stop();
+          }
+        }, {
+          key: "startAutoplay",
+          value: function startAutoplay() {
+            this.autoplayService.isAutoplayStopped = false;
+            this.autoplayService.play();
+          }
         }]);
 
         return _CarouselComponent;
@@ -94394,7 +94509,7 @@
           changed: "changed",
           initialized: "initialized"
         },
-        features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([NavigationService, AutoplayService, CarouselService, LazyLoadService, AnimateService, AutoHeightService, HashService])],
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([NavigationService, AutoplayService, CarouselService, LazyLoadService, AnimateService, AutoHeightService, HashService]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]],
         decls: 4,
         vars: 9,
         consts: [[1, "owl-carousel", "owl-theme", 3, "ngClass", "mouseover", "mouseleave", "touchstart", "touchend"], ["owlCarousel", ""], ["class", "owl-stage-outer", 4, "ngIf"], [4, "ngIf"], [1, "owl-stage-outer"], [3, "owlDraggable", "stageData", "slidesData"], [1, "owl-nav", 3, "ngClass"], [1, "owl-prev", 3, "ngClass", "innerHTML", "click"], [1, "owl-next", 3, "ngClass", "innerHTML", "click"], [1, "owl-dots", 3, "ngClass"], ["class", "owl-dot", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "owl-dot", 3, "ngClass", "click"], [3, "innerHTML"]],
@@ -94434,7 +94549,8 @@
         directives: function directives() {
           return [_angular_common__WEBPACK_IMPORTED_MODULE_6__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_6__.NgIf, StageComponent, _angular_common__WEBPACK_IMPORTED_MODULE_6__.NgForOf];
         },
-        styles: [".owl-theme[_ngcontent-%COMP%] { display: block; }"]
+        styles: [".owl-theme[_ngcontent-%COMP%] { display: block; }"],
+        changeDetection: 0
       });
 
       _CarouselComponent.ctorParameters = function () {
@@ -94505,6 +94621,7 @@
             selector: 'owl-carousel-o',
             template: "\n    <div class=\"owl-carousel owl-theme\" #owlCarousel\n      [ngClass]=\"{'owl-rtl': owlDOMData?.rtl,\n                  'owl-loaded': owlDOMData?.isLoaded,\n                  'owl-responsive': owlDOMData?.isResponsive,\n                  'owl-drag': owlDOMData?.isMouseDragable,\n                  'owl-grab': owlDOMData?.isGrab}\"\n      (mouseover)=\"startPausing()\"\n      (mouseleave)=\"startPlayML()\"\n      (touchstart)=\"startPausing()\"\n      (touchend)=\"startPlayTE()\">\n\n      <div *ngIf=\"carouselLoaded\" class=\"owl-stage-outer\">\n        <owl-stage [owlDraggable]=\"{'isMouseDragable': owlDOMData?.isMouseDragable, 'isTouchDragable': owlDOMData?.isTouchDragable}\"\n                    [stageData]=\"stageData\"\n                    [slidesData]=\"slidesData\"></owl-stage>\n      </div> <!-- /.owl-stage-outer -->\n      <ng-container *ngIf=\"slides.toArray().length\">\n        <div class=\"owl-nav\" [ngClass]=\"{'disabled': navData?.disabled}\">\n          <div class=\"owl-prev\" [ngClass]=\"{'disabled': navData?.prev?.disabled}\" (click)=\"prev()\" [innerHTML]=\"navData?.prev?.htmlText\"></div>\n          <div class=\"owl-next\" [ngClass]=\"{'disabled': navData?.next?.disabled}\" (click)=\"next()\" [innerHTML]=\"navData?.next?.htmlText\"></div>\n        </div> <!-- /.owl-nav -->\n        <div class=\"owl-dots\" [ngClass]=\"{'disabled': dotsData?.disabled}\">\n          <div *ngFor=\"let dot of dotsData?.dots\" class=\"owl-dot\" [ngClass]=\"{'active': dot.active, 'owl-dot-text': dot.showInnerContent}\" (click)=\"moveByDot(dot.id)\">\n            <span [innerHTML]=\"dot.innerContent\"></span>\n          </div>\n        </div> <!-- /.owl-dots -->\n      </ng-container>\n    </div> <!-- /.owl-carousel owl-loaded -->\n  ",
             providers: [NavigationService, AutoplayService, CarouselService, LazyLoadService, AnimateService, AutoHeightService, HashService],
+            changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectionStrategy.OnPush,
             styles: [".owl-theme { display: block; }"]
           }]
         }], function () {
@@ -94599,9 +94716,16 @@
            */
 
           this._oneDragMove$ = new rxjs__WEBPACK_IMPORTED_MODULE_1__.Subject();
+
+          this.preparePublicSlide = function (slide) {
+            var newSlide = Object.assign({}, slide);
+            delete newSlide.tplRef;
+            return newSlide;
+          };
           /**
            * Passes this to _oneMouseTouchMove();
            */
+
 
           this.bindOneMouseTouchMove = function (ev) {
             _this247._oneMouseTouchMove(ev);
@@ -94648,6 +94772,10 @@
         }, {
           key: "onTouchStart",
           value: function onTouchStart(event) {
+            if (event.targetTouches.length >= 2) {
+              return false;
+            }
+
             if (this.owlDraggable.isTouchDragable) {
               this._onDragStart(event);
             }
@@ -94879,7 +95007,7 @@
           /**
              * Gets the difference of two vectors.
              * @param first The first vector.
-             * @param second- The second vector.
+             * @param second The second vector.
              * @returns The difference.
              */
 
@@ -94980,7 +95108,7 @@
         },
         decls: 3,
         vars: 8,
-        consts: [[1, "owl-stage", 3, "ngStyle", "transitionend"], [4, "ngFor", "ngForOf"], [1, "owl-item", 3, "ngClass", "ngStyle", "animationend"], [4, "ngIf"], [3, "ngTemplateOutlet"]],
+        consts: [[1, "owl-stage", 3, "ngStyle", "transitionend"], [4, "ngFor", "ngForOf"], [1, "owl-item", 3, "ngClass", "ngStyle", "animationend"], [4, "ngIf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]],
         template: function StageComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
@@ -95001,7 +95129,7 @@
           if (rf & 2) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction5"](2, _c5, ctx.stageData.width + "px", ctx.stageData.transform, ctx.stageData.transition, ctx.stageData.paddingL ? ctx.stageData.paddingL + "px" : "", ctx.stageData.paddingR ? ctx.stageData.paddingR + "px" : ""));
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction5"](2, _c6, ctx.stageData.width + "px", ctx.stageData.transform, ctx.stageData.transition, ctx.stageData.paddingL ? ctx.stageData.paddingL + "px" : "", ctx.stageData.paddingR ? ctx.stageData.paddingR + "px" : ""));
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
@@ -95072,7 +95200,7 @@
           type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
           args: [{
             selector: 'owl-stage',
-            template: "\n    <div>\n      <div class=\"owl-stage\" [ngStyle]=\"{'width': stageData.width + 'px',\n                                        'transform': stageData.transform,\n                                        'transition': stageData.transition,\n                                        'padding-left': stageData.paddingL ? stageData.paddingL + 'px' : '',\n                                        'padding-right': stageData.paddingR ? stageData.paddingR + 'px' : '' }\"\n          (transitionend)=\"onTransitionEnd()\">\n        <ng-container *ngFor=\"let slide of slidesData; let i = index\">\n          <div class=\"owl-item\" [ngClass]=\"slide.classes\"\n                                [ngStyle]=\"{'width': slide.width + 'px',\n                                            'margin-left': slide.marginL ? slide.marginL + 'px' : '',\n                                            'margin-right': slide.marginR ? slide.marginR + 'px' : '',\n                                            'left': slide.left}\"\n                                (animationend)=\"clear(slide.id)\"\n                                [@autoHeight]=\"slide.heightState\">\n            <ng-template *ngIf=\"slide.load\" [ngTemplateOutlet]=\"slide.tplRef\"></ng-template>\n          </div><!-- /.owl-item -->\n        </ng-container>\n      </div><!-- /.owl-stage -->\n    </div>\n  ",
+            template: "\n    <div>\n      <div class=\"owl-stage\" [ngStyle]=\"{'width': stageData.width + 'px',\n                                        'transform': stageData.transform,\n                                        'transition': stageData.transition,\n                                        'padding-left': stageData.paddingL ? stageData.paddingL + 'px' : '',\n                                        'padding-right': stageData.paddingR ? stageData.paddingR + 'px' : '' }\"\n          (transitionend)=\"onTransitionEnd()\">\n        <ng-container *ngFor=\"let slide of slidesData; let i = index\">\n          <div class=\"owl-item\" [ngClass]=\"slide.classes\"\n                                [ngStyle]=\"{'width': slide.width + 'px',\n                                            'margin-left': slide.marginL ? slide.marginL + 'px' : '',\n                                            'margin-right': slide.marginR ? slide.marginR + 'px' : '',\n                                            'left': slide.left}\"\n                                (animationend)=\"clear(slide.id)\"\n                                [@autoHeight]=\"slide.heightState\">\n            <ng-template *ngIf=\"slide.load\" [ngTemplateOutlet]=\"slide.tplRef\" [ngTemplateOutletContext]=\"{ $implicit: preparePublicSlide(slide), index: i }\"></ng-template>\n          </div><!-- /.owl-item -->\n        </ng-container>\n      </div><!-- /.owl-stage -->\n    </div>\n  ",
             animations: [(0, _angular_animations__WEBPACK_IMPORTED_MODULE_17__.trigger)('autoHeight', [(0, _angular_animations__WEBPACK_IMPORTED_MODULE_17__.state)('nulled', (0, _angular_animations__WEBPACK_IMPORTED_MODULE_17__.style)({
               height: 0
             })), (0, _angular_animations__WEBPACK_IMPORTED_MODULE_17__.state)('full', (0, _angular_animations__WEBPACK_IMPORTED_MODULE_17__.style)({
@@ -95624,6 +95752,10 @@
           }
         });
       })();
+
+      var _SlideModel = function _SlideModel() {
+        _classCallCheck2(this, _SlideModel);
+      };
       /**
        * Generated bundle index. Do not edit.
        */
@@ -97658,14 +97790,17 @@
         }
 
         _createClass2(_NgxScrollTopComponent, [{
-          key: "symbol",
-          set: function set(symbol) {
-            console.error("NgxScrollTop: You are trying to set `".concat(symbol, "` as your symbol but Input `[symbol]=\"'\u2191'\"` is deprecated now.\n\r"), "Use `Content projection` method, like this:\n\r\n\r", "<ngx-scrolltop>".concat(symbol, "</ngx-scrolltop>\n\r\n\r"), "More info: https://github.com/bartholomej/ngx-scrolltop#symbol");
-          }
-        }, {
           key: "onWindowScroll",
           value: function onWindowScroll() {
             this.show = this.core.onWindowScroll(this.mode);
+          }
+        }, {
+          key: "ngOnChanges",
+          value: function ngOnChanges(changes) {
+            // Deprecation warning. It will be removed soon.
+            if (changes.symbol) {
+              console.error("NgxScrollTop: You are trying to set `".concat(changes['symbol'].currentValue, "` as your symbol but Input `[symbol]=\"'\u2191'\"` is deprecated now.\n\r"), "Use `Content projection` method, like this:\n\r\n\r", "<ngx-scrolltop>".concat(changes['symbol'].currentValue, "</ngx-scrolltop>\n\r\n\r"), "More info: https://github.com/bartholomej/ngx-scrolltop#symbol");
+            }
           }
         }, {
           key: "scrollToTop",
@@ -97695,11 +97830,12 @@
           position: "position",
           theme: "theme",
           mode: "mode",
-          symbol: "symbol",
           backgroundColor: "backgroundColor",
           symbolColor: "symbolColor",
-          size: "size"
+          size: "size",
+          symbol: "symbol"
         },
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]],
         ngContentSelectors: _c0,
         decls: 1,
         vars: 1,
@@ -97716,7 +97852,7 @@
           }
         },
         directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.NgIf, _angular_common__WEBPACK_IMPORTED_MODULE_1__.NgClass],
-        styles: ["button[_ngcontent-%COMP%]{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;outline:0;user-select:none}.scrolltop-button[_ngcontent-%COMP%]{align-items:center;border:none;border-radius:50%;bottom:20px;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);cursor:pointer;display:flex;height:40px;justify-content:center;position:fixed;right:20px;transition:opacity .1 linear;width:40px;z-index:10000}.scrolltop-button[_ngcontent-%COMP%]:hover{opacity:.92}.scrolltop-button[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{font-size:15px}.scrolltop-button[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{transform:translateY(10%);vertical-align:baseline;width:50%}.scrolltop-button.black[_ngcontent-%COMP%]{background-color:#000;color:#fff}.scrolltop-button.black[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.black[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fff}.scrolltop-button.black[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fff}.scrolltop-button.white[_ngcontent-%COMP%]{background-color:#fff;color:#000}.scrolltop-button.white[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.white[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#000}.scrolltop-button.white[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#000}.scrolltop-button.gray[_ngcontent-%COMP%]{background-color:#212121;color:#fafafa}.scrolltop-button.gray[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.gray[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fafafa}.scrolltop-button.gray[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fafafa}.scrolltop-button.grey[_ngcontent-%COMP%]{background-color:#212121;color:#fafafa}.scrolltop-button.grey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.grey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fafafa}.scrolltop-button.grey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fafafa}.scrolltop-button.brown[_ngcontent-%COMP%]{background-color:#3e2723;color:#efebe9}.scrolltop-button.brown[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.brown[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#efebe9}.scrolltop-button.brown[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#efebe9}.scrolltop-button.deeporange[_ngcontent-%COMP%]{background-color:#bf360c;color:#fbe9e7}.scrolltop-button.deeporange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.deeporange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fbe9e7}.scrolltop-button.deeporange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fbe9e7}.scrolltop-button.orange[_ngcontent-%COMP%]{background-color:#ff6d00;color:#fff3e0}.scrolltop-button.orange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.orange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fff3e0}.scrolltop-button.orange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fff3e0}.scrolltop-button.yellow[_ngcontent-%COMP%]{background-color:#ffd600;color:#fffde7}.scrolltop-button.yellow[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.yellow[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fffde7}.scrolltop-button.yellow[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fffde7}.scrolltop-button.green[_ngcontent-%COMP%]{background-color:#1b5e20;color:#e8f5e9}.scrolltop-button.green[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.green[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e8f5e9}.scrolltop-button.green[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e8f5e9}.scrolltop-button.blue[_ngcontent-%COMP%]{background-color:#2962ff;color:#e3f2fd}.scrolltop-button.blue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.blue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e3f2fd}.scrolltop-button.blue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e3f2fd}.scrolltop-button.purple[_ngcontent-%COMP%]{background-color:#4a148c;color:#f3e5f5}.scrolltop-button.purple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.purple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#f3e5f5}.scrolltop-button.purple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#f3e5f5}.scrolltop-button.deeppurple[_ngcontent-%COMP%]{background-color:#311b92;color:#ede7f6}.scrolltop-button.deeppurple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.deeppurple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#ede7f6}.scrolltop-button.deeppurple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#ede7f6}.scrolltop-button.pink[_ngcontent-%COMP%]{background-color:#880e4f;color:#fce4ec}.scrolltop-button.pink[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.pink[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fce4ec}.scrolltop-button.pink[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fce4ec}.scrolltop-button.red[_ngcontent-%COMP%]{background-color:#b71c1c;color:#ffebee}.scrolltop-button.red[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.red[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#ffebee}.scrolltop-button.red[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#ffebee}.scrolltop-button.indigo[_ngcontent-%COMP%]{background-color:#1a237e;color:#e8eaf6}.scrolltop-button.indigo[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.indigo[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e8eaf6}.scrolltop-button.indigo[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e8eaf6}.scrolltop-button.lightblue[_ngcontent-%COMP%]{background-color:#01579b;color:#e1f5fe}.scrolltop-button.lightblue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.lightblue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e1f5fe}.scrolltop-button.lightblue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e1f5fe}.scrolltop-button.cyan[_ngcontent-%COMP%]{background-color:#006064;color:#e0f7fa}.scrolltop-button.cyan[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.cyan[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e0f7fa}.scrolltop-button.cyan[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e0f7fa}.scrolltop-button.teal[_ngcontent-%COMP%]{background-color:#004d40;color:#e0f2f1}.scrolltop-button.teal[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.teal[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e0f2f1}.scrolltop-button.teal[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e0f2f1}.scrolltop-button.lightgreen[_ngcontent-%COMP%]{background-color:#33691e;color:#f1f8e9}.scrolltop-button.lightgreen[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.lightgreen[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#f1f8e9}.scrolltop-button.lightgreen[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#f1f8e9}.scrolltop-button.lime[_ngcontent-%COMP%]{background-color:#827717;color:#f9fbe7}.scrolltop-button.lime[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.lime[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#f9fbe7}.scrolltop-button.lime[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#f9fbe7}.scrolltop-button.amber[_ngcontent-%COMP%]{background-color:#ff6f00;color:#fff8e1}.scrolltop-button.amber[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.amber[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fff8e1}.scrolltop-button.amber[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fff8e1}.scrolltop-button.bluegrey[_ngcontent-%COMP%]{background-color:#263238;color:#eceff1}.scrolltop-button.bluegrey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.bluegrey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#eceff1}.scrolltop-button.bluegrey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#eceff1}"]
+        styles: ["button[_ngcontent-%COMP%]{outline:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.scrolltop-button[_ngcontent-%COMP%]{position:fixed;display:flex;justify-content:center;align-items:center;border-radius:50%;width:40px;height:40px;right:20px;bottom:20px;cursor:pointer;border:none;transition:opacity .1 linear;z-index:10000;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}.scrolltop-button[_ngcontent-%COMP%]:hover{opacity:.92}.scrolltop-button[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{font-size:15px}.scrolltop-button[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{transform:translateY(10%);width:50%;vertical-align:baseline}.scrolltop-button.black[_ngcontent-%COMP%]{background-color:#000;color:#fff}.scrolltop-button.black[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.black[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fff}.scrolltop-button.black[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fff}.scrolltop-button.white[_ngcontent-%COMP%]{background-color:#fff;color:#000}.scrolltop-button.white[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.white[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#000}.scrolltop-button.white[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#000}.scrolltop-button.gray[_ngcontent-%COMP%]{background-color:#212121;color:#fafafa}.scrolltop-button.gray[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.gray[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fafafa}.scrolltop-button.gray[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fafafa}.scrolltop-button.grey[_ngcontent-%COMP%]{background-color:#212121;color:#fafafa}.scrolltop-button.grey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.grey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fafafa}.scrolltop-button.grey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fafafa}.scrolltop-button.brown[_ngcontent-%COMP%]{background-color:#3e2723;color:#efebe9}.scrolltop-button.brown[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.brown[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#efebe9}.scrolltop-button.brown[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#efebe9}.scrolltop-button.deeporange[_ngcontent-%COMP%]{background-color:#bf360c;color:#fbe9e7}.scrolltop-button.deeporange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.deeporange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fbe9e7}.scrolltop-button.deeporange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fbe9e7}.scrolltop-button.orange[_ngcontent-%COMP%]{background-color:#ff6d00;color:#fff3e0}.scrolltop-button.orange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.orange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fff3e0}.scrolltop-button.orange[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fff3e0}.scrolltop-button.yellow[_ngcontent-%COMP%]{background-color:#ffd600;color:#fffde7}.scrolltop-button.yellow[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.yellow[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fffde7}.scrolltop-button.yellow[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fffde7}.scrolltop-button.green[_ngcontent-%COMP%]{background-color:#1b5e20;color:#e8f5e9}.scrolltop-button.green[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.green[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e8f5e9}.scrolltop-button.green[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e8f5e9}.scrolltop-button.blue[_ngcontent-%COMP%]{background-color:#2962ff;color:#e3f2fd}.scrolltop-button.blue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.blue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e3f2fd}.scrolltop-button.blue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e3f2fd}.scrolltop-button.purple[_ngcontent-%COMP%]{background-color:#4a148c;color:#f3e5f5}.scrolltop-button.purple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.purple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#f3e5f5}.scrolltop-button.purple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#f3e5f5}.scrolltop-button.deeppurple[_ngcontent-%COMP%]{background-color:#311b92;color:#ede7f6}.scrolltop-button.deeppurple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.deeppurple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#ede7f6}.scrolltop-button.deeppurple[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#ede7f6}.scrolltop-button.pink[_ngcontent-%COMP%]{background-color:#880e4f;color:#fce4ec}.scrolltop-button.pink[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.pink[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fce4ec}.scrolltop-button.pink[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fce4ec}.scrolltop-button.red[_ngcontent-%COMP%]{background-color:#b71c1c;color:#ffebee}.scrolltop-button.red[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.red[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#ffebee}.scrolltop-button.red[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#ffebee}.scrolltop-button.indigo[_ngcontent-%COMP%]{background-color:#1a237e;color:#e8eaf6}.scrolltop-button.indigo[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.indigo[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e8eaf6}.scrolltop-button.indigo[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e8eaf6}.scrolltop-button.lightblue[_ngcontent-%COMP%]{background-color:#01579b;color:#e1f5fe}.scrolltop-button.lightblue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.lightblue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e1f5fe}.scrolltop-button.lightblue[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e1f5fe}.scrolltop-button.cyan[_ngcontent-%COMP%]{background-color:#006064;color:#e0f7fa}.scrolltop-button.cyan[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.cyan[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e0f7fa}.scrolltop-button.cyan[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e0f7fa}.scrolltop-button.teal[_ngcontent-%COMP%]{background-color:#004d40;color:#e0f2f1}.scrolltop-button.teal[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.teal[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#e0f2f1}.scrolltop-button.teal[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#e0f2f1}.scrolltop-button.lightgreen[_ngcontent-%COMP%]{background-color:#33691e;color:#f1f8e9}.scrolltop-button.lightgreen[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.lightgreen[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#f1f8e9}.scrolltop-button.lightgreen[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#f1f8e9}.scrolltop-button.lime[_ngcontent-%COMP%]{background-color:#827717;color:#f9fbe7}.scrolltop-button.lime[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.lime[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#f9fbe7}.scrolltop-button.lime[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#f9fbe7}.scrolltop-button.amber[_ngcontent-%COMP%]{background-color:#ff6f00;color:#fff8e1}.scrolltop-button.amber[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.amber[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#fff8e1}.scrolltop-button.amber[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#fff8e1}.scrolltop-button.bluegrey[_ngcontent-%COMP%]{background-color:#263238;color:#eceff1}.scrolltop-button.bluegrey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%], .scrolltop-button.bluegrey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   span[_ngcontent-%COMP%]{color:#eceff1}.scrolltop-button.bluegrey[_ngcontent-%COMP%]   .symbol-container[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]{fill:#eceff1}"]
       });
 
       _NgxScrollTopComponent.ctorParameters = function () {
@@ -97759,7 +97895,7 @@
           args: [{
             selector: 'ngx-scrolltop',
             template: "<button\n  *ngIf=\"show\"\n  type=\"button\"\n  role=\"button\"\n  aria-label=\"Scroll to top of the page\"\n  tabindex=\"0\"\n  class=\"scrolltop-button\"\n  #scrollTopButton\n  (click)=\"scrollToTop()\"\n  [ngClass]=\"theme\"\n  [style.left]=\"position === 'left' ? '20px' : ''\"\n  [style.backgroundColor]=\"backgroundColor\"\n  [style.width.px]=\"size\"\n  [style.height.px]=\"size\">\n  <div class=\"symbol-container\">\n    <span #ref>\n      <ng-content></ng-content>\n    </span>\n    <svg *ngIf=\"ref.childNodes.length === 0\"\n      aria-hidden=\"true\"\n      [style.fill]=\"symbolColor\"\n      focusable=\"false\"\n      role=\"img\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      viewBox=\"0 0 448 512\">\n      <path\n        d=\"M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z\">\n      </path>\n    </svg>\n  </div>\n</button>\n",
-            styles: ["button{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;outline:0;user-select:none}.scrolltop-button{align-items:center;border:none;border-radius:50%;bottom:20px;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);cursor:pointer;display:flex;height:40px;justify-content:center;position:fixed;right:20px;transition:opacity .1 linear;width:40px;z-index:10000}.scrolltop-button:hover{opacity:.92}.scrolltop-button .symbol-container span{font-size:15px}.scrolltop-button .symbol-container svg{transform:translateY(10%);vertical-align:baseline;width:50%}.scrolltop-button.black{background-color:#000;color:#fff}.scrolltop-button.black .symbol-container,.scrolltop-button.black .symbol-container span{color:#fff}.scrolltop-button.black .symbol-container svg{fill:#fff}.scrolltop-button.white{background-color:#fff;color:#000}.scrolltop-button.white .symbol-container,.scrolltop-button.white .symbol-container span{color:#000}.scrolltop-button.white .symbol-container svg{fill:#000}.scrolltop-button.gray{background-color:#212121;color:#fafafa}.scrolltop-button.gray .symbol-container,.scrolltop-button.gray .symbol-container span{color:#fafafa}.scrolltop-button.gray .symbol-container svg{fill:#fafafa}.scrolltop-button.grey{background-color:#212121;color:#fafafa}.scrolltop-button.grey .symbol-container,.scrolltop-button.grey .symbol-container span{color:#fafafa}.scrolltop-button.grey .symbol-container svg{fill:#fafafa}.scrolltop-button.brown{background-color:#3e2723;color:#efebe9}.scrolltop-button.brown .symbol-container,.scrolltop-button.brown .symbol-container span{color:#efebe9}.scrolltop-button.brown .symbol-container svg{fill:#efebe9}.scrolltop-button.deeporange{background-color:#bf360c;color:#fbe9e7}.scrolltop-button.deeporange .symbol-container,.scrolltop-button.deeporange .symbol-container span{color:#fbe9e7}.scrolltop-button.deeporange .symbol-container svg{fill:#fbe9e7}.scrolltop-button.orange{background-color:#ff6d00;color:#fff3e0}.scrolltop-button.orange .symbol-container,.scrolltop-button.orange .symbol-container span{color:#fff3e0}.scrolltop-button.orange .symbol-container svg{fill:#fff3e0}.scrolltop-button.yellow{background-color:#ffd600;color:#fffde7}.scrolltop-button.yellow .symbol-container,.scrolltop-button.yellow .symbol-container span{color:#fffde7}.scrolltop-button.yellow .symbol-container svg{fill:#fffde7}.scrolltop-button.green{background-color:#1b5e20;color:#e8f5e9}.scrolltop-button.green .symbol-container,.scrolltop-button.green .symbol-container span{color:#e8f5e9}.scrolltop-button.green .symbol-container svg{fill:#e8f5e9}.scrolltop-button.blue{background-color:#2962ff;color:#e3f2fd}.scrolltop-button.blue .symbol-container,.scrolltop-button.blue .symbol-container span{color:#e3f2fd}.scrolltop-button.blue .symbol-container svg{fill:#e3f2fd}.scrolltop-button.purple{background-color:#4a148c;color:#f3e5f5}.scrolltop-button.purple .symbol-container,.scrolltop-button.purple .symbol-container span{color:#f3e5f5}.scrolltop-button.purple .symbol-container svg{fill:#f3e5f5}.scrolltop-button.deeppurple{background-color:#311b92;color:#ede7f6}.scrolltop-button.deeppurple .symbol-container,.scrolltop-button.deeppurple .symbol-container span{color:#ede7f6}.scrolltop-button.deeppurple .symbol-container svg{fill:#ede7f6}.scrolltop-button.pink{background-color:#880e4f;color:#fce4ec}.scrolltop-button.pink .symbol-container,.scrolltop-button.pink .symbol-container span{color:#fce4ec}.scrolltop-button.pink .symbol-container svg{fill:#fce4ec}.scrolltop-button.red{background-color:#b71c1c;color:#ffebee}.scrolltop-button.red .symbol-container,.scrolltop-button.red .symbol-container span{color:#ffebee}.scrolltop-button.red .symbol-container svg{fill:#ffebee}.scrolltop-button.indigo{background-color:#1a237e;color:#e8eaf6}.scrolltop-button.indigo .symbol-container,.scrolltop-button.indigo .symbol-container span{color:#e8eaf6}.scrolltop-button.indigo .symbol-container svg{fill:#e8eaf6}.scrolltop-button.lightblue{background-color:#01579b;color:#e1f5fe}.scrolltop-button.lightblue .symbol-container,.scrolltop-button.lightblue .symbol-container span{color:#e1f5fe}.scrolltop-button.lightblue .symbol-container svg{fill:#e1f5fe}.scrolltop-button.cyan{background-color:#006064;color:#e0f7fa}.scrolltop-button.cyan .symbol-container,.scrolltop-button.cyan .symbol-container span{color:#e0f7fa}.scrolltop-button.cyan .symbol-container svg{fill:#e0f7fa}.scrolltop-button.teal{background-color:#004d40;color:#e0f2f1}.scrolltop-button.teal .symbol-container,.scrolltop-button.teal .symbol-container span{color:#e0f2f1}.scrolltop-button.teal .symbol-container svg{fill:#e0f2f1}.scrolltop-button.lightgreen{background-color:#33691e;color:#f1f8e9}.scrolltop-button.lightgreen .symbol-container,.scrolltop-button.lightgreen .symbol-container span{color:#f1f8e9}.scrolltop-button.lightgreen .symbol-container svg{fill:#f1f8e9}.scrolltop-button.lime{background-color:#827717;color:#f9fbe7}.scrolltop-button.lime .symbol-container,.scrolltop-button.lime .symbol-container span{color:#f9fbe7}.scrolltop-button.lime .symbol-container svg{fill:#f9fbe7}.scrolltop-button.amber{background-color:#ff6f00;color:#fff8e1}.scrolltop-button.amber .symbol-container,.scrolltop-button.amber .symbol-container span{color:#fff8e1}.scrolltop-button.amber .symbol-container svg{fill:#fff8e1}.scrolltop-button.bluegrey{background-color:#263238;color:#eceff1}.scrolltop-button.bluegrey .symbol-container,.scrolltop-button.bluegrey .symbol-container span{color:#eceff1}.scrolltop-button.bluegrey .symbol-container svg{fill:#eceff1}"]
+            styles: ["button{outline:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.scrolltop-button{position:fixed;display:flex;justify-content:center;align-items:center;border-radius:50%;width:40px;height:40px;right:20px;bottom:20px;cursor:pointer;border:none;transition:opacity .1 linear;z-index:10000;box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12)}.scrolltop-button:hover{opacity:.92}.scrolltop-button .symbol-container span{font-size:15px}.scrolltop-button .symbol-container svg{transform:translateY(10%);width:50%;vertical-align:baseline}.scrolltop-button.black{background-color:#000;color:#fff}.scrolltop-button.black .symbol-container,.scrolltop-button.black .symbol-container span{color:#fff}.scrolltop-button.black .symbol-container svg{fill:#fff}.scrolltop-button.white{background-color:#fff;color:#000}.scrolltop-button.white .symbol-container,.scrolltop-button.white .symbol-container span{color:#000}.scrolltop-button.white .symbol-container svg{fill:#000}.scrolltop-button.gray{background-color:#212121;color:#fafafa}.scrolltop-button.gray .symbol-container,.scrolltop-button.gray .symbol-container span{color:#fafafa}.scrolltop-button.gray .symbol-container svg{fill:#fafafa}.scrolltop-button.grey{background-color:#212121;color:#fafafa}.scrolltop-button.grey .symbol-container,.scrolltop-button.grey .symbol-container span{color:#fafafa}.scrolltop-button.grey .symbol-container svg{fill:#fafafa}.scrolltop-button.brown{background-color:#3e2723;color:#efebe9}.scrolltop-button.brown .symbol-container,.scrolltop-button.brown .symbol-container span{color:#efebe9}.scrolltop-button.brown .symbol-container svg{fill:#efebe9}.scrolltop-button.deeporange{background-color:#bf360c;color:#fbe9e7}.scrolltop-button.deeporange .symbol-container,.scrolltop-button.deeporange .symbol-container span{color:#fbe9e7}.scrolltop-button.deeporange .symbol-container svg{fill:#fbe9e7}.scrolltop-button.orange{background-color:#ff6d00;color:#fff3e0}.scrolltop-button.orange .symbol-container,.scrolltop-button.orange .symbol-container span{color:#fff3e0}.scrolltop-button.orange .symbol-container svg{fill:#fff3e0}.scrolltop-button.yellow{background-color:#ffd600;color:#fffde7}.scrolltop-button.yellow .symbol-container,.scrolltop-button.yellow .symbol-container span{color:#fffde7}.scrolltop-button.yellow .symbol-container svg{fill:#fffde7}.scrolltop-button.green{background-color:#1b5e20;color:#e8f5e9}.scrolltop-button.green .symbol-container,.scrolltop-button.green .symbol-container span{color:#e8f5e9}.scrolltop-button.green .symbol-container svg{fill:#e8f5e9}.scrolltop-button.blue{background-color:#2962ff;color:#e3f2fd}.scrolltop-button.blue .symbol-container,.scrolltop-button.blue .symbol-container span{color:#e3f2fd}.scrolltop-button.blue .symbol-container svg{fill:#e3f2fd}.scrolltop-button.purple{background-color:#4a148c;color:#f3e5f5}.scrolltop-button.purple .symbol-container,.scrolltop-button.purple .symbol-container span{color:#f3e5f5}.scrolltop-button.purple .symbol-container svg{fill:#f3e5f5}.scrolltop-button.deeppurple{background-color:#311b92;color:#ede7f6}.scrolltop-button.deeppurple .symbol-container,.scrolltop-button.deeppurple .symbol-container span{color:#ede7f6}.scrolltop-button.deeppurple .symbol-container svg{fill:#ede7f6}.scrolltop-button.pink{background-color:#880e4f;color:#fce4ec}.scrolltop-button.pink .symbol-container,.scrolltop-button.pink .symbol-container span{color:#fce4ec}.scrolltop-button.pink .symbol-container svg{fill:#fce4ec}.scrolltop-button.red{background-color:#b71c1c;color:#ffebee}.scrolltop-button.red .symbol-container,.scrolltop-button.red .symbol-container span{color:#ffebee}.scrolltop-button.red .symbol-container svg{fill:#ffebee}.scrolltop-button.indigo{background-color:#1a237e;color:#e8eaf6}.scrolltop-button.indigo .symbol-container,.scrolltop-button.indigo .symbol-container span{color:#e8eaf6}.scrolltop-button.indigo .symbol-container svg{fill:#e8eaf6}.scrolltop-button.lightblue{background-color:#01579b;color:#e1f5fe}.scrolltop-button.lightblue .symbol-container,.scrolltop-button.lightblue .symbol-container span{color:#e1f5fe}.scrolltop-button.lightblue .symbol-container svg{fill:#e1f5fe}.scrolltop-button.cyan{background-color:#006064;color:#e0f7fa}.scrolltop-button.cyan .symbol-container,.scrolltop-button.cyan .symbol-container span{color:#e0f7fa}.scrolltop-button.cyan .symbol-container svg{fill:#e0f7fa}.scrolltop-button.teal{background-color:#004d40;color:#e0f2f1}.scrolltop-button.teal .symbol-container,.scrolltop-button.teal .symbol-container span{color:#e0f2f1}.scrolltop-button.teal .symbol-container svg{fill:#e0f2f1}.scrolltop-button.lightgreen{background-color:#33691e;color:#f1f8e9}.scrolltop-button.lightgreen .symbol-container,.scrolltop-button.lightgreen .symbol-container span{color:#f1f8e9}.scrolltop-button.lightgreen .symbol-container svg{fill:#f1f8e9}.scrolltop-button.lime{background-color:#827717;color:#f9fbe7}.scrolltop-button.lime .symbol-container,.scrolltop-button.lime .symbol-container span{color:#f9fbe7}.scrolltop-button.lime .symbol-container svg{fill:#f9fbe7}.scrolltop-button.amber{background-color:#ff6f00;color:#fff8e1}.scrolltop-button.amber .symbol-container,.scrolltop-button.amber .symbol-container span{color:#fff8e1}.scrolltop-button.amber .symbol-container svg{fill:#fff8e1}.scrolltop-button.bluegrey{background-color:#263238;color:#eceff1}.scrolltop-button.bluegrey .symbol-container,.scrolltop-button.bluegrey .symbol-container span{color:#eceff1}.scrolltop-button.bluegrey .symbol-container svg{fill:#eceff1}"]
           }]
         }], function () {
           return [{
@@ -97775,9 +97911,6 @@
           mode: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
           }],
-          symbol: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
-          }],
           onWindowScroll: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.HostListener,
             args: ['window:scroll']
@@ -97789,6 +97922,9 @@
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
           }],
           size: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+          }],
+          symbol: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
           }]
         });
@@ -100623,12 +100759,6 @@
       /* harmony import */
 
 
-      var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-      /*! tslib */
-      4762);
-      /* harmony import */
-
-
       var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
       /*! @angular/core */
       7716);
@@ -100647,9 +100777,10 @@
       var _c1 = ["*"];
 
       var _NgxTypedJsComponent = /*#__PURE__*/function () {
-        function NgxTypedJsComponent() {
-          _classCallCheck2(this, NgxTypedJsComponent);
+        function _NgxTypedJsComponent() {
+          _classCallCheck2(this, _NgxTypedJsComponent);
 
+          this.typeSpeed = 30;
           this.completed = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
           this.preStringTyped = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
           this.stringTyped = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
@@ -100662,7 +100793,7 @@
           this.destroyed = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
         }
 
-        _createClass2(NgxTypedJsComponent, [{
+        _createClass2(_NgxTypedJsComponent, [{
           key: "ngAfterViewInit",
           value: function ngAfterViewInit() {
             this.typed = new (typed_js__WEBPACK_IMPORTED_MODULE_0___default())(this.content.nativeElement.querySelector('.typing'), this.options);
@@ -100699,6 +100830,8 @@
         }, {
           key: "options",
           get: function get() {
+            var _a;
+
             var emit = function emit(emitter) {
               return function () {
                 return emitter.emit();
@@ -100712,7 +100845,7 @@
             };
 
             var opts = {
-              strings: this.strings,
+              strings: (_a = this.strings) !== null && _a !== void 0 ? _a : [''],
               stringsElement: this.stringsElement,
               typeSpeed: this.typeSpeed,
               startDelay: this.startDelay,
@@ -100756,9 +100889,15 @@
             cursorElementStyle.fontSize = textElementStyle.fontSize;
             cursorElementStyle.color = this.cursorColor || textElementStyle.color;
           }
+        }, {
+          key: "ngOnChanges",
+          value: function ngOnChanges(changes) {
+            this.typed.destroy();
+            this.ngAfterViewInit();
+          }
         }]);
 
-        return NgxTypedJsComponent;
+        return _NgxTypedJsComponent;
       }();
 
       _NgxTypedJsComponent.ɵfac = function NgxTypedJsComponent_Factory(t) {
@@ -100780,10 +100919,10 @@
           }
         },
         inputs: {
+          typeSpeed: "typeSpeed",
           cursorColor: "cursorColor",
           strings: "strings",
           stringsElement: "stringsElement",
-          typeSpeed: "typeSpeed",
           startDelay: "startDelay",
           backSpeed: "backSpeed",
           smartBackspace: "smartBackspace",
@@ -100813,6 +100952,7 @@
           started: "started",
           destroyed: "destroyed"
         },
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]],
         ngContentSelectors: _c1,
         decls: 3,
         vars: 0,
@@ -100830,54 +100970,104 @@
         },
         styles: ["[_nghost-%COMP%] .typing{display:inline}"]
       });
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", String)], _NgxTypedJsComponent.prototype, "cursorColor", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Array)], _NgxTypedJsComponent.prototype, "strings", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", String)], _NgxTypedJsComponent.prototype, "stringsElement", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Number)], _NgxTypedJsComponent.prototype, "typeSpeed", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Number)], _NgxTypedJsComponent.prototype, "startDelay", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Number)], _NgxTypedJsComponent.prototype, "backSpeed", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Boolean)], _NgxTypedJsComponent.prototype, "smartBackspace", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Boolean)], _NgxTypedJsComponent.prototype, "shuffle", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Number)], _NgxTypedJsComponent.prototype, "backDelay", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Boolean)], _NgxTypedJsComponent.prototype, "fadeOut", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", String)], _NgxTypedJsComponent.prototype, "fadeOutClass", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Boolean)], _NgxTypedJsComponent.prototype, "fadeOutDelay", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Boolean)], _NgxTypedJsComponent.prototype, "loop", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Number)], _NgxTypedJsComponent.prototype, "loopCount", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Boolean)], _NgxTypedJsComponent.prototype, "showCursor", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", String)], _NgxTypedJsComponent.prototype, "cursorChar", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Boolean)], _NgxTypedJsComponent.prototype, "autoInsertCss", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", String)], _NgxTypedJsComponent.prototype, "attr", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Boolean)], _NgxTypedJsComponent.prototype, "bindInputFocusEvents", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", String)], _NgxTypedJsComponent.prototype, "contentType", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter)], _NgxTypedJsComponent.prototype, "completed", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter)], _NgxTypedJsComponent.prototype, "preStringTyped", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter)], _NgxTypedJsComponent.prototype, "stringTyped", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter)], _NgxTypedJsComponent.prototype, "lastStringBackspaced", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter)], _NgxTypedJsComponent.prototype, "typingPaused", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter)], _NgxTypedJsComponent.prototype, "typingResumed", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter)], _NgxTypedJsComponent.prototype, "reset", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter)], _NgxTypedJsComponent.prototype, "stopped", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter)], _NgxTypedJsComponent.prototype, "started", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output)(), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter)], _NgxTypedJsComponent.prototype, "destroyed", void 0);
-      (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.ViewChild)('wrapper', {
-        "static": true
-      }), (0, tslib__WEBPACK_IMPORTED_MODULE_2__.__metadata)("design:type", Object)], _NgxTypedJsComponent.prototype, "content", void 0);
-
-      var _NgxTypedJsModule = function NgxTypedJsModule() {
-        _classCallCheck2(this, NgxTypedJsModule);
+      _NgxTypedJsComponent.propDecorators = {
+        cursorColor: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        strings: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        stringsElement: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        typeSpeed: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        startDelay: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        backSpeed: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        smartBackspace: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        shuffle: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        backDelay: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        fadeOut: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        fadeOutClass: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        fadeOutDelay: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        loop: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        loopCount: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        showCursor: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        cursorChar: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        autoInsertCss: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        attr: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        bindInputFocusEvents: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        contentType: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+        }],
+        completed: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output
+        }],
+        preStringTyped: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output
+        }],
+        stringTyped: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output
+        }],
+        lastStringBackspaced: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output
+        }],
+        typingPaused: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output
+        }],
+        typingResumed: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output
+        }],
+        reset: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output
+        }],
+        stopped: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output
+        }],
+        started: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output
+        }],
+        destroyed: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output
+        }],
+        content: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ViewChild,
+          args: ['wrapper', {
+            "static": true
+          }]
+        }]
       };
-
-      _NgxTypedJsModule.ɵfac = function NgxTypedJsModule_Factory(t) {
-        return new (t || _NgxTypedJsModule)();
-      };
-
-      _NgxTypedJsModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
-        type: _NgxTypedJsModule
-      });
-      _NgxTypedJsModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({
-        imports: [[]]
-      });
 
       (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](_NgxTypedJsComponent, [{
@@ -100890,6 +101080,9 @@
         }], function () {
           return [];
         }, {
+          typeSpeed: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
+          }],
           completed: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Output
           }],
@@ -100927,9 +101120,6 @@
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
           }],
           stringsElement: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
-          }],
-          typeSpeed: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__.Input
           }],
           startDelay: [{
@@ -100988,6 +101178,21 @@
           }]
         });
       })();
+
+      var _NgxTypedJsModule = function _NgxTypedJsModule() {
+        _classCallCheck2(this, _NgxTypedJsModule);
+      };
+
+      _NgxTypedJsModule.ɵfac = function NgxTypedJsModule_Factory(t) {
+        return new (t || _NgxTypedJsModule)();
+      };
+
+      _NgxTypedJsModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
+        type: _NgxTypedJsModule
+      });
+      _NgxTypedJsModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({
+        imports: [[]]
+      });
 
       (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](_NgxTypedJsModule, [{
@@ -113120,7 +113325,7 @@
        * 
        *   typed.js - A JavaScript Typing Animation Library
        *   Author: Matt Boldt <me@mattboldt.com>
-       *   Version: v2.0.11
+       *   Version: v2.0.12
        *   Url: https://github.com/mattboldt/typed.js
        *   License(s): MIT
        * 
@@ -113560,7 +113765,7 @@
                   var _this4 = this;
 
                   if (this.pause.status === true) {
-                    this.setPauseStatus(curString, curStrPos, true);
+                    this.setPauseStatus(curString, curStrPos, false);
                     return;
                   }
 
@@ -113773,6 +113978,7 @@
                   if (this.cursor) return;
                   this.cursor = document.createElement('span');
                   this.cursor.className = 'typed-cursor';
+                  this.cursor.setAttribute('aria-hidden', true);
                   this.cursor.innerHTML = this.cursorChar;
                   this.el.parentNode && this.el.parentNode.insertBefore(this.cursor, this.el.nextSibling);
                 }
@@ -113788,7 +113994,7 @@
           /* 1 */
 
           /***/
-          function (module, exports, __nested_webpack_require_18173__) {
+          function (module, exports, __nested_webpack_require_18228__) {
             'use strict';
 
             Object.defineProperty(exports, '__esModule', {
@@ -113839,7 +114045,7 @@
               }
             }
 
-            var _defaultsJs = __nested_webpack_require_18173__(2);
+            var _defaultsJs = __nested_webpack_require_18228__(2);
 
             var _defaultsJs2 = _interopRequireDefault(_defaultsJs);
             /**
@@ -115109,6 +115315,14 @@
         },
 
         /* harmony export */
+        "__spreadArray": function __spreadArray() {
+          return (
+            /* binding */
+            _spreadArray
+          );
+        },
+
+        /* harmony export */
         "__await": function __await() {
           return (
             /* binding */
@@ -115215,6 +115429,8 @@
       };
 
       function _extends3(d, b) {
+        if (typeof b !== "function" && b !== null) throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+
         _extendStatics2(d, b);
 
         function __() {
@@ -115478,6 +115694,8 @@
 
         return ar;
       }
+      /** @deprecated */
+
 
       function _spread2() {
         for (var ar = [], i = 0; i < arguments.length; i++) {
@@ -115486,6 +115704,8 @@
 
         return ar;
       }
+      /** @deprecated */
+
 
       function _spreadArrays2() {
         for (var s = 0, i = 0, il = arguments.length; i < il; i++) {
@@ -115501,7 +115721,15 @@
         return r;
       }
 
-      ;
+      function _spreadArray(to, from, pack) {
+        if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+          if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+          }
+        }
+        return to.concat(ar || Array.prototype.slice.call(from));
+      }
 
       function _await2(v) {
         return this instanceof _await2 ? (this.v = v, this) : new _await2(v);
@@ -115634,21 +115862,17 @@
         };
       }
 
-      function _classPrivateFieldGet2(receiver, privateMap) {
-        if (!privateMap.has(receiver)) {
-          throw new TypeError("attempted to get private field on non-instance");
-        }
-
-        return privateMap.get(receiver);
+      function _classPrivateFieldGet2(receiver, state, kind, f) {
+        if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+        return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
       }
 
-      function _classPrivateFieldSet2(receiver, privateMap, value) {
-        if (!privateMap.has(receiver)) {
-          throw new TypeError("attempted to set private field on non-instance");
-        }
-
-        privateMap.set(receiver, value);
-        return value;
+      function _classPrivateFieldSet2(receiver, state, value, kind, f) {
+        if (kind === "m") throw new TypeError("Private method is not writable");
+        if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+        return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
       }
       /***/
 
