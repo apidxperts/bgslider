@@ -69,9 +69,6 @@
   }
 }
 body {
-  
-    overflow-y: hidden;
-
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-family: var(--bs-body-font-family);
@@ -12465,7 +12462,23 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-family: var(--fontFamily);
+  overflow-y: hidden;
   height: 100% !important;
+}
+.footmenu {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.footmenu li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+}
+.footmenu li a {
+  color: white;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
