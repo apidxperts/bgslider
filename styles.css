@@ -12457,6 +12457,34 @@ Default CSS
   --blackColor: #000000;
   --transition: .5s;
 }
+.translate {
+  position: relative;
+  z-index: 9999;
+  /* margin-left: 85%; */
+  /* margin-top: 15px; */
+}
+.translate select {
+  border: 2px solid #f1f1f1 !important;
+  padding: 5px !important;
+  font-family: "Poppins" !important;
+}
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget {
+  color: transparent !important;
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+img.goog-te-gadget-icon {
+  display: none;
+}
+html, body {
+  min-height: 0 !important;
+  height: auto !important;
+  position: inherit !important;
+}
 body {
   padding: 0;
   margin: 0;

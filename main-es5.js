@@ -3795,9 +3795,9 @@
       _NavbarComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
         type: _NavbarComponent,
         selectors: [["app-navbar"]],
-        decls: 58,
+        decls: 61,
         vars: 2,
-        consts: [["ngStickyNav", "", "stickyClass", "sticky-box-shadow", "ngStickyNav", "", 1, "navbar", "navbar-expand-lg", "navbar-light", "bg-light"], [1, "container"], ["src", "assets/img/logo.png", "alt", "image", "routerLink", "/", 1, "navbar-brand"], ["type", "button", 1, "navbar-toggler", 3, "click"], [1, "burger-menu"], [1, "top-bar"], [1, "middle-bar"], [1, "bottom-bar"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "ml-auto"], [1, "nav-item"], ["href", "https://about.dxperts.network ", "target", "_blank", 1, "nav-link"], ["href", "https://grants.dxperts.network", "target", "_blank", 1, "nav-link"], ["href", "https://blockproducer.dxperts.network", "target", "_blank", 1, "nav-link"], ["href", "https://ecosystem.dxperts.network", "target", "_blank", 1, "nav-link"], [1, "navbar-nav", "ml-auto", "for-responsive"], ["href", "https://github.com/", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-github"], [1, "nav-link"], ["href", "https://www.facebook.com/", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-facebook-f"], ["href", "https://twitter.com/", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-twitter"], ["href", "https://reddit.com/", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-reddit"], ["href", "https://telegram.me/share/url?&url=http://dxperts.org", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-telegram"], ["href", "", "target", "_blank", 1, "nav-link"], [1, "fas", "fa-rss"], ["href", "https://api.whatsapp.com/", "target", "_blank", 1, "nav-link"], [1, "fas", "fa-whatsapp"]],
+        consts: [["ngStickyNav", "", "stickyClass", "sticky-box-shadow", "ngStickyNav", "", 1, "navbar", "navbar-expand-lg", "navbar-light", "bg-light"], [1, "container"], ["src", "assets/img/logo.png", "alt", "image", "routerLink", "/", 1, "navbar-brand"], ["type", "button", 1, "navbar-toggler", 3, "click"], [1, "burger-menu"], [1, "top-bar"], [1, "middle-bar"], [1, "bottom-bar"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "ml-auto"], [1, "nav-item"], ["href", "https://about.dxperts.network ", "target", "_blank", 1, "nav-link"], ["href", "https://grants.dxperts.network", "target", "_blank", 1, "nav-link"], ["href", "https://blockproducer.dxperts.network", "target", "_blank", 1, "nav-link"], ["href", "https://ecosystem.dxperts.network", "target", "_blank", 1, "nav-link"], ["href", "#", "target", "_blank", 1, "nav-link"], ["id", "google_translate_element"], [1, "navbar-nav", "ml-auto", "for-responsive"], ["href", "https://github.com/", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-github"], [1, "nav-link"], ["href", "https://www.facebook.com/", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-facebook-f"], ["href", "https://twitter.com/", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-twitter"], ["href", "https://reddit.com/", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-reddit"], ["href", "https://telegram.me/share/url?&url=http://dxperts.org", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-telegram"], ["href", "", "target", "_blank", 1, "nav-link"], [1, "fas", "fa-rss"], ["href", "https://api.whatsapp.com/", "target", "_blank", 1, "nav-link"], [1, "fas", "fa-whatsapp"]],
         template: function NavbarComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nav", 0);
@@ -3868,19 +3868,11 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "li", 10);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "ul", 15);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "a", 15);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "li", 10);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "a", 16);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](25, "i", 17);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](26, "span", 18);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, " Github");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](24, "div", 16);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -3888,31 +3880,17 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "li", 10);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "ul", 17);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "a", 19);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](26, "li", 10);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](30, "i", 20);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "a", 18);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "span", 18);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](28, "i", 19);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, " Facebook");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "span", 20);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "li", 10);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "a", 21);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](35, "i", 22);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](36, "span", 18);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](37, " Twitter");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, " Github");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -3920,31 +3898,15 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](38, "li", 10);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "li", 10);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "a", 23);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](32, "a", 21);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](40, "i", 24);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](33, "i", 22);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](41, "span", 18);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "span", 20);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](42, " Reddit");
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](43, "li", 10);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](44, "a", 25);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](45, "i", 26);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](46, "span", 18);
-
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](47, " Telegram");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, " Facebook");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -3952,15 +3914,31 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](48, "li", 10);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](36, "li", 10);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](49, "a", 27);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](37, "a", 23);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](50, "i", 28);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](38, "i", 24);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](51, "span", 18);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](39, "span", 20);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](52, " RSS");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, " Twitter");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](41, "li", 10);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](42, "a", 25);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](43, "i", 26);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](44, "span", 20);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](45, " Reddit");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -3968,15 +3946,47 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](53, "li", 10);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](46, "li", 10);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](54, "a", 29);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](47, "a", 27);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](55, "i", 30);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](48, "i", 28);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](56, "span", 18);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](49, "span", 20);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](57, " Whatsapp");
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](50, " Telegram");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](51, "li", 10);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](52, "a", 29);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](53, "i", 30);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](54, "span", 20);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](55, " RSS");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](56, "li", 10);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](57, "a", 31);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](58, "i", 32);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](59, "span", 20);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](60, " Whatsapp");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
