@@ -2076,6 +2076,10 @@ progress {
   color: #6c757d;
   opacity: 1;
 }
+.form-control:-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
@@ -2483,10 +2487,17 @@ textarea.form-control-lg {
 .form-floating > .form-control::-moz-placeholder {
   color: transparent;
 }
+.form-floating > .form-control:-ms-input-placeholder {
+  color: transparent;
+}
 .form-floating > .form-control::placeholder {
   color: transparent;
 }
 .form-floating > .form-control:not(:-moz-placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: 0.625rem;
+}
+.form-floating > .form-control:not(:-ms-input-placeholder) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
@@ -2503,6 +2514,10 @@ textarea.form-control-lg {
   padding-bottom: 0.625rem;
 }
 .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+.form-floating > .form-control:not(:-ms-input-placeholder) ~ label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
@@ -2761,6 +2776,7 @@ textarea.form-control-lg {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
@@ -5052,6 +5068,7 @@ textarea.form-control-lg {
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   opacity: 0.25;
 }
@@ -7160,16 +7177,19 @@ textarea.form-control-lg {
 .user-select-all {
   -webkit-user-select: all !important;
      -moz-user-select: all !important;
+      -ms-user-select: all !important;
           user-select: all !important;
 }
 .user-select-auto {
   -webkit-user-select: auto !important;
      -moz-user-select: auto !important;
+      -ms-user-select: auto !important;
           user-select: auto !important;
 }
 .user-select-none {
   -webkit-user-select: none !important;
      -moz-user-select: none !important;
+      -ms-user-select: none !important;
           user-select: none !important;
 }
 .pe-none {
@@ -10580,12 +10600,12 @@ textarea.form-control-lg {
 .owl-carousel .owl-item img{display:block;width:100%}
 .owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}
 .no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}
-.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none}
+.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{background:0 0;color:inherit;border:none;padding:0!important;font:inherit}
 .owl-carousel.owl-loading{opacity:0;display:block}
 .owl-carousel.owl-hidden{opacity:0}
 .owl-carousel.owl-refresh .owl-item{visibility:hidden}
-.owl-carousel.owl-drag .owl-item{touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;user-select:none}
+.owl-carousel.owl-drag .owl-item{touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .owl-carousel.owl-grab{cursor:move;cursor:-webkit-grab;cursor:grab}
 .owl-carousel.owl-rtl{direction:rtl}
 .owl-carousel.owl-rtl .owl-item{float:right}
@@ -12452,10 +12472,17 @@ Default CSS
 ==============================*/
 :root {
   --fontFamily: "Poppins", sans-serif;
-  --mainColor: #2c87ff;
+  --mainColor: #4C68CA;
   --whiteColor: #ffffff;
   --blackColor: #000000;
   --transition: .5s;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.text-primary {
+  --bs-text-opacity: 1;
+  /* color: rgba(13, 110, 253, var(--bs-text-opacity)) !important; */
+  /* color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important; */
+  color: #4C68CA !important;
 }
 .translate {
   position: relative;
@@ -12488,8 +12515,8 @@ html, body {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  font-family: var(--fontFamily);
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: var(--bs-font-sans-serif);
   overflow-y: hidden;
   height: 100% !important;
 }
@@ -12538,7 +12565,7 @@ a {
   transition: var(--transition);
 }
 a:hover, a:focus {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   text-decoration: none;
 }
@@ -12593,25 +12620,25 @@ img {
 .btn-primary {
   color: #ffffff;
   color: var(--whiteColor);
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.disabled:hover, .btn-primary.disabled:focus {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   background-color: #ffffff;
   background-color: var(--whiteColor);
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
   color: #ffffff;
   color: var(--whiteColor);
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
 }
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
@@ -12623,9 +12650,9 @@ img {
 .btn-primary.disabled, .btn-primary:disabled {
   color: #ffffff;
   color: var(--whiteColor);
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
   opacity: 1;
 }
@@ -12642,7 +12669,7 @@ img {
   height: 100%;
   left: 10px;
   top: 0;
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
@@ -12663,7 +12690,7 @@ img {
   font-weight: 400;
 }
 .section-title h2 span {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   font-weight: 600;
 }
@@ -12672,7 +12699,7 @@ img {
   margin-top: -7px;
 }
 .section-title h4 {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   margin-bottom: 14px;
   text-transform: capitalize;
@@ -12713,15 +12740,15 @@ textarea.form-control {
   border-radius: 5px;
   width: 35px;
   height: 10px;
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
 }
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
 }
 /*==============================
@@ -12759,7 +12786,7 @@ Preloader CSS
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
           animation: sk-foldCubeAngle 2.4s infinite linear both;
@@ -12852,7 +12879,7 @@ Main Header CSS
   font-weight: 600;
 }
 .navbar-light .navbar-brand span {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   line-height: 10px;
   text-transform: lowercase;
@@ -12878,8 +12905,7 @@ Main Header CSS
   padding-left: 0;
 }
 .navbar-light .navbar-nav .nav-item .nav-link {
-  color: #ffffff;
-  color: var(--whiteColor);
+  color: #2F819F;
   position: relative;
   cursor: pointer;
   font-weight: 500;
@@ -12897,15 +12923,14 @@ Main Header CSS
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
   transform: scaleX(0);
 }
 .navbar-light .navbar-nav .nav-item .nav-link.active, .navbar-light .navbar-nav .nav-item .nav-link:hover, .navbar-light .navbar-nav .nav-item .nav-link:focus {
-  color: #2c87ff;
-  color: var(--mainColor);
+  color: #63C9D9;
 }
 .navbar-light .navbar-nav .nav-item .nav-link.active::before, .navbar-light .navbar-nav .nav-item .nav-link:hover::before, .navbar-light .navbar-nav .nav-item .nav-link:focus::before {
   transform: scaleX(1);
@@ -12922,11 +12947,11 @@ Main Header CSS
   color: var(--blackColor);
 }
 .navbar-light.sticky-box-shadow .navbar-nav .nav-link.active, .navbar-light.sticky-box-shadow .navbar-nav .nav-link.show, .navbar-light.sticky-box-shadow .navbar-nav .nav-link:hover, .navbar-light.sticky-box-shadow .navbar-nav .nav-link:focus {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
 }
 .navbar-light.sticky-box-shadow .navbar-nav .active .nav-link, .navbar-light.sticky-box-shadow .navbar-nav .show .nav-link {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
 }
 @media only screen and (max-width: 991px) {
@@ -12954,7 +12979,7 @@ Main Header CSS
     display: inline-block;
   }
   .navbar-light .navbar-nav .nav-item .nav-link.active, .navbar-light .navbar-nav .nav-item .nav-link:hover {
-    color: #2c87ff;
+    color: #4C68CA;
     color: var(--mainColor);
   }
   .navbar-light .navbar-nav.for-responsive {
@@ -13067,7 +13092,7 @@ Main Banner CSS
   font-size: 55px;
 }
 .main-banner-text h1 span {
-  color: #2c87ff;
+  color: #4C68CA;
   font-weight: 600;
 }
 .main-banner-text h1 ngx-typed-js {
@@ -13102,9 +13127,9 @@ Main Banner CSS
   border-color: var(--whiteColor);
 }
 .main-banner-text .view-work:hover, .main-banner-text .view-work:focus {
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -13148,7 +13173,7 @@ Main Banner CSS
   right: 40px;
 }
 .home-slides .owl-theme .owl-nav [class*=owl-]:hover {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -13269,11 +13294,11 @@ Welcome Area CSS
   margin-bottom: 30px;
 }
 .single-box .icon {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   font-size: 25px;
   width: 65px;
-  border: 1px dashed #2c87ff;
+  border: 1px dashed #4C68CA;
   border: 1px dashed var(--mainColor);
   height: 65px;
   position: relative;
@@ -13318,7 +13343,7 @@ Welcome Area CSS
 }
 .single-box:hover {
   transform: translateY(-5px);
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
 }
 .single-box:hover .icon {
@@ -13338,7 +13363,7 @@ Welcome Area CSS
 .single-box:hover .link-btn {
   background: #ffffff;
   background: var(--whiteColor);
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   opacity: 1;
   visibility: visible;
@@ -13381,7 +13406,7 @@ About Area CSS
   font-size: 15.5px;
 }
 .about-content .features-list li i {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   margin-right: 7px;
 }
@@ -13408,7 +13433,7 @@ About Area CSS
   background-color: #ffffff;
   background-color: var(--whiteColor);
   border-radius: 50%;
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   z-index: 1;
   font-size: 35px;
@@ -13435,7 +13460,7 @@ About Area CSS
           animation: ripple 2s linear 1s infinite;
 }
 .about-video .video-btn button:hover {
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -13538,7 +13563,7 @@ Strategy Area CSS
   font-size: 15.5px;
 }
 .strategy-content .features-list li i {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   margin-right: 7px;
 }
@@ -13573,7 +13598,7 @@ Who We Are Area CSS
 }
 .single-who-we-are i {
   font-size: 50px;
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
@@ -13613,7 +13638,7 @@ Who We Are Area CSS
   width: 100%;
   transition: .5s;
   transition: var(--transition);
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   z-index: -1;
 }
@@ -13705,9 +13730,9 @@ CTA Area CSS
   border-color: var(--whiteColor);
 }
 .cta-content .section-title .view-work:hover, .cta-content .section-title .view-work:focus {
-  border-color: #2c87ff !important;
+  border-color: #4C68CA !important;
   border-color: var(--mainColor) !important;
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -13758,7 +13783,7 @@ Skill Area CSS
   left: 0px;
   top: 0px;
   height: 7px;
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   transition: all 2000ms ease;
   border-radius: 30px;
@@ -13786,7 +13811,7 @@ Skill Area CSS
   border-radius: 50%;
   transition: .5s;
   transition: var(--transition);
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   z-index: 1;
   font-size: 35px;
@@ -13813,7 +13838,7 @@ Skill Area CSS
           animation: ripple 2s linear 1s infinite;
 }
 .skill-video .video-btn button:hover {
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -13857,7 +13882,7 @@ Fun Facts Area CSS
 }
 .funfact i {
   font-size: 50px;
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   position: absolute;
   left: 0;
@@ -13914,7 +13939,7 @@ Team Area CSS
   font-weight: 600;
 }
 .single-team-box .content .post {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
@@ -13958,9 +13983,9 @@ Team Area CSS
   border-radius: 50%;
 }
 .single-team-box .social ul li a:hover {
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
 }
 .single-team-box:hover .content {
@@ -14009,14 +14034,14 @@ How We Work Area CSS
   position: relative;
   text-align: center;
   font-size: 30px;
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
   margin-bottom: 28px;
   border-width: 2px;
   border-style: dashed;
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
   border-radius: 50%;
 }
@@ -14052,11 +14077,11 @@ How We Work Area CSS
   transform: translateY(-5px);
 }
 .single-how-work:hover .icon {
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
 }
 .col-lg-4:nth-child(3) .single-how-work::before {
@@ -14083,10 +14108,10 @@ Services Area CSS
   left: 0;
   bottom: 0;
   width: 50px;
-  border-left: 2px solid #2c87ff;
+  border-left: 2px solid #4C68CA;
   border-left: 2px solid var(--mainColor);
   height: 50px;
-  border-bottom: 2px solid #2c87ff;
+  border-bottom: 2px solid #4C68CA;
   border-bottom: 2px solid var(--mainColor);
   opacity: 0;
   transition: .5s;
@@ -14106,7 +14131,7 @@ Services Area CSS
   width: 70px;
   height: 70px;
   line-height: 71px;
-  border: 1px dashed #2c87ff;
+  border: 1px dashed #4C68CA;
   border: 1px dashed var(--mainColor);
   font-size: 30px;
   border-radius: 50%;
@@ -14114,7 +14139,7 @@ Services Area CSS
   transition: var(--transition);
   background: #ffffff;
   background: var(--whiteColor);
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
 }
 .single-services .services-content {
@@ -14133,7 +14158,7 @@ Services Area CSS
   transform: translateY(-10px);
 }
 .single-services:hover .services-img .icon i {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   border-color: #ffffff;
   border-color: var(--whiteColor);
@@ -14188,9 +14213,9 @@ Why We Are Different CSS
   margin-bottom: 0;
 }
 .why-we-different-tabset.tabset input:checked + label {
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14219,7 +14244,7 @@ Why We Are Different CSS
   margin-bottom: 0;
 }
 .why-we-different-content ul li i {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   margin-right: 5px;
 }
@@ -14249,7 +14274,7 @@ Work Area CSS
   font-weight: 500;
 }
 .shorting-menu .filter.active, .shorting-menu .filter:hover {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14287,13 +14312,13 @@ Work Area CSS
   font-weight: 500;
 }
 .work-tabs .nav-tabset .nav-tab span:hover {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
 }
 .work-tabs .nav-tabset .nav-tab.active span {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14369,9 +14394,9 @@ Work Area CSS
   transition: var(--transition);
 }
 .single-work .popup-btn:hover {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
 }
 .single-work:hover::before {
@@ -14413,7 +14438,7 @@ Pricing Area CSS
   content: "";
   width: 70px;
   height: 30px;
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   position: absolute;
   top: 50px;
@@ -14426,7 +14451,7 @@ Pricing Area CSS
 }
 .pricingTable .title {
   margin-bottom: 35px;
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14476,7 +14501,7 @@ Pricing Area CSS
   margin-top: 0;
 }
 .pricingTable .pricing-content li i {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   margin-right: 4px;
 }
@@ -14541,7 +14566,7 @@ FAQ Area CSS
   display: block;
 }
 .faq-accordion .card .card-header a:hover {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
 }
 .faq-accordion .card .card-header a h5 {
@@ -14549,7 +14574,7 @@ FAQ Area CSS
   padding: 20px 40px 20px 20px;
   color: #ffffff;
   color: var(--whiteColor);
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   position: relative;
   font-size: 16px;
@@ -14607,7 +14632,7 @@ FAQ Area CSS
 .faq-accordion .panel-heading .panel-title a:hover {
   color: #ffffff;
   color: var(--whiteColor);
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
 }
 .faq-accordion .panel-heading .panel-title a::before {
@@ -14623,7 +14648,7 @@ FAQ Area CSS
 .faq-accordion .dropup .panel-heading .panel-title a {
   color: #ffffff;
   color: var(--whiteColor);
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
 }
 .faq-accordion .dropup .panel-heading .panel-title a::before {
@@ -14684,7 +14709,7 @@ Feedback Area CSS
   font-weight: 500;
 }
 .single-feedback-item .info span {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   display: block;
   font-weight: 500;
@@ -14738,11 +14763,11 @@ Feedback Area CSS
   right: 50px;
 }
 .feedback-slides .owl-theme .owl-nav [class*=owl-]:hover, .feedback-slides .owl-theme .owl-nav [class*=owl-]:focus {
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
   box-shadow: 0px 8px 16px 0px rgba(241, 96, 1, 0.2);
 }
@@ -14797,7 +14822,7 @@ Blog Area CSS
 }
 .single-blog-item span {
   display: block;
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
 }
 .single-blog-item span, .single-blog-item p, .single-blog-item h3 {
@@ -14819,7 +14844,7 @@ Blog Area CSS
   display: inline-block;
 }
 .single-blog-item h3 a:hover {
-  color: #2c87ff !important;
+  color: #4C68CA !important;
   color: var(--mainColor) !important;
 }
 .single-blog-item .link-btn {
@@ -14870,7 +14895,7 @@ Blog Area CSS
   color: var(--whiteColor);
 }
 .single-blog-item:hover .link-btn {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -14956,9 +14981,9 @@ Contact Area CSS
   background: var(--whiteColor);
   padding: 30px;
   height: 100%;
-  border-top: 3px solid #2c87ff;
+  border-top: 3px solid #4C68CA;
   border-top: 3px solid var(--mainColor);
-  border-bottom: 3px solid #2c87ff;
+  border-bottom: 3px solid #4C68CA;
   border-bottom: 3px solid var(--mainColor);
 }
 .contact-info ul li {
@@ -14987,7 +15012,7 @@ Contact Area CSS
   position: absolute;
   left: 0;
   top: 50%;
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   font-size: 19px;
   background: #f6f6f6;
@@ -15001,7 +15026,7 @@ Contact Area CSS
   transform: translateY(-50%);
 }
 .contact-info ul li:hover i {
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -15011,13 +15036,13 @@ Contact Area CSS
   background: var(--whiteColor);
   box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
   padding: 30px;
-  border-top: 3px solid #2c87ff;
+  border-top: 3px solid #4C68CA;
   border-top: 3px solid var(--mainColor);
-  border-bottom: 3px solid #2c87ff;
+  border-bottom: 3px solid #4C68CA;
   border-bottom: 3px solid var(--mainColor);
 }
 .contact-form h3 {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   margin-bottom: 25px;
   font-size: 20px;
@@ -15027,7 +15052,7 @@ Contact Area CSS
   border-radius: 3px;
 }
 .contact-form .form-control:focus {
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
 }
 .contact-form label {
@@ -15093,7 +15118,7 @@ Page Title CSS
   color: var(--whiteColor);
 }
 .page-title-content ul li a:hover {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
 }
 /*==============================
@@ -15124,7 +15149,7 @@ Blog Details Area CSS
   left: 15px;
   height: 100px;
   text-align: center;
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -15142,7 +15167,7 @@ Blog Details Area CSS
   display: inline-block;
 }
 .blog-details .article-text .category a {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -15159,7 +15184,7 @@ Blog Details Area CSS
   background: #f4f4f4;
   padding: 30px;
   font-size: 17px;
-  border-left: 4px solid #2c87ff;
+  border-left: 4px solid #4C68CA;
   border-left: 4px solid var(--mainColor);
   margin-bottom: 25px;
   margin-top: 25px;
@@ -15175,7 +15200,7 @@ Blog Details Area CSS
   text-align: right;
 }
 .blog-details .article-text .author-share .social-share a {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -15236,12 +15261,12 @@ Blog Details Area CSS
   border-radius: 5px;
   background: #ffffff;
   background: var(--whiteColor);
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   display: inline-block;
 }
 .post-controls-buttons div a:hover {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
@@ -15288,7 +15313,7 @@ Blog Details Area CSS
   position: absolute;
   right: 25px;
   bottom: 25px;
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   text-transform: uppercase;
   font-size: 17px;
@@ -15329,7 +15354,7 @@ Footer Area CSS
 }
 .footer-area h3 span {
   text-transform: lowercase;
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
   font-size: 35px;
   font-weight: 700;
@@ -15353,11 +15378,11 @@ Footer Area CSS
   display: block;
 }
 .footer-area ul li a:hover, .footer-area ul li a:focus {
-  background: #2c87ff;
+  background: #4C68CA;
   background: var(--mainColor);
   color: #ffffff;
   color: var(--whiteColor);
-  border-color: #2c87ff;
+  border-color: #4C68CA;
   border-color: var(--mainColor);
 }
 .footer-area p {
@@ -15396,7 +15421,8 @@ Sidebar Eaxmple Demo CSS
   font-size: 13px;
 }
 .demo-modal-panel .sidebar-demo-control span {
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   text-orientation: upright;
   padding-left: 5px;
   padding-right: 5px;
@@ -15404,7 +15430,7 @@ Sidebar Eaxmple Demo CSS
 .demo-modal-panel .sidebar-demo-control:hover {
   color: #ffffff;
   color: var(--whiteColor);
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
 }
 .example-demo-modal {
@@ -15460,7 +15486,7 @@ Sidebar Eaxmple Demo CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #2c87ff;
+  background-color: #4C68CA;
   background-color: var(--mainColor);
   transition: .5s;
   transition: var(--transition);
@@ -15533,7 +15559,7 @@ Sidebar Eaxmple Demo CSS
   display: inline-block;
 }
 .example-demo-modal .header-title .example-demo-modal-control:hover {
-  color: #2c87ff;
+  color: #4C68CA;
   color: var(--mainColor);
 }
 .example-demo-modal .header-title .title {

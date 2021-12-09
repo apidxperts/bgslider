@@ -87090,7 +87090,7 @@
           _CountUp = function () {
         function t(t, i, a) {
           var s = this;
-          this.target = t, this.endVal = i, this.options = a, this.version = "2.0.8", this.defaults = {
+          this.target = t, this.endVal = i, this.options = a, this.version = "2.0.7", this.defaults = {
             startVal: 0,
             decimalPlaces: 0,
             duration: 2,
@@ -87111,25 +87111,24 @@
                 a,
                 n,
                 e,
-                r = t < 0 ? "-" : "";
-            i = Math.abs(t).toFixed(s.options.decimalPlaces);
-            var o = (i += "").split(".");
+                r,
+                o = t < 0 ? "-" : "";
 
-            if (a = o[0], n = o.length > 1 ? s.options.decimal + o[1] : "", s.options.useGrouping) {
-              e = "";
+            if (i = Math.abs(t).toFixed(s.options.decimalPlaces), n = (a = (i += "").split("."))[0], e = a.length > 1 ? s.options.decimal + a[1] : "", s.options.useGrouping) {
+              r = "";
 
-              for (var l = 0, h = a.length; l < h; ++l) {
-                0 !== l && l % 3 == 0 && (e = s.options.separator + e), e = a[h - l - 1] + e;
+              for (var l = 0, h = n.length; l < h; ++l) {
+                0 !== l && l % 3 == 0 && (r = s.options.separator + r), r = n[h - l - 1] + r;
               }
 
-              a = e;
+              n = r;
             }
 
-            return s.options.numerals && s.options.numerals.length && (a = a.replace(/[0-9]/g, function (t) {
+            return s.options.numerals && s.options.numerals.length && (n = n.replace(/[0-9]/g, function (t) {
               return s.options.numerals[+t];
-            }), n = n.replace(/[0-9]/g, function (t) {
+            }), e = e.replace(/[0-9]/g, function (t) {
               return s.options.numerals[+t];
-            })), r + s.options.prefix + a + n + s.options.suffix;
+            })), o + s.options.prefix + n + e + s.options.suffix;
           }, this.easeOutExpo = function (t, i, a, s) {
             return a * (1 - Math.pow(2, -10 * t / s)) * 1024 / 1023 + i;
           }, this.options = __assign(__assign({}, this.defaults), a), this.formattingFn = this.options.formattingFn ? this.options.formattingFn : this.formatNumber, this.easingFn = this.options.easingFn ? this.options.easingFn : this.easeOutExpo, this.startVal = this.validateValue(this.options.startVal), this.frameVal = this.startVal, this.endVal = this.validateValue(i), this.options.decimalPlaces = Math.max(this.options.decimalPlaces), this.resetDuration(), this.options.separator = String(this.options.separator), this.useEasing = this.options.useEasing, "" === this.options.separator && (this.options.useGrouping = !1), this.el = "string" == typeof t ? document.getElementById(t) : t, this.el ? this.printValue(this.startVal) : this.error = "[CountUp] target is null or undefined";
@@ -102507,7 +102506,7 @@
       /*! ./config */
       2494);
 
-      var _Observable = /*#__PURE__*/function () {
+      var _Observable = /*#__PURE__*/function (_symbol_observable__W) {
         function _Observable(subscribe) {
           _classCallCheck2(this, _Observable);
 
@@ -102596,7 +102595,7 @@
             return source && source.subscribe(subscriber);
           }
         }, {
-          key: _symbol_observable__WEBPACK_IMPORTED_MODULE_3__.observable,
+          key: _symbol_observable__W,
           value: function value() {
             return this;
           }
@@ -102634,7 +102633,7 @@
         }]);
 
         return _Observable;
-      }();
+      }(_symbol_observable__WEBPACK_IMPORTED_MODULE_3__.observable);
 
       _Observable.create = function (subscribe) {
         return new _Observable(subscribe);
@@ -103136,7 +103135,7 @@
         return _SubjectSubscriber;
       }(_Subscriber__WEBPACK_IMPORTED_MODULE_0__.Subscriber);
 
-      var _Subject = /*#__PURE__*/function (_Observable__WEBPACK_) {
+      var _Subject = /*#__PURE__*/function (_Observable__WEBPACK_, _internal_symbol_rxSu) {
         _inherits(_Subject, _Observable__WEBPACK_);
 
         var _super92 = _createSuper(_Subject);
@@ -103156,7 +103155,7 @@
         }
 
         _createClass2(_Subject, [{
-          key: _internal_symbol_rxSubscriber__WEBPACK_IMPORTED_MODULE_2__.rxSubscriber,
+          key: _internal_symbol_rxSu,
           value: function value() {
             return new _SubjectSubscriber(this);
           }
@@ -103264,7 +103263,7 @@
         }]);
 
         return _Subject;
-      }(_Observable__WEBPACK_IMPORTED_MODULE_1__.Observable);
+      }(_Observable__WEBPACK_IMPORTED_MODULE_1__.Observable, _internal_symbol_rxSubscriber__WEBPACK_IMPORTED_MODULE_2__.rxSubscriber);
 
       _Subject.create = function (destination, source) {
         return new _AnonymousSubject(destination, source);
@@ -103483,7 +103482,7 @@
       /*! ./util/hostReportError */
       4449);
 
-      var _Subscriber = /*#__PURE__*/function (_Subscription__WEBPAC2) {
+      var _Subscriber = /*#__PURE__*/function (_Subscription__WEBPAC2, _internal_symbol_rxSu2) {
         _inherits(_Subscriber, _Subscription__WEBPAC2);
 
         var _super95 = _createSuper(_Subscriber);
@@ -103533,7 +103532,7 @@
         }
 
         _createClass2(_Subscriber, [{
-          key: _internal_symbol_rxSubscriber__WEBPACK_IMPORTED_MODULE_2__.rxSubscriber,
+          key: _internal_symbol_rxSu2,
           value: function value() {
             return this;
           }
@@ -103611,7 +103610,7 @@
         }]);
 
         return _Subscriber;
-      }(_Subscription__WEBPACK_IMPORTED_MODULE_0__.Subscription);
+      }(_Subscription__WEBPACK_IMPORTED_MODULE_0__.Subscription, _internal_symbol_rxSubscriber__WEBPACK_IMPORTED_MODULE_2__.rxSubscriber);
 
       var _SafeSubscriber = /*#__PURE__*/function (_Subscriber2) {
         _inherits(_SafeSubscriber, _Subscriber2);
@@ -107126,7 +107125,7 @@
         return StaticIterator;
       }();
 
-      var StaticArrayIterator = /*#__PURE__*/function () {
+      var StaticArrayIterator = /*#__PURE__*/function (_internal_symbol_iter) {
         function StaticArrayIterator(array) {
           _classCallCheck2(this, StaticArrayIterator);
 
@@ -107137,7 +107136,7 @@
         }
 
         _createClass2(StaticArrayIterator, [{
-          key: _internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_3__.iterator,
+          key: _internal_symbol_iter,
           value: function value() {
             return this;
           }
@@ -107167,9 +107166,9 @@
         }]);
 
         return StaticArrayIterator;
-      }();
+      }(_internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_3__.iterator);
 
-      var ZipBufferIterator = /*#__PURE__*/function (_OuterSubscriber__WEB3) {
+      var ZipBufferIterator = /*#__PURE__*/function (_OuterSubscriber__WEB3, _internal_symbol_iter2) {
         _inherits(ZipBufferIterator, _OuterSubscriber__WEB3);
 
         var _super103 = _createSuper(ZipBufferIterator);
@@ -107189,7 +107188,7 @@
         }
 
         _createClass2(ZipBufferIterator, [{
-          key: _internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_3__.iterator,
+          key: _internal_symbol_iter2,
           value: function value() {
             return this;
           }
@@ -107244,7 +107243,7 @@
         }]);
 
         return ZipBufferIterator;
-      }(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_4__.OuterSubscriber); //# sourceMappingURL=zip.js.map
+      }(_OuterSubscriber__WEBPACK_IMPORTED_MODULE_4__.OuterSubscriber, _internal_symbol_iterator__WEBPACK_IMPORTED_MODULE_3__.iterator); //# sourceMappingURL=zip.js.map
 
       /***/
 
