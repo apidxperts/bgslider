@@ -12473,7 +12473,7 @@ Default CSS
 :root {
   --fontFamily: "Poppins", sans-serif;
   --mainColor: #4C68CA;
-  --whiteColor: #ffffff;
+  --whiteColor: #12232e;
   --blackColor: #000000;
   --transition: .5s;
   --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -12618,7 +12618,7 @@ img {
   font-weight: 500;
 }
 .btn-primary {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   background-color: #4C68CA;
   background-color: var(--mainColor);
@@ -12628,13 +12628,13 @@ img {
 .btn-primary:hover, .btn-primary:focus, .btn-primary.disabled:hover, .btn-primary.disabled:focus {
   color: #4C68CA;
   color: var(--mainColor);
-  background-color: #ffffff;
+  background-color: #12232e;
   background-color: var(--whiteColor);
   border-color: #4C68CA;
   border-color: var(--mainColor);
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   background-color: #4C68CA;
   background-color: var(--mainColor);
@@ -12648,7 +12648,7 @@ img {
   box-shadow: none;
 }
 .btn-primary.disabled, .btn-primary:disabled {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   background-color: #4C68CA;
   background-color: var(--mainColor);
@@ -12711,7 +12711,7 @@ img {
   height: 45px;
   padding: 10px;
   font-size: 15px;
-  background-color: #ffffff;
+  background-color: #12232e;
   background-color: var(--whiteColor);
   border: 1px solid #eeeeee;
   border-radius: 0;
@@ -12758,7 +12758,7 @@ Preloader CSS
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   z-index: 99999;
 }
@@ -12860,7 +12860,7 @@ Main Header CSS
   width: 100%;
   z-index: 999;
   position: fixed !important;
-  background: #ffffff !important;
+  background: #12232e !important;
   background: var(--whiteColor) !important;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -12869,7 +12869,7 @@ Main Header CSS
   padding-bottom: 20px;
 }
 .navbar-light .navbar-brand {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   text-transform: uppercase;
   line-height: 10px;
@@ -12889,7 +12889,7 @@ Main Header CSS
   font-weight: 700;
 }
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .navbar-light .navbar-nav .nav-item {
@@ -12955,13 +12955,17 @@ Main Header CSS
   color: var(--mainColor);
 }
 @media only screen and (max-width: 991px) {
+  .footmenu {
+    margin-left: -170px;
+  }
+
   .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
   .navbar-light .navbar-nav {
-    background-color: #ffffff;
+    background-color: #12232e;
     background-color: var(--whiteColor);
     padding: 10px 20px;
     margin-top: 10px;
@@ -12974,8 +12978,8 @@ Main Header CSS
     padding-bottom: 10px;
   }
   .navbar-light .navbar-nav .nav-item .nav-link {
-    color: #000000;
-    color: var(--blackColor);
+    color: #2F819F;
+    font-size: 18px;
     display: inline-block;
   }
   .navbar-light .navbar-nav .nav-item .nav-link.active, .navbar-light .navbar-nav .nav-item .nav-link:hover {
@@ -12986,7 +12990,7 @@ Main Header CSS
     display: block !important;
   }
   .navbar-light .navbar-toggler {
-    color: #ffffff;
+    color: #12232e;
     color: var(--whiteColor);
     font-size: inherit;
     box-shadow: unset;
@@ -13001,7 +13005,7 @@ Main Header CSS
     width: 30px;
     margin: 6px 0;
     display: block;
-    background: #ffffff;
+    background: #12232e;
     background: var(--whiteColor);
   }
   .navbar-light.active .navbar-toggler .burger-menu span.top-bar {
@@ -13072,19 +13076,19 @@ Main Banner CSS
   z-index: 1;
 }
 .main-banner-text h3 {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   font-weight: 300;
   font-size: 20px;
 }
 .main-banner-text h4 {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   font-weight: 400;
   font-size: 20px;
 }
 .main-banner-text h1 {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   margin-top: 30px;
   margin-bottom: 30px;
@@ -13105,7 +13109,7 @@ Main Banner CSS
   display: inline-block;
 }
 .main-banner-text p {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   max-width: 650px;
   font-size: 15.5px;
@@ -13118,12 +13122,12 @@ Main Banner CSS
   margin-right: 7px;
 }
 .main-banner-text .btn:hover, .main-banner-text .btn:focus {
-  border-color: #ffffff;
+  border-color: #12232e;
   border-color: var(--whiteColor);
 }
 .main-banner-text .view-work {
   background: transparent;
-  border-color: #ffffff;
+  border-color: #12232e;
   border-color: var(--whiteColor);
 }
 .main-banner-text .view-work:hover, .main-banner-text .view-work:focus {
@@ -13131,7 +13135,7 @@ Main Banner CSS
   border-color: var(--mainColor);
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .main-banner-text.text-start p {
@@ -13163,7 +13167,7 @@ Main Banner CSS
   line-height: 58px;
   border-radius: 50%;
   font-size: 25px;
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   transition: .5s;
   transition: var(--transition);
@@ -13175,7 +13179,7 @@ Main Banner CSS
 .home-slides .owl-theme .owl-nav [class*=owl-]:hover {
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .home-slides .owl-theme:hover .owl-nav {
@@ -13226,7 +13230,7 @@ Creative Banner CSS
   left: 0;
   width: 100%;
   border-width: 10rem 100vw 0 0;
-  border-color: transparent #ffffff #ffffff transparent;
+  border-color: transparent #12232e #12232e transparent;
   border-color: transparent var(--whiteColor) var(--whiteColor) transparent;
   border-style: solid;
 }
@@ -13238,7 +13242,7 @@ Creative Banner CSS
 }
 .creative-banner-two::before {
   content: "";
-  border-right: 50vw solid #ffffff;
+  border-right: 50vw solid #12232e;
   border-right: 50vw solid var(--whiteColor);
   border-top: 160px solid transparent;
   bottom: 0;
@@ -13250,7 +13254,7 @@ Creative Banner CSS
 .creative-banner-two::after {
   content: "";
   position: absolute;
-  border-left: 50vw solid #ffffff;
+  border-left: 50vw solid #12232e;
   border-left: 50vw solid var(--whiteColor);
   border-top: 160px solid transparent;
   bottom: 0;
@@ -13347,21 +13351,21 @@ Welcome Area CSS
   background-color: var(--mainColor);
 }
 .single-box:hover .icon {
-  background-color: #ffffff;
+  background-color: #12232e;
   background-color: var(--whiteColor);
-  border-color: #ffffff;
+  border-color: #12232e;
   border-color: var(--whiteColor);
 }
 .single-box:hover h3 {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .single-box:hover p {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .single-box:hover .link-btn {
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   color: #4C68CA;
   color: var(--mainColor);
@@ -13430,7 +13434,7 @@ About Area CSS
   transition: .5s;
   transition: var(--transition);
   line-height: 92px;
-  background-color: #ffffff;
+  background-color: #12232e;
   background-color: var(--whiteColor);
   border-radius: 50%;
   color: #4C68CA;
@@ -13448,7 +13452,7 @@ About Area CSS
   bottom: 0;
   left: 0;
   border-radius: 50%;
-  border: 1px solid #ffffff;
+  border: 1px solid #12232e;
   border: 1px solid var(--whiteColor);
 }
 .about-video .video-btn button::before {
@@ -13462,7 +13466,7 @@ About Area CSS
 .about-video .video-btn button:hover {
   background-color: #4C68CA;
   background-color: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 @-webkit-keyframes pulse-border {
@@ -13589,7 +13593,7 @@ Who We Are Area CSS
   margin-bottom: 30px;
   position: relative;
   z-index: 1;
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   border: 1.5px dashed #eeeeee;
   padding: 30px;
@@ -13644,25 +13648,25 @@ Who We Are Area CSS
 }
 .single-who-we-are:hover {
   box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   transform: translateY(-10px);
 }
 .single-who-we-are:hover i {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .single-who-we-are:hover p {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   opacity: 0.9;
 }
 .single-who-we-are:hover h3 {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .single-who-we-are:hover span {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   opacity: 0.2;
 }
@@ -13702,14 +13706,14 @@ CTA Area CSS
   display: none;
 }
 .cta-content .section-title h2 {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   font-weight: 600;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 .cta-content .section-title p {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   opacity: 0.95;
   margin-left: auto;
@@ -13721,12 +13725,12 @@ CTA Area CSS
   margin-right: 8px;
 }
 .cta-content .section-title .btn.btn-primary:hover, .cta-content .section-title .btn.btn-primary:focus {
-  border-color: #ffffff;
+  border-color: #12232e;
   border-color: var(--whiteColor);
 }
 .cta-content .section-title .view-work {
   background: transparent;
-  border-color: #ffffff;
+  border-color: #12232e;
   border-color: var(--whiteColor);
 }
 .cta-content .section-title .view-work:hover, .cta-content .section-title .view-work:focus {
@@ -13734,7 +13738,7 @@ CTA Area CSS
   border-color: var(--mainColor) !important;
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 /*==============================
@@ -13806,7 +13810,7 @@ Skill Area CSS
   border: none;
   height: 90px;
   line-height: 92px;
-  background-color: #ffffff;
+  background-color: #12232e;
   background-color: var(--whiteColor);
   border-radius: 50%;
   transition: .5s;
@@ -13826,7 +13830,7 @@ Skill Area CSS
   bottom: 0;
   left: 0;
   border-radius: 50%;
-  border: 1px solid #ffffff;
+  border: 1px solid #12232e;
   border: 1px solid var(--whiteColor);
 }
 .skill-video .video-btn button::before {
@@ -13840,7 +13844,7 @@ Skill Area CSS
 .skill-video .video-btn button:hover {
   background-color: #4C68CA;
   background-color: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 @-webkit-keyframes animate-positive {
@@ -13889,14 +13893,14 @@ Fun Facts Area CSS
   top: 2px;
 }
 .funfact h3 {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   margin-bottom: 5px;
   font-size: 45px;
   font-weight: 600;
 }
 .funfact p {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   font-size: 16px;
 }
@@ -13920,7 +13924,7 @@ Team Area CSS
   left: 0;
   bottom: -30px;
   right: 0;
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   margin-left: 15px;
   z-index: 1;
@@ -13975,10 +13979,10 @@ Team Area CSS
   width: 35px;
   height: 35px;
   line-height: 35px;
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   display: block;
-  border: 1px solid #ffffff;
+  border: 1px solid #12232e;
   border: 1px solid var(--whiteColor);
   border-radius: 50%;
 }
@@ -13994,11 +13998,11 @@ Team Area CSS
   box-shadow: unset;
 }
 .single-team-box:hover .content .title {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .single-team-box:hover .content .post {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .single-team-box:hover .social {
@@ -14079,7 +14083,7 @@ How We Work Area CSS
 .single-how-work:hover .icon {
   background-color: #4C68CA;
   background-color: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   border-color: #4C68CA;
   border-color: var(--mainColor);
@@ -14137,7 +14141,7 @@ Services Area CSS
   border-radius: 50%;
   transition: .5s;
   transition: var(--transition);
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   color: #4C68CA;
   color: var(--mainColor);
@@ -14160,9 +14164,9 @@ Services Area CSS
 .single-services:hover .services-img .icon i {
   background: #4C68CA;
   background: var(--mainColor);
-  border-color: #ffffff;
+  border-color: #12232e;
   border-color: var(--whiteColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .single-services:hover::before {
@@ -14217,7 +14221,7 @@ Why We Are Different CSS
   border-color: var(--mainColor);
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .why-we-different-tabset .tab-panel {
@@ -14276,7 +14280,7 @@ Work Area CSS
 .shorting-menu .filter.active, .shorting-menu .filter:hover {
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .shorting-menu .filter:last-child {
@@ -14314,13 +14318,13 @@ Work Area CSS
 .work-tabs .nav-tabset .nav-tab span:hover {
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .work-tabs .nav-tabset .nav-tab.active span {
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .work-tabs .nav-tabset .nav-tab:last-child {
@@ -14350,7 +14354,7 @@ Work Area CSS
   bottom: 0;
   left: 0;
   right: 0;
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   opacity: 0;
   visibility: hidden;
@@ -14383,12 +14387,12 @@ Work Area CSS
   height: 45px;
   line-height: 45px;
   border-radius: 50%;
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   font-size: 22px;
   opacity: 0;
   visibility: hidden;
-  border: 1px solid #ffffff;
+  border: 1px solid #12232e;
   border: 1px solid var(--whiteColor);
   transition: .5s;
   transition: var(--transition);
@@ -14423,7 +14427,7 @@ Pricing Area CSS
 }
 .pricingTable {
   margin-bottom: 30px;
-  background-color: #ffffff;
+  background-color: #12232e;
   background-color: var(--whiteColor);
   box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
   text-align: center;
@@ -14453,7 +14457,7 @@ Pricing Area CSS
   margin-bottom: 35px;
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   text-transform: uppercase;
   padding-top: 20px;
@@ -14513,14 +14517,14 @@ Pricing Area CSS
 }
 .col-lg-4:nth-child(2) .pricingTable .title {
   background: #424242;
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .col-lg-4:nth-child(2) .pricingTable .pricing-content li i {
   color: #424242;
 }
 .col-lg-4:nth-child(2) .pricingTable .btn-primary {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   background-color: #424242;
   border-color: #424242;
@@ -14549,7 +14553,7 @@ FAQ Area CSS
   display: block;
   margin-bottom: 15px;
   border: none;
-  background-color: #ffffff;
+  background-color: #12232e;
   background-color: var(--whiteColor);
   box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, 0.13) !important;
 }
@@ -14572,7 +14576,7 @@ FAQ Area CSS
 .faq-accordion .card .card-header a h5 {
   overflow: hidden;
   padding: 20px 40px 20px 20px;
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   background: #4C68CA;
   background: var(--mainColor);
@@ -14595,7 +14599,7 @@ FAQ Area CSS
   transition: var(--transition);
 }
 .faq-accordion .card .card-header a.collapsed h5:hover {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .faq-accordion .card .card-header a.collapsed i {
@@ -14611,7 +14615,7 @@ FAQ Area CSS
   display: block;
   border-radius: 5px;
   margin-bottom: 15px;
-  background-color: #ffffff;
+  background-color: #12232e;
   background-color: var(--whiteColor);
   box-shadow: 2px 8px 20px 0 rgba(25, 42, 70, 0.13);
 }
@@ -14624,13 +14628,13 @@ FAQ Area CSS
   color: #000000;
   color: var(--blackColor);
   padding: 20px 40px 20px 20px;
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   font-size: 16px;
   font-weight: 500;
 }
 .faq-accordion .panel-heading .panel-title a:hover {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   background: #4C68CA;
   background: var(--mainColor);
@@ -14646,7 +14650,7 @@ FAQ Area CSS
   font-weight: 900;
 }
 .faq-accordion .dropup .panel-heading .panel-title a {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   background: #4C68CA;
   background: var(--mainColor);
@@ -14696,7 +14700,7 @@ Feedback Area CSS
   width: 100px !important;
   height: 100px;
   display: inline-block !important;
-  border: 3px solid #ffffff;
+  border: 3px solid #12232e;
   border: 3px solid var(--whiteColor);
   position: absolute;
   right: 0;
@@ -14765,7 +14769,7 @@ Feedback Area CSS
 .feedback-slides .owl-theme .owl-nav [class*=owl-]:hover, .feedback-slides .owl-theme .owl-nav [class*=owl-]:focus {
   background-color: #4C68CA;
   background-color: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   border-color: #4C68CA;
   border-color: var(--mainColor);
@@ -14815,7 +14819,7 @@ Blog Area CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   transition: .5s;
   transition: var(--transition);
@@ -14891,13 +14895,13 @@ Blog Area CSS
   opacity: 0.66;
 }
 .single-blog-item:hover span, .single-blog-item:hover p, .single-blog-item:hover h3 a {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .single-blog-item:hover .link-btn {
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 /*==============================
@@ -14935,7 +14939,7 @@ Subscribe Area CSS
 .newsletter {
   max-width: 750px;
   box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   padding: 40px 35px;
   text-align: center;
@@ -14977,7 +14981,7 @@ Contact Area CSS
 }
 .contact-info {
   box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   padding: 30px;
   height: 100%;
@@ -15028,11 +15032,11 @@ Contact Area CSS
 .contact-info ul li:hover i {
   background-color: #4C68CA;
   background-color: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .contact-form {
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
   padding: 30px;
@@ -15095,7 +15099,7 @@ Page Title CSS
   margin-top: 70px;
 }
 .page-title-content h1 {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   margin-bottom: 35px;
   font-size: 45px;
@@ -15103,7 +15107,7 @@ Page Title CSS
 }
 .page-title-content ul li {
   display: inline-block;
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   text-transform: uppercase;
   font-weight: 500;
@@ -15114,7 +15118,7 @@ Page Title CSS
   color: #cccccc;
 }
 .page-title-content ul li a {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .page-title-content ul li a:hover {
@@ -15136,7 +15140,7 @@ Blog Details Area CSS
 }
 .blog-details {
   box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
 }
 .blog-details .article-img {
@@ -15151,7 +15155,7 @@ Blog Details Area CSS
   text-align: center;
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   border-radius: 5px;
   padding-top: 19px;
@@ -15169,7 +15173,7 @@ Blog Details Area CSS
 .blog-details .article-text .category a {
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   padding: 3px 15px;
   display: inline-block;
@@ -15202,7 +15206,7 @@ Blog Details Area CSS
 .blog-details .article-text .author-share .social-share a {
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   width: 35px;
   display: inline-block;
@@ -15215,7 +15219,7 @@ Blog Details Area CSS
 .blog-details .article-text .author-share .social-share a:hover {
   background-color: #000000;
   background-color: var(--blackColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .blog-details .article-text .article-author {
@@ -15259,7 +15263,7 @@ Blog Details Area CSS
   box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
   padding: 10px 20px;
   border-radius: 5px;
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   color: #4C68CA;
   color: var(--mainColor);
@@ -15268,7 +15272,7 @@ Blog Details Area CSS
 .post-controls-buttons div a:hover {
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 .post-controls-buttons .controls-right {
@@ -15283,7 +15287,7 @@ Blog Details Area CSS
   margin-bottom: 25px;
   position: relative;
   overflow: hidden;
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
 }
 .post-comments .single-comment.left-m {
@@ -15321,7 +15325,7 @@ Blog Details Area CSS
 .leave-a-reply {
   box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
   padding: 25px;
-  background: #ffffff;
+  background: #12232e;
   background: var(--whiteColor);
   margin-top: 50px;
 }
@@ -15345,7 +15349,7 @@ Footer Area CSS
   margin-bottom: 30px;
 }
 .footer-area h3 a {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   text-transform: uppercase;
   display: inline-block;
@@ -15369,10 +15373,10 @@ Footer Area CSS
   height: 32px;
   text-align: center;
   line-height: 31px;
-  border: 1px solid #ffffff;
+  border: 1px solid #12232e;
   border: 1px solid var(--whiteColor);
   border-radius: 50%;
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   font-size: 14px;
   display: block;
@@ -15380,7 +15384,7 @@ Footer Area CSS
 .footer-area ul li a:hover, .footer-area ul li a:focus {
   background: #4C68CA;
   background: var(--mainColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   border-color: #4C68CA;
   border-color: var(--mainColor);
@@ -15388,7 +15392,7 @@ Footer Area CSS
 .footer-area p {
   line-height: 1;
   margin-top: 30px;
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
 }
 /*==============================
@@ -15406,7 +15410,7 @@ Sidebar Eaxmple Demo CSS
   border: none;
   background-color: #000000;
   background-color: var(--blackColor);
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   padding: 0 0;
   letter-spacing: 1px;
@@ -15428,7 +15432,7 @@ Sidebar Eaxmple Demo CSS
   padding-right: 5px;
 }
 .demo-modal-panel .sidebar-demo-control:hover {
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   background-color: #4C68CA;
   background-color: var(--mainColor);
@@ -15449,7 +15453,7 @@ Sidebar Eaxmple Demo CSS
   width: 450px;
   height: 100vh;
   overflow-y: scroll;
-  background-color: #ffffff;
+  background-color: #12232e;
   background-color: var(--whiteColor);
   box-shadow: 0 0 30px 0 rgba(67, 67, 67, 0.15);
   padding: 90px 30px 30px 30px;
@@ -15476,7 +15480,7 @@ Sidebar Eaxmple Demo CSS
 .example-demo-modal .inner ul li .single-demo img {
   border-radius: 5px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  border: 5px solid #ffffff;
+  border: 5px solid #12232e;
   border: 5px solid var(--whiteColor);
 }
 .example-demo-modal .inner ul li .single-demo::before {
@@ -15501,7 +15505,7 @@ Sidebar Eaxmple Demo CSS
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   text-transform: capitalize;
   transition: .5s;
@@ -15532,7 +15536,7 @@ Sidebar Eaxmple Demo CSS
 }
 .example-demo-modal .header-title {
   position: absolute;
-  background-color: #ffffff;
+  background-color: #12232e;
   background-color: var(--whiteColor);
   top: -1px;
   left: 0;
@@ -15594,12 +15598,12 @@ Sidebar Eaxmple Demo CSS
   height: 520px;
   position: absolute;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
+  background-color: #12232e;
   background-color: var(--whiteColor);
 }
 .video-popup .nsm-dialog-btn-close {
   background-color: transparent;
-  color: #ffffff;
+  color: #12232e;
   color: var(--whiteColor);
   position: absolute;
   border: none;
