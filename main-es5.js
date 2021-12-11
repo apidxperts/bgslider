@@ -3795,7 +3795,7 @@
       _NavbarComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
         type: _NavbarComponent,
         selectors: [["app-navbar"]],
-        decls: 47,
+        decls: 50,
         vars: 2,
         consts: [["ngStickyNav", "", "stickyClass", "sticky-box-shadow", "ngStickyNav", "", 1, "navbar", "navbar-expand-lg", "navbar-light", "bg-light"], [1, "container"], ["src", "assets/img/logo.png", "alt", "image", "routerLink", "/", 1, "navbar-brand"], ["type", "button", 1, "navbar-toggler", 3, "click"], [1, "burger-menu"], [1, "top-bar"], [1, "middle-bar"], [1, "bottom-bar"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "ml-auto"], [1, "nav-item"], ["href", "https://dxperts.network ", "target", "_blank", 1, "nav-link"], ["href", "https://about.dxperts.network ", "target", "_blank", 1, "nav-link"], ["href", "https://grants.dxperts.network", "target", "_blank", 1, "nav-link"], ["href", "https://blockproducer.dxperts.network", "target", "_blank", 1, "nav-link"], ["href", "https://ecosystem.dxperts.network", "target", "_blank", 1, "nav-link"], ["href", "https://dxpertscommunity.com", "target", "_blank", 1, "nav-link"], ["href", "#", "target", "_blank", 1, "nav-link"], ["id", "google_translate_element"], [1, "navbar-nav", "ml-auto", "for-responsive"]],
         template: function NavbarComponent_Template(rf, ctx) {
@@ -3947,6 +3947,16 @@
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](45, "a", 15);
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](46, " Echo System ");
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](47, "li", 10);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](48, "a", 16);
+
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](49, " Community ");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
