@@ -8929,9 +8929,9 @@
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "video", 30);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "video", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "source", 31);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "source", 30);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -8975,9 +8975,9 @@
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "video", 30);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "video", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "source", 32);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "source", 31);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -9021,7 +9021,7 @@
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "video", 30);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "video", 14);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "source", 15);
 
@@ -9057,7 +9057,7 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "br");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "a", 33);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "a", 32);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "JOIN FOR FREE");
 
@@ -9079,9 +9079,9 @@
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "video", 30);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "video", 14);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "source", 31);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "source", 30);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -9109,7 +9109,7 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "br");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 34);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 33);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "EXPLORE");
 
@@ -9131,7 +9131,7 @@
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 13);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "video", 35);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "video", 34);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 16);
 
@@ -9157,7 +9157,7 @@
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "br");
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 34);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 33);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "EXPLORE");
 
@@ -9215,7 +9215,7 @@
         selectors: [["app-home-three"]],
         decls: 26,
         vars: 1,
-        consts: [[1, "home-slides"], [2, "position", "absolute", "color", "#000e1a", "z-index", "9999", "top", "80%", "left", "35%"], [1, "footmenu"], ["href", "https://telegram.me/share/url?&url=http://dxperts.org", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-telegram"], ["href", "#", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-facebook-f"], ["href", "https://twitter.com/", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-twitter"], [1, "fab", "fa-reddit"], [1, "fas", "fa-rss"], [3, "options"], ["carouselSlide", ""], [1, "main-banner"], ["loop", "", "muted", "", "autoplay", "", 1, "video-background"], ["src", "assets/video/video2.mp4", "type", "video/mp4"], [1, "d-table"], [1, "d-table-cell"], [1, "container"], [1, "main-banner-text"], ["src", "assets/video/Tropical.mp4", "type", "video/mp4"], [1, "row"], [1, "col-lg-3", "col-md-6", "text-center"], [1, "mt-5", 2, "margin-top", "0px !important"], [1, "fas", "fa-4x", "fa-gem", "text-primary", "mb-4", "fh", 2, "font-weight", "600 !important", "font-size", "2.5em !important"], [1, "h6", "mb-2"], [1, "text-muted", "mb-0"], [1, "fas", "fa-4x", "fa-users", "text-primary", "mb-4", "fh", 2, "font-weight", "600 !important", "font-size", "2.5em !important"], [1, "fas", "fa-4x", "fa-globe", "text-primary", "mb-4", "fh", 2, "font-weight", "600 !important", "font-size", "2.5em !important"], [1, "fas", "fa-4x", "fa-heart", "text-primary", "mb-4", "fh", 2, "font-weight", "600 !important", "font-size", "2.5em !important"], ["loop", "", "muted", "", "autoplay", "", "poster", "#", 1, "video-background"], ["src", "assets/video/video3.mp4", "type", "video/mp4"], ["src", "assets/video/promo-video.mp4", "type", "video/mp4"], ["href", "https://dxperts.org", "target", "_blank", 1, "btn", "btn-primary"], ["href", "https://dxpertscommunity.com/", "target", "_blank", 1, "btn", "btn-primary"], ["loop", "", "muted", "", "autoplay", "", "poster", "#", 1, "image-background"]],
+        consts: [[1, "home-slides"], [2, "position", "absolute", "color", "#000e1a", "z-index", "9999", "top", "80%", "left", "35%"], [1, "footmenu"], ["href", "https://telegram.me/share/url?&url=http://dxperts.org", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-telegram"], ["href", "#", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-facebook-f"], ["href", "https://twitter.com/", "target", "_blank", 1, "nav-link"], [1, "fab", "fa-twitter"], [1, "fab", "fa-reddit"], [1, "fas", "fa-rss"], [3, "options"], ["carouselSlide", ""], [1, "main-banner"], ["loop", "", "muted", "", "autoplay", "", 1, "video-background"], ["src", "assets/video/video2.mp4", "type", "video/mp4"], [1, "d-table"], [1, "d-table-cell"], [1, "container"], [1, "main-banner-text"], ["src", "assets/video/Tropical.mp4", "type", "video/mp4"], [1, "row"], [1, "col-lg-3", "col-md-6", "text-center"], [1, "mt-5", 2, "margin-top", "0px !important"], [1, "fas", "fa-4x", "fa-gem", "text-primary", "mb-4", "fh", 2, "font-weight", "600 !important", "font-size", "2.5em !important"], [1, "h6", "mb-2"], [1, "text-muted", "mb-0"], [1, "fas", "fa-4x", "fa-users", "text-primary", "mb-4", "fh", 2, "font-weight", "600 !important", "font-size", "2.5em !important"], [1, "fas", "fa-4x", "fa-globe", "text-primary", "mb-4", "fh", 2, "font-weight", "600 !important", "font-size", "2.5em !important"], [1, "fas", "fa-4x", "fa-heart", "text-primary", "mb-4", "fh", 2, "font-weight", "600 !important", "font-size", "2.5em !important"], ["src", "assets/video/video3.mp4", "type", "video/mp4"], ["src", "assets/video/promo-video.mp4", "type", "video/mp4"], ["href", "https://dxperts.org", "target", "_blank", 1, "btn", "btn-primary"], ["href", "https://dxpertscommunity.com/", "target", "_blank", 1, "btn", "btn-primary"], ["loop", "", "muted", "", "autoplay", "", "poster", "#", 1, "image-background"]],
         template: function HomeThreeComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
